@@ -10,14 +10,12 @@ setup(
     package_dir={
         pkg: "DMBluetoothSetup",
         f"{pkg}.IrProtocols": "DMBluetoothSetup/IrProtocols",
-        f"{pkg}.IrDatabase": "DMBluetoothSetup/IrDatabase",
-        f"{pkg}.Tools": "DMBluetoothSetup/Tools",
+        f"{pkg}.Dfu": "DMBluetoothSetup/Dfu",
     },
     packages=[
         pkg,
         f"{pkg}.IrProtocols",
-        f"{pkg}.IrDatabase",
-        f"{pkg}.Tools",
+        f"{pkg}.Dfu",
     ],
     package_data={
         pkg: [

@@ -1,8 +1,10 @@
 from enigma import IrProtocol, IrKey
 
 from ..InputDeviceIRDatabase import irdb
+
+
 class Panasonic:
-    #{37k,432}<1,-1|1,-3>(8,-4,2:8,32:8,D:8,S:8,F:8,(D^S^F):8,1,-173)+
+    # {37k,432}<1,-1|1,-3>(8,-4,2:8,32:8,D:8,S:8,F:8,(D^S^F):8,1,-173)+
     M = 2
     N = 32
 
@@ -26,7 +28,7 @@ class Panasonic:
         stop_ontime = 1 << 15 | timebase
         stop_totaltime = timebase
         repeat_protocol_id = IrProtocol.IR_PROTO_CUSTOM
-        repeat_ms = 80*2
+        repeat_ms = 80 * 2
 
         proto = IrProtocol(
             carrier_period,

@@ -69,7 +69,6 @@ def getInputDeviceConnected(device):
     return bool(_safeCall(device, "connected", False))
 
 
-
 def _validColorValue(value, default):
     value = str(value) if value is not None else default
     return value if value in _COLOR_VALUES else default
@@ -156,7 +155,6 @@ def ensureInputDeviceManagerConfig():
         settings.connectedColor.addNotifier(_onConnectedRcuColorChanged, initial_call=False)
         settings.connectedColorIr.addNotifier(_onConnectedRcuColorIrChanged, initial_call=False)
         _COLOR_NOTIFIERS_INSTALLED = True
-
 
 
 def _safeCall(obj, method, default=None):

@@ -7,11 +7,12 @@ from twisted.internet import reactor
 
 from Tools.Directories import createDir, fileExists, pathExists
 
+
 class DfuFileset:
-    TYPE_SYSTEM     = 1
-    TYPE_APP         = 1 << 1
-    SECTION_INIT    = 1 << 4
-    SECTION_DATA    = 1 << 5
+    TYPE_SYSTEM = 1
+    TYPE_APP = 1 << 1
+    SECTION_INIT = 1 << 4
+    SECTION_DATA = 1 << 5
 
     def __init__(self, type, dat, bin):
         self._type = type
@@ -30,25 +31,25 @@ class DfuFileset:
     def bin(self):
         return self._bin
 
-
     def __str__(self):
         return "<{0} instance at{1}>:: {2} - bin: {3}, data: {4}".format(self.__class__.__name__, id(self), self.type, self.dat, self.bin)
 
+
 class DfuFlash:
-    EVT_DFU_LOWBAT        = 1 << 9
-    EVT_DFU_NA            = 1 << 10
-    EVT_DFU_TIMEOUT        = 1 << 11
-    EVT_DFU_AVAILABLE    = 1 << 12
-    EVT_DFU_CONNECTED     = 1 << 13
-    EVT_FLASH_BEGIN        = 1 << 14
-    EVT_FLASH_REJECTED    = 1 << 15
-    EVT_INIT_FAIL        = 1 << 16
-    EVT_UPLOAD_BEGIN    = 1 << 17
+    EVT_DFU_LOWBAT = 1 << 9
+    EVT_DFU_NA = 1 << 10
+    EVT_DFU_TIMEOUT = 1 << 11
+    EVT_DFU_AVAILABLE = 1 << 12
+    EVT_DFU_CONNECTED = 1 << 13
+    EVT_FLASH_BEGIN = 1 << 14
+    EVT_FLASH_REJECTED = 1 << 15
+    EVT_INIT_FAIL = 1 << 16
+    EVT_UPLOAD_BEGIN = 1 << 17
     EVT_UPLOAD_PROGRESS = 1 << 18
-    EVT_UPLOAD_RESULT    = 1 << 19
-    EVT_BL_SKIPPED        = 1 << 20
-    EVT_REBOOT_AWAIT    = 1 << 21
-    EVT_FINISHED        = 1 << 31
+    EVT_UPLOAD_RESULT = 1 << 19
+    EVT_BL_SKIPPED = 1 << 20
+    EVT_REBOOT_AWAIT = 1 << 21
+    EVT_FINISHED = 1 << 31
     EVT_DFU_CONTROL_ERROR = 1 << 32
 
     UPLOAD_RESULT_ERROR = 0
@@ -233,7 +234,7 @@ class DfuFlash:
             self.event(self.EVT_INIT_FAIL, event)
 
         elif event == Dfu.DFU_EVT_OBJECT_CREATE_SUCCESS:
-            self.event(self.EVT_UPLOAD_BEGIN, value) # value is the section (data or bin)
+            self.event(self.EVT_UPLOAD_BEGIN, value)  # value is the section (data or bin)
             self._section = value
 
         elif event == Dfu.DFU_EVT_COMMAND_ERROR:

@@ -18,6 +18,7 @@ from twisted.internet import reactor
 global inputDeviceWatcher
 inputDeviceWatcher = None
 
+
 class InputDeviceWatcher(InputDeviceUpdateHandlerBase):
     BATTERY_LOG_DIR = "/var/lib/enigma2"
 
@@ -63,7 +64,7 @@ class InputDeviceWatcher(InputDeviceUpdateHandlerBase):
                 self._batteryStates[address] = device.batteryLevel()
 
     def _onDeviceListChanged(self):
-        if config.misc.firstrun.value: #Wizard will run!
+        if config.misc.firstrun.value:  # Wizard will run!
             return
         if not config.inputDevices.settings.firstDevice.value:
             return
@@ -98,17 +99,21 @@ class InputDeviceWatcher(InputDeviceUpdateHandlerBase):
             windowTitle=_("New Firmware"),
         )
 
+
 def idm_setup(session, **kwargs):
     session.open(InputDeviceManagement)
+
 
 def idm_menu(menuid, **kwargs):
     if menuid == "system":
         return [(_("Bluetooth Setup"), idm_setup, "dmbluetooth_setup", 10)]
     return []
 
+
 def sessionStart(reason, session, *args, **kwargs):
     global inputDeviceWatcher
     inputDeviceWatcher = InputDeviceWatcher(session)
+
 
 def Plugins(**kwargs):
     return [

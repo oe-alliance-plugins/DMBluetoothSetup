@@ -2,6 +2,7 @@ from enigma import IrProtocol, IrKey
 
 from .NEC import NECBase
 
+
 class Pioneer:
     # {40k,564}<1,-1|1,-3>(16,-8,D:8,S:8,F:8,~F:8,1,^108m)+
 

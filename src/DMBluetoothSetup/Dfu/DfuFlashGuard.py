@@ -11,6 +11,7 @@ from .DfuFlash import DfuFileset, DfuFlash
 
 from os.path import dirname
 
+
 class DfuLog(Screen):
     IS_DIALOG = True
 
@@ -37,6 +38,7 @@ class DfuLog(Screen):
         self._log.text = text
 
     text = property(_getText, _setText)
+
 
 class DfuFlashGuard(Screen):
     IS_DIALOG = True
@@ -137,7 +139,7 @@ class DfuFlashGuard(Screen):
     def load(self):
         types = self._flasher.load(resolveFilename(SCOPE_RCU_FIRMWARE))
         self._onLoadFinished(types)
-        if self._device.checkVersion(1,5) < 0 and types & DfuFileset.TYPE_SYSTEM:
+        if self._device.checkVersion(1, 5) < 0 and types & DfuFileset.TYPE_SYSTEM:
             self._warnBootloaderNoControl()
             return
         self._flash()
@@ -176,7 +178,7 @@ class DfuFlashGuard(Screen):
 
     def _onDfuBatteryLow(self):
         text = _("Device battery level of {0}% is too low.\nIt's required to be at least {1}%!".format(self._device.batteryLevel(), DFU_BATTERY_MIN))
-        self.session.openWithCallback(self._onErrorAck, MessageBox,text, type=MessageBox.TYPE_ERROR, windowTitle=_("Upload rejected!"))
+        self.session.openWithCallback(self._onErrorAck, MessageBox, text, type=MessageBox.TYPE_ERROR, windowTitle=_("Upload rejected!"))
 
     def _onLoadFinished(self, types):
         t = []
@@ -214,13 +216,13 @@ class DfuFlashGuard(Screen):
         self._enableActions()
         text = self._addBatteryRebootHintText(_("The firmware files are invalid or corrupted!\nThe upload was rejected by the device!"))
         self._appendText(text)
-        self.session.openWithCallback(self._onErrorAck, MessageBox,text, type=MessageBox.TYPE_ERROR, windowTitle=_("Upload rejected!"))
+        self.session.openWithCallback(self._onErrorAck, MessageBox, text, type=MessageBox.TYPE_ERROR, windowTitle=_("Upload rejected!"))
 
     def _onInitError(self, event):
         self._enableActions()
         text = self._addBatteryRebootHintText(_("Update initialization failed!\n"))
         self._appendText(text)
-        self.session.openWithCallback(self._onErrorAck, MessageBox,text, type=MessageBox.TYPE_ERROR, windowTitle=_("Init failed!"))
+        self.session.openWithCallback(self._onErrorAck, MessageBox, text, type=MessageBox.TYPE_ERROR, windowTitle=_("Init failed!"))
 
     def _onWriteControlError(self, event):
         self._enableActions()
@@ -238,7 +240,7 @@ class DfuFlashGuard(Screen):
         self._initialProgress = True
         s = self._sectionDescription(section)
         setType = self._typeDescription()
-        self._appendText("Uploading {0} {1}...".format(setType,s))
+        self._appendText("Uploading {0} {1}...".format(setType, s))
 
     def _onUploadProgress(self, currentBytes, totalBytes):
         self._initialProgress = False

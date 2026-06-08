@@ -11,6 +11,7 @@ from ..InputDeviceManagement import InputDeviceManagementBase
 
 from .DfuFlashGuard import DfuFlashGuard
 
+
 class DfuWelcomeStep(SetupTextStep):
     def __init__(self, parent):
         SetupTextStep.__init__(self, parent)
@@ -23,6 +24,7 @@ class DfuWelcomeStep(SetupTextStep):
             "\n\nLet's begin!\n\n[Press OK]"
         )
         return True
+
 
 class DfuUpdateStep(SetupListStep, InputDeviceManagementBase):
     VERSION_MAP = {
@@ -182,6 +184,7 @@ class DfuUpdateStep(SetupListStep, InputDeviceManagementBase):
             return
         self._reload()
         self.parent.updateSummary()
+
 
 class DfuFinishStep(SetupTextStep):
     def __init__(self, parent):

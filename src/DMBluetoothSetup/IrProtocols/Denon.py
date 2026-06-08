@@ -4,8 +4,9 @@ from ..InputDeviceIRDatabase import irdb
 
 from socket import htons
 
+
 class Denon:
-     #{38k,264}<1,-3|1,-7>(D:5,F:8,0:2,1,-165,D:5,~F:8,3:2,1,-165)+
+     # {38k,264}<1,-3|1,-7>(D:5,F:8,0:2,1,-165,D:5,~F:8,3:2,1,-165)+
     # We use the first half as initial and the second half as repeat message.
     # Even using just a single half should be enough for the signal to be decoded correctly, but using both will help avoiding spurious decodes
 
@@ -73,7 +74,7 @@ class Denon:
                 continue
             device = definition["device"]
             make_len = 15
-            #D:5,F:8,0:2
+            # D:5,F:8,0:2
             make_msg = (device & 0x1f) | (fnc & 0xff) << 5 | 0 << 13
             # htons returns a byte-swapped 16-bit interpretation of our
             # message. We only have 15 bits, so shift it one bit right.
@@ -87,4 +88,4 @@ class Denon:
             # rep_key = IrKey(keycode, IrProtocol.IR_PROTO_REP_CUSTOM, rep_make_msg, make_len, 0, 0)
             # rep_keys.append(rep_key)
 
-        return [(proto, False, keys)] #(rep_proto, True, rep_keys)
+        return [(proto, False, keys)]  # (rep_proto, True, rep_keys)

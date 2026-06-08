@@ -12,8 +12,9 @@ from .Panasonic import Panasonic
 from .Pioneer import Pioneer
 from Tools.Log import Log
 
+
 class ProtocolMaster:
-    HANDLER_LUT  = {
+    HANDLER_LUT = {
         "Denon": Denon,
         "JVC": JVC,
         "NEC": NEC,
@@ -33,5 +34,5 @@ class ProtocolMaster:
         protocolHandler = ProtocolMaster.HANDLER_LUT.get(protocol, None)
         if not protocolHandler:
             Log.w("No Handler for Protocol %s" % (protocol,))
-            return [(False,False,False)]
+            return [(False, False, False)]
         return protocolHandler.build(data)

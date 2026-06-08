@@ -56,6 +56,7 @@ INPUT_DEVICE_MANAGEMENT_SKIN = """
 </screen>
 """
 
+
 class InputDeviceManagementBase:
     def __init__(self):
         ensureInputDeviceManagerConfig()
@@ -287,6 +288,7 @@ class InputDeviceManagementBase:
         else:
             self.__highlightDevice = None
 
+
 class InputDeviceManagement(Screen, InputDeviceManagementBase, InputDeviceUpdateHandlerBase):
     skin = INPUT_DEVICE_MANAGEMENT_SKIN
 
@@ -343,7 +345,7 @@ class InputDeviceManagement(Screen, InputDeviceManagementBase, InputDeviceUpdate
 
     def _updateButtons(self):
         device = self._currentInputDevice
-        if device and getInputDeviceConnected(device) and device.checkVersion(1,3) >= 0:
+        if device and getInputDeviceConnected(device) and device.checkVersion(1, 3) >= 0:
             self["key_green"].setText(_("IR-Setup"))
         else:
             self["key_green"].setText("")
@@ -355,7 +357,7 @@ class InputDeviceManagement(Screen, InputDeviceManagementBase, InputDeviceUpdate
 
     def _irProg(self):
         device = self._currentInputDevice
-        if not device or not getInputDeviceConnected(device) or device.checkVersion(1,3) < 0:
+        if not device or not getInputDeviceConnected(device) or device.checkVersion(1, 3) < 0:
             return
         self.session.open(InputDeviceIRProg, device)
 
@@ -393,7 +395,6 @@ class InputDeviceManagement(Screen, InputDeviceManagementBase, InputDeviceUpdate
             text,
             type=MessageBox.TYPE_YESNO,
             windowTitle=_("Update Bluetooth Receiver Firmware?"))
-
 
     def _checkAdapter(self):
         if self.available() and not self.responding():

@@ -2,6 +2,7 @@ from enigma import IrProtocol, IrKey
 
 from ..InputDeviceIRDatabase import irdb
 
+
 class JVC:
     # {38k,525}<1,-1|1,-3>(16,-8,(D:8,F:8,1,-45)+)
 

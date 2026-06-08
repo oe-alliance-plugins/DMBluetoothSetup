@@ -2,6 +2,7 @@ from enigma import IrProtocol, IrKey
 
 from ..InputDeviceIRDatabase import irdb
 
+
 class SonyBase:
     FUNCTION_BITS = 7
 

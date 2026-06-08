@@ -62,6 +62,7 @@ INPUT_DEVICE_KEY_INFO_SKIN = """
 </screen>
 """
 
+
 def ensure_text(value):
     if isinstance(value, bytes):
         return value.decode("utf-8", "replace")
@@ -73,7 +74,7 @@ class InputDeviceIRProg(Screen, CharJump):
 
     PLUGIN_IMAGES_PATH = "%s/images/" % (os_path.dirname(__file__))
     SKIN_IMAGES_PATH = resolveFilename(SCOPE_CURRENT_SKIN, config.skin.primary_skin.value.replace("/skin.xml", "/images/"))
-    MAJOR_CODELIST_ITEMS = [ "amp", "av ", "tv", "vcr", "sat"]
+    MAJOR_CODELIST_ITEMS = ["amp", "av ", "tv", "vcr", "sat"]
 
     def __init__(self, session, remote):
         Screen.__init__(self, session)
@@ -325,6 +326,7 @@ class InputDeviceIRProg(Screen, CharJump):
         device, data = entry
         count = len(data["keys"])
         self["status"].setText(_("Press OK to apply %s IR keys for '%s'") % (count, device))
+
 
 class InputDeviceKeyInfo(Screen, Rc):
     skin = INPUT_DEVICE_KEY_INFO_SKIN

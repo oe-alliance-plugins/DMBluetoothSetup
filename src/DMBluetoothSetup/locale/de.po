@@ -1,0 +1,824 @@
+# DMBluetoothSetup translation template.
+# Copyright (C) 2026 OpenATV
+# This file is distributed under the same license as the DMBluetoothSetup plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: DMBluetoothSetup 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-08 23:44+0200\n"
+"PO-Revision-Date: 2026-06-08 23:44+0200\n"
+"Last-Translator: OpenATV Team <noreply@openatv.org>\n"
+"Language-Team: OpenATV\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Dfu/DfuFlashGuard.py:23
+msgid "DFU Log"
+msgstr "DFU-Log"
+
+#: Dfu/DfuFlashGuard.py:54
+msgid "DFU Firmware Upgrade"
+msgstr "DFU-Firmware-Update"
+
+#: Dfu/DfuFlashGuard.py:64
+msgid "Show Full Log"
+msgstr "Vollständiges Log anzeigen"
+
+#: Dfu/DfuFlashGuard.py:147
+msgid "Initializing DFU Mode..."
+msgstr "DFU-Modus wird initialisiert..."
+
+#: Dfu/DfuFlashGuard.py:153
+msgid ""
+"Your remote is likely to become unresponsive during the first half of the update Process.\n"
+"After the Bootloader/System has been updated you will regain control for the rest of this and all future updates."
+msgstr ""
+"Die Fernbedienung reagiert während der ersten Hälfte des Update-Vorgangs voraussichtlich nicht.\n"
+"Nachdem Bootloader/System aktualisiert wurden, ist die Bedienung für den Rest dieses und für zukünftige Updates wieder möglich."
+
+#: Dfu/DfuFlashGuard.py:162
+msgid "Please read carefully!"
+msgstr "Bitte sorgfältig lesen!"
+
+#: Dfu/DfuFlashGuard.py:169
+msgid ""
+"DFU is not available on this device. A firmware update may be required upfront!"
+msgstr ""
+"DFU ist auf diesem Gerät nicht verfügbar. Möglicherweise ist vorher ein Firmware-Update erforderlich!"
+
+#: Dfu/DfuFlashGuard.py:174
+msgid ""
+"DFU device did not show up. Cancelling!\n"
+"You may want to try this again!"
+msgstr ""
+"DFU-Gerät wurde nicht erkannt. Abbruch!\n"
+"Der Vorgang kann erneut versucht werden."
+
+#: Dfu/DfuFlashGuard.py:178
+#, python-brace-format
+msgid ""
+"Device battery level of {0}% is too low.\n"
+"It's required to be at least {1}%!"
+msgstr ""
+"Der Akkustand des Geräts ist mit {0}% zu niedrig.\n"
+"Er muss mindestens {1}% betragen!"
+
+#: Dfu/DfuFlashGuard.py:179 Dfu/DfuFlashGuard.py:217
+msgid "Upload rejected!"
+msgstr "Upload abgelehnt!"
+
+#: Dfu/DfuFlashGuard.py:184
+msgid "SYSTEM"
+msgstr "SYSTEM"
+
+#: Dfu/DfuFlashGuard.py:186
+msgid "APPLICATION"
+msgstr "ANWENDUNG"
+
+#: Dfu/DfuFlashGuard.py:187
+#, python-brace-format
+msgid "Package Content: {0}"
+msgstr "Paketinhalt: {0}"
+
+#: Dfu/DfuFlashGuard.py:192
+msgid "System"
+msgstr "System"
+
+#: Dfu/DfuFlashGuard.py:192
+msgid "Application"
+msgstr "Anwendung"
+
+#: Dfu/DfuFlashGuard.py:198
+msgid "BIN"
+msgstr "BIN"
+
+#: Dfu/DfuFlashGuard.py:198
+msgid "DAT"
+msgstr "DAT"
+
+#: Dfu/DfuFlashGuard.py:201
+msgid "DFU device ready!"
+msgstr "DFU-Gerät bereit!"
+
+#: Dfu/DfuFlashGuard.py:204
+msgid "DFU device connected!"
+msgstr "DFU-Gerät verbunden!"
+
+#: Dfu/DfuFlashGuard.py:208
+#, python-brace-format
+msgid "Starting DFU Upload of {0}"
+msgstr "Starte DFU-Upload von {0}"
+
+#: Dfu/DfuFlashGuard.py:211
+msgid ""
+"You can remove the batteries of your remote for a short moment to reboot it!"
+msgstr ""
+"Die Batterien der Fernbedienung können kurz entfernt werden, um sie neu zu starten!"
+
+#: Dfu/DfuFlashGuard.py:215
+msgid ""
+"The firmware files are invalid or corrupted!\n"
+"The upload was rejected by the device!"
+msgstr ""
+"Die Firmware-Dateien sind ungültig oder beschädigt!\n"
+"Der Upload wurde vom Gerät abgelehnt!"
+
+#: Dfu/DfuFlashGuard.py:221
+msgid ""
+"Update initialization failed!\n"
+msgstr ""
+"Update-Initialisierung fehlgeschlagen!\n"
+
+#: Dfu/DfuFlashGuard.py:223
+msgid "Init failed!"
+msgstr "Initialisierung fehlgeschlagen!"
+
+#: Dfu/DfuFlashGuard.py:227
+#, python-format
+msgid ""
+"Control write failed! Code %i\n"
+msgstr ""
+"Control-Write fehlgeschlagen! Code %i\n"
+
+#: Dfu/DfuFlashGuard.py:229
+msgid "Control write failed!"
+msgstr "Control-Write fehlgeschlagen!"
+
+#: Dfu/DfuFlashGuard.py:246
+#, python-brace-format
+msgid "Uploaded {0} of {1} bytes"
+msgstr "{0} von {1} Bytes hochgeladen"
+
+#: Dfu/DfuFlashGuard.py:249 KeyBindingList.py:20
+msgid "OK"
+msgstr "OK"
+
+#: Dfu/DfuFlashGuard.py:249
+msgid "ERROR"
+msgstr "FEHLER"
+
+#: Dfu/DfuFlashGuard.py:257
+msgid "Waiting for device reboot..."
+msgstr "Warte auf Neustart des Geräts..."
+
+#: Dfu/DfuFlashGuard.py:260
+msgid "System rejected! (Already the latest version?!). Skipping!"
+msgstr "System abgelehnt! (Bereits die neueste Version?) Wird übersprungen!"
+
+#: Dfu/DfuFlashGuard.py:265
+msgid ""
+"\n"
+"Your remote control will restart in a few seconds (up to 40)!\n"
+"\n"
+"Press [OK] or [EXIT] to close this window once it finished booting!"
+msgstr ""
+"\n"
+"Die Fernbedienung startet in wenigen Sekunden neu (bis zu 40 Sekunden)!\n"
+"\n"
+"[OK] oder [EXIT] drücken, um dieses Fenster zu schließen, sobald der Start abgeschlossen ist!"
+
+#: Dfu/DfuGuide.py:19
+msgid "Welcome..."
+msgstr "Willkommen..."
+
+#: Dfu/DfuGuide.py:21
+msgid ""
+"to the Remote Control Firmware Update Assistant.\n"
+"We will now guide you through the remote control firmware update procedure!\n"
+"\n"
+"Let's begin!\n"
+"\n"
+"[Press OK]"
+msgstr ""
+"zum Assistenten für das Firmware-Update der Fernbedienung.\n"
+"Der Assistent führt durch den Update-Vorgang der Fernbedienungs-Firmware!\n"
+"\n"
+"Der Vorgang kann nun gestartet werden.\n"
+"\n"
+"[OK drücken]"
+
+#: Dfu/DfuGuide.py:71
+msgid "Available Remotes"
+msgstr "Verfügbare Fernbedienungen"
+
+#: Dfu/DfuGuide.py:72 Dfu/DfuGuide.py:124
+msgid "Press OK to finish the Remote Control Firmware Update Assistant."
+msgstr ""
+"OK drücken, um den Assistenten für das Firmware-Update der Fernbedienung zu beenden."
+
+#: Dfu/DfuGuide.py:85 InputDeviceManagement.py:163
+msgid "bound"
+msgstr "gekoppelt"
+
+#: Dfu/DfuGuide.py:88 InputDeviceManagement.py:166
+msgid "..."
+msgstr "..."
+
+#: Dfu/DfuGuide.py:90 InputDeviceManagement.py:208
+msgid "DM Remote"
+msgstr "DM Remote"
+
+#: Dfu/DfuGuide.py:92
+msgid "DFU - DM Remote"
+msgstr "DFU - DM Remote"
+
+#: Dfu/DfuGuide.py:98 InputDeviceManagement.py:173
+msgid "connected"
+msgstr "verbunden"
+
+#: Dfu/DfuGuide.py:98 InputDeviceManagement.py:173
+msgid "disconnected"
+msgstr "getrennt"
+
+#: Dfu/DfuGuide.py:109 InputDeviceManagement.py:352
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: Dfu/DfuGuide.py:111 Dfu/DfuGuide.py:152
+msgid "Force Update"
+msgstr "Update erzwingen"
+
+#: Dfu/DfuGuide.py:114
+#, python-brace-format
+msgid ""
+"Press Blue to update the firmware of the selected remote control to application version {0} and bootloader version {1}"
+msgstr ""
+"Blau drücken, um die Firmware der ausgewählten Fernbedienung auf Anwendungsversion {0} und Bootloader-Version {1} zu aktualisieren."
+
+#: Dfu/DfuGuide.py:119
+msgid "Connect"
+msgstr "Verbinden"
+
+#: Dfu/DfuGuide.py:120
+msgid ""
+"Firmware updates can only be applied to connected remotes!\n"
+"Press Yellow to connect the selected remote control."
+msgstr ""
+"Firmware-Updates können nur auf verbundene Fernbedienungen angewendet werden!\n"
+"Gelb drücken, um die ausgewählte Fernbedienung zu verbinden."
+
+#: Dfu/DfuGuide.py:150
+msgid ""
+"The selected remote is already running the latest firmware!\n"
+"Update anyways?"
+msgstr ""
+"Auf der ausgewählten Fernbedienung ist bereits die neueste Firmware installiert!\n"
+"Trotzdem aktualisieren?"
+
+#: Dfu/DfuGuide.py:191
+msgid "Thank you..."
+msgstr "Vielen Dank..."
+
+#: Dfu/DfuGuide.py:192
+msgid ""
+"for using the Remote Control Firmware Update Assistant.\n"
+"\n"
+"[Press OK to close]"
+msgstr ""
+"für die Nutzung des Assistenten für das Firmware-Update der Fernbedienung.\n"
+"\n"
+"[OK drücken zum Schließen]"
+
+#: InputDeviceAdapterFlasher.py:22
+msgid "Flashing Frontprocessor Firmware"
+msgstr "Frontprozessor-Firmware wird geflasht"
+
+#: InputDeviceAdapterFlasher.py:23
+msgid "Frontprocessor Firmware"
+msgstr "Frontprozessor-Firmware"
+
+#: InputDeviceAdapterFlasher.py:25
+msgid "Flashing Adapter Firmware"
+msgstr "Adapter-Firmware wird geflasht"
+
+#: InputDeviceAdapterFlasher.py:26
+msgid "Bluetooth Frontprocessor Firmware"
+msgstr "Bluetooth-Frontprozessor-Firmware"
+
+#: InputDeviceAdapterFlasher.py:48
+msgid "Please wait! We are about to start..."
+msgstr "Bitte warten! Der Vorgang wird gestartet..."
+
+#: InputDeviceAdapterFlasher.py:54
+msgid "Firmware flasher is missing or broken! Cancelled!"
+msgstr "Firmware-Flasher fehlt oder ist beschädigt. Abbruch!"
+
+#: InputDeviceAdapterFlasher.py:67
+msgid "Working..."
+msgstr "Arbeite..."
+
+#: InputDeviceAdapterFlasher.py:72
+msgid "Flashing firmware..."
+msgstr "Firmware wird geflasht..."
+
+#: InputDeviceAdapterFlasher.py:75
+msgid "Verifying firmware..."
+msgstr "Firmware wird geprüft..."
+
+#: InputDeviceAdapterFlasher.py:79
+msgid ""
+"\n"
+"\n"
+"DO NOT TURN OFF YOUR DREAMBOX!"
+msgstr ""
+"\n"
+"\n"
+"DIE DREAMBOX NICHT AUSSCHALTEN!"
+
+#: InputDeviceAdapterFlasher.py:86
+#, python-format
+msgid ""
+"%s\n"
+"\n"
+"%03d blocks written (%s)"
+msgstr ""
+"%s\n"
+"\n"
+"%03d Blöcke geschrieben (%s)"
+
+#: InputDeviceAdapterFlasher.py:89
+#, python-format
+msgid ""
+"%s\n"
+"\n"
+"%03d blocks written\n"
+"%03d blocks verified (%s)"
+msgstr ""
+"%s\n"
+"\n"
+"%03d Blöcke geschrieben\n"
+"%03d Blöcke geprüft (%s)"
+
+#: InputDeviceIRProg.py:97 InputDeviceIRProg.py:339 KeyBindingList.py:33
+msgid "Exit"
+msgstr "EXIT"
+
+#: InputDeviceIRProg.py:151
+#, python-format
+msgid "IR setup complete. %s IR codes acknowledged."
+msgstr "IR-Einrichtung abgeschlossen. %s IR-Codes bestätigt."
+
+#: InputDeviceIRProg.py:154
+#, python-format
+msgid ""
+"IR setup complete.\n"
+"%s of %s IR codes acknowledged."
+msgstr ""
+"IR-Einrichtung abgeschlossen.\n"
+"%s von %s IR-Codes bestätigt."
+
+#: InputDeviceIRProg.py:210
+#, python-format
+msgid "%s devices"
+msgstr "%s Geräte"
+
+#: InputDeviceIRProg.py:227
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: InputDeviceIRProg.py:230
+#, python-format
+msgid "%s mapped keys"
+msgstr "%s zugeordnete Tasten"
+
+#: InputDeviceIRProg.py:248
+msgid "Vendors"
+msgstr "Hersteller"
+
+#: InputDeviceIRProg.py:249
+msgid "Select"
+msgstr "Auswählen"
+
+#: InputDeviceIRProg.py:254
+msgid "Apply"
+msgstr "Anwenden"
+
+#: InputDeviceIRProg.py:255 KeyBindingList.py:25
+msgid "Info"
+msgstr "Info"
+
+#: InputDeviceIRProg.py:298
+#, python-format
+msgid "Transferring %s IR codes..."
+msgstr "%s IR-Codes werden übertragen..."
+
+#: InputDeviceIRProg.py:305
+msgid "IR codes sent. Waiting for remote confirmation..."
+msgstr "IR-Codes gesendet. Warte auf Bestätigung der Fernbedienung..."
+
+#: InputDeviceIRProg.py:315
+#, python-format
+msgid "Transferring IR codes... %s/%s"
+msgstr "IR-Codes werden übertragen... %s/%s"
+
+#: InputDeviceIRProg.py:327
+#, python-format
+msgid "Press OK to apply %s IR keys for '%s'"
+msgstr "OK drücken, um %s IR-Tasten für '%s' zu übertragen"
+
+#: InputDeviceManagement.py:185
+msgid "Battery: unknown"
+msgstr "Batterie: unbekannt"
+
+#: InputDeviceManagement.py:186 InputDeviceManagement.py:220
+#, python-format
+msgid "Battery: %d%%"
+msgstr "Batterie: %d%%"
+
+#: InputDeviceManagement.py:190 InputDeviceManagement.py:222
+#, python-format
+msgid "RSSI: %d dBm"
+msgstr "RSSI: %d dBm"
+
+#: InputDeviceManagement.py:192
+msgid "RSSI: unknown"
+msgstr "RSSI: unbekannt"
+
+#: InputDeviceManagement.py:204
+msgid "Firmware: unknown"
+msgstr "Firmware: unbekannt"
+
+#: InputDeviceManagement.py:205
+#, python-format
+msgid "Firmware: %s"
+msgstr "Firmware: %s"
+
+#: InputDeviceManagement.py:212
+#, python-format
+msgid "%s  FW %s"
+msgstr "%s  FW %s"
+
+#: InputDeviceManagement.py:218
+msgid "Battery: --"
+msgstr "Batterie: --"
+
+#: InputDeviceManagement.py:224
+msgid "RSSI: --"
+msgstr "RSSI: --"
+
+#: InputDeviceManagement.py:295
+msgid "Input devices"
+msgstr "Eingabegeräte"
+
+#: InputDeviceManagement.py:312
+msgid "Rescan"
+msgstr "Erneut suchen"
+
+#: InputDeviceManagement.py:313
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: InputDeviceManagement.py:334
+msgid "DFU update setup is not available on this image."
+msgstr "DFU-Update ist auf diesem Image nicht verfügbar."
+
+#: InputDeviceManagement.py:347
+msgid "IR-Setup"
+msgstr "IR-Einrichtung"
+
+#: InputDeviceManagement.py:368
+msgid "Rescanning..."
+msgstr "Suche läuft..."
+
+#: InputDeviceManagement.py:381
+#, python-format
+msgid "Scan complete (%d devices)"
+msgstr "Suche abgeschlossen (%d Gerät(e))"
+
+#: InputDeviceManagement.py:395
+msgid "Update Bluetooth Receiver Firmware?"
+msgstr "Bluetooth-Empfänger-Firmware aktualisieren?"
+
+#: InputDeviceManagement.py:403
+msgid ""
+"Your Dreambox bluetooth receiver has no firmware installed.\n"
+"Install the latest firmware now?"
+msgstr ""
+"Der Dreambox-Bluetooth-Empfänger hat keine Firmware installiert.\n"
+"Jetzt die neueste Firmware installieren?"
+
+#: InputDeviceManagement.py:405
+msgid "Flash Bluetooth Receiver Firmware?"
+msgstr "Bluetooth-Empfänger-Firmware flashen?"
+
+#: InputDeviceManagement.py:414
+msgid "No dreambox bluetooth receiver detected! Sorry!"
+msgstr "Kein Dreambox-Bluetooth-Empfänger gefunden."
+
+#: InputDeviceManagement.py:419
+msgid "Press OK to disconnect"
+msgstr "OK drücken zum Trennen"
+
+#: InputDeviceManagement.py:421
+msgid "Press OK to connect the selected remote control."
+msgstr "OK drücken, um die ausgewählte Fernbedienung zu verbinden."
+
+#: InputDeviceManagement.py:423
+msgid ""
+"Please pick up the remote control you want to connect and press any number key on it to select it in the list."
+msgstr ""
+"Bitte die Fernbedienung nehmen, die verbunden werden soll, und eine Zifferntaste drücken, um sie in der Liste auszuwählen."
+
+#: InputDeviceManagement.py:451
+#, python-format
+msgid "Really disconnect %s (%s)?"
+msgstr "%s (%s) wirklich trennen?"
+
+#: InputDeviceManagement.py:452
+msgid "Disconnect paired remote?"
+msgstr "Gekoppelte Fernbedienung trennen?"
+
+#: InputDeviceManagement.py:458
+#, python-format
+msgid "Do you really want to connect %s (%s) "
+msgstr "%s (%s) wirklich verbinden? "
+
+#: InputDeviceManagement.py:459
+msgid "Connect new remote?"
+msgstr "Neue Fernbedienung verbinden?"
+
+#: InputDeviceSettings.py:31
+msgid "Bluetooth remote settings"
+msgstr "Bluetooth-Fernbedienungseinstellungen"
+
+#: InputDeviceSettings.py:36
+msgid "LED color when connected to this receiver"
+msgstr "LED-Farbe bei Verbindung mit diesem Receiver"
+
+#: InputDeviceSettings.py:38
+msgid "LED ring color used when the remote control is connected in Bluetooth mode."
+msgstr "LED-Ringfarbe, wenn die Fernbedienung im Bluetooth-Modus verbunden ist."
+
+#: InputDeviceSettings.py:41
+msgid "IR-Mode LED color when connected to this receiver"
+msgstr "IR-Modus-LED-Farbe bei Verbindung mit diesem Receiver"
+
+#: InputDeviceSettings.py:43
+msgid "LED ring color used when the remote control is connected in IR mode."
+msgstr "LED-Ringfarbe, wenn die Fernbedienung im IR-Modus verbunden ist."
+
+#: InputDeviceSettings.py:46
+msgid "Haptic feedback in lists"
+msgstr "Haptisches Feedback in Listen"
+
+#: InputDeviceSettings.py:48
+msgid ""
+"Enable vibration feedback when moving through Bluetooth remote-control lists."
+msgstr ""
+"Vibration beim Navigieren in Listen mit der Bluetooth-Fernbedienung aktivieren."
+
+#: InputDeviceUpdateHandlerBase.py:13
+msgid "There is a new firmware for your frontprocessor available. Update now?"
+msgstr ""
+"Für den Frontprozessor ist eine neue Firmware verfügbar. Jetzt aktualisieren?"
+
+#: InputDeviceUpdateHandlerBase.py:16
+msgid ""
+"\n"
+"\n"
+"!!! ATTENTION !!!\n"
+"Due to major firmware changes you can not downgrade to images dated before this one anymore!\n"
+"This update is mandatory and should not be skipped!\n"
+"!!! ATTENTION !!!!"
+msgstr ""
+"\n"
+"\n"
+"!!! ACHTUNG !!!\n"
+"Aufgrund umfangreicher Firmware-Änderungen kann nicht mehr auf Images zurückgewechselt werden, die älter als dieses Image sind!\n"
+"Dieses Update ist erforderlich und sollte nicht übersprungen werden!\n"
+"!!! ACHTUNG !!!"
+
+#: InputDeviceUpdateHandlerBase.py:35
+msgid ""
+"The Frontprocessor was updated successfully!\n"
+"Your Dreambox must be rebooted for the changes to take effect.\n"
+"Reboot now?"
+msgstr ""
+"Der Frontprozessor wurde erfolgreich aktualisiert!\n"
+"Die Dreambox muss neu gestartet werden, damit die Änderungen wirksam werden.\n"
+"Jetzt neu starten?"
+
+#: InputDeviceUpdateHandlerBase.py:37 InputDeviceUpdateHandlerBase.py:38
+msgid "Reboot required"
+msgstr "Neustart erforderlich"
+
+#: InputDeviceUpdateHandlerBase.py:44
+msgid ""
+"Frontprocessor update failed!\n"
+"Retry?"
+msgstr ""
+"Frontprozessor-Update fehlgeschlagen!\n"
+"Erneut versuchen?"
+
+#: InputDeviceUpdateHandlerBase.py:46
+msgid "Retry?"
+msgstr "Erneut versuchen?"
+
+#: InputDeviceUpdateHandlerBase.py:47
+msgid "ERROR! Retry Firmware Update?"
+msgstr "FEHLER! Firmware-Update erneut versuchen?"
+
+#: InputDeviceUpdateHandlerBase.py:53
+msgid ""
+"Frontprocessor update failed multiple times!\n"
+"Please contact the support!\n"
+"You can try executing\n"
+"'flash-nrf52 --program --verify --start'\n"
+"on a console manually"
+msgstr ""
+"Frontprozessor-Update ist mehrfach fehlgeschlagen!\n"
+"Bitte den Support kontaktieren!\n"
+"Der folgende Befehl kann manuell auf einer Konsole ausgeführt werden:\n"
+"'flash-nrf52 --program --verify --start'"
+
+#: InputDeviceUpdateHandlerBase.py:60
+msgid "ERROR!"
+msgstr "FEHLER!"
+
+#: InputDeviceUpdateHandlerBase.py:61
+msgid "ERROR! Frontprocessor Update"
+msgstr "FEHLER! Frontprozessor-Update"
+
+#: KeyBindingList.py:11
+msgid "Mute"
+msgstr "Stumm"
+
+#: KeyBindingList.py:12
+msgid "Mode"
+msgstr "Modus"
+
+#: KeyBindingList.py:13
+msgid "Power"
+msgstr "Power"
+
+#: KeyBindingList.py:14
+msgid "Red"
+msgstr "Rot"
+
+#: KeyBindingList.py:15
+msgid "Blue"
+msgstr "Blau"
+
+#: KeyBindingList.py:16
+msgid "Green"
+msgstr "Grün"
+
+#: KeyBindingList.py:17
+msgid "Yellow"
+msgstr "Gelb"
+
+#: KeyBindingList.py:18
+msgid "Up"
+msgstr "Hoch"
+
+#: KeyBindingList.py:19
+msgid "Down"
+msgstr "Runter"
+
+#: KeyBindingList.py:21
+msgid "Left"
+msgstr "Links"
+
+#: KeyBindingList.py:22
+msgid "Right"
+msgstr "Rechts"
+
+#: KeyBindingList.py:23
+msgid "Menu"
+msgstr "Menü"
+
+#: KeyBindingList.py:24
+msgid "PVR"
+msgstr "PVR"
+
+#: KeyBindingList.py:26
+msgid "Audio"
+msgstr "Audio"
+
+#: KeyBindingList.py:27
+msgid "TXT"
+msgstr "TXT"
+
+#: KeyBindingList.py:28
+msgid "<"
+msgstr "<"
+
+#: KeyBindingList.py:29
+msgid ">"
+msgstr ">"
+
+#: KeyBindingList.py:30
+msgid "Play/Pause"
+msgstr "Wiedergabe/Pause"
+
+#: KeyBindingList.py:31
+msgid "+"
+msgstr "+"
+
+#: KeyBindingList.py:32
+msgid "-"
+msgstr "-"
+
+#: KeyBindingList.py:34
+msgid "Stop"
+msgstr "Stopp"
+
+#: KeyBindingList.py:35
+msgid "Record"
+msgstr "Aufnahme"
+
+#: KeyBindingList.py:36
+msgid "Volume +"
+msgstr "Lautstärke +"
+
+#: KeyBindingList.py:37
+msgid "Volume -"
+msgstr "Lautstärke -"
+
+#: KeyBindingList.py:38
+msgid "Fast Forward"
+msgstr "Vorspulen"
+
+#: KeyBindingList.py:39
+msgid "Rewind"
+msgstr "Zurückspulen"
+
+#: __init__.py:5
+msgid "red"
+msgstr "Rot"
+
+#: __init__.py:6
+msgid "rose"
+msgstr "Rosa"
+
+#: __init__.py:7
+msgid "orange"
+msgstr "Orange"
+
+#: __init__.py:8
+msgid "yellow"
+msgstr "Gelb"
+
+#: __init__.py:9
+msgid "lime"
+msgstr "Lime"
+
+#: __init__.py:10
+msgid "green"
+msgstr "Grün"
+
+#: __init__.py:11
+msgid "aqua"
+msgstr "Aqua"
+
+#: __init__.py:12
+msgid "olympic blue"
+msgstr "Olympic Blue"
+
+#: __init__.py:13
+msgid "blue"
+msgstr "Blau"
+
+#: __init__.py:14
+msgid "azure"
+msgstr "Azurblau"
+
+#: __init__.py:15
+msgid "purple"
+msgstr "Violett"
+
+#: __init__.py:16
+msgid "pink"
+msgstr "Pink"
+
+#: plugin.py:82
+msgid "A new bluetooth remote has been discovered. Connect now?"
+msgstr "Eine neue Bluetooth-Fernbedienung wurde gefunden. Jetzt verbinden?"
+
+#: plugin.py:84
+msgid "New Bluetooth Remote"
+msgstr "Neue Bluetooth-Fernbedienung"
+
+#: plugin.py:98
+msgid "New Firmware"
+msgstr "Neue Firmware"
+
+#: plugin.py:106 plugin.py:121
+msgid "Bluetooth Setup"
+msgstr "Bluetooth-Einrichtung"
+
+#: plugin.py:116
+msgid "Bluetooth Setup Autosetup"
+msgstr "Bluetooth-Einrichtung Auto-Setup"
+
+#: plugin.py:122
+msgid "Set up Bluetooth remote controls"
+msgstr "Bluetooth-Fernbedienungen einrichten"
+
+#~ msgid "Connecting to %s"
+#~ msgstr "Verbinde mit %s"

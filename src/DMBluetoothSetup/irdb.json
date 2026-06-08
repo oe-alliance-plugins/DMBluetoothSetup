@@ -1,0 +1,5447 @@
+{
+  "Denon": {
+    "AV Processor": {
+      "device": 2,
+      "keys": {
+        "KEY_0": 129,
+        "KEY_1": 130,
+        "KEY_2": 131,
+        "KEY_3": 132,
+        "KEY_4": 133,
+        "KEY_5": 134,
+        "KEY_6": 135,
+        "KEY_7": 136,
+        "KEY_8": 137,
+        "KEY_9": 138,
+        "KEY_AUDIO": 142,
+        "KEY_DOWN": 173,
+        "KEY_EXIT": 146,
+        "KEY_FASTFORWARD": 90,
+        "KEY_INFO": 167,
+        "KEY_LEFT": 175,
+        "KEY_MENU": 145,
+        "KEY_MUTE": 240,
+        "KEY_NEXT": 152,
+        "KEY_OK": 187,
+        "KEY_PLAY": 92,
+        "KEY_POWER": 80,
+        "KEY_PREVIOUS": 153,
+        "KEY_REWIND": 155,
+        "KEY_RIGHT": 174,
+        "KEY_STOP": 94,
+        "KEY_UP": 172,
+        "KEY_VIDEO": 116,
+        "KEY_VOLUMEDOWN": 242,
+        "KEY_VOLUMEUP": 241
+      },
+      "models": [
+        "Cassette Tape",
+        "Tuner",
+        "AV Processor",
+        "DVD Player",
+        "Receiver",
+        "Amplifier",
+        "Processor"
+      ],
+      "protocol": "Denon",
+      "subdevice": -1
+    },
+    "CD Player": {
+      "device": 175,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_DOWN": 64,
+        "KEY_LEFT": 253,
+        "KEY_NEXT": 82,
+        "KEY_OK": 122,
+        "KEY_PLAY": 23,
+        "KEY_POWER": 28,
+        "KEY_PREVIOUS": 89,
+        "KEY_REWIND": 91,
+        "KEY_RIGHT": 254,
+        "KEY_STOP": 22,
+        "KEY_UP": 127,
+        "KEY_VOLUMEDOWN": 79,
+        "KEY_VOLUMEUP": 78
+      },
+      "models": [
+        "CD Player"
+      ],
+      "protocol": "Pioneer",
+      "subdevice": -1
+    },
+    "CD Receiver": {
+      "device": 8,
+      "keys": {
+        "KEY_0": 65,
+        "KEY_1": 66,
+        "KEY_2": 67,
+        "KEY_3": 68,
+        "KEY_4": 69,
+        "KEY_5": 70,
+        "KEY_6": 71,
+        "KEY_7": 72,
+        "KEY_8": 73,
+        "KEY_9": 74,
+        "KEY_CHANNELDOWN": 89,
+        "KEY_CHANNELUP": 88,
+        "KEY_DOWN": 64,
+        "KEY_LEFT": 253,
+        "KEY_MUTE": 75,
+        "KEY_NEXT": 88,
+        "KEY_OK": 122,
+        "KEY_PLAY": 92,
+        "KEY_POWER": 104,
+        "KEY_PREVIOUS": 89,
+        "KEY_RIGHT": 254,
+        "KEY_STOP": 94,
+        "KEY_UP": 127
+      },
+      "models": [
+        "CD Jukebox",
+        "CD Receiver"
+      ],
+      "protocol": "Denon",
+      "subdevice": -1
+    },
+    "DVD Player": {
+      "device": 176,
+      "keys": {
+        "KEY_0": 129,
+        "KEY_1": 130,
+        "KEY_2": 131,
+        "KEY_3": 132,
+        "KEY_4": 133,
+        "KEY_5": 134,
+        "KEY_6": 129,
+        "KEY_7": 136,
+        "KEY_8": 137,
+        "KEY_9": 138,
+        "KEY_AUDIO": 142,
+        "KEY_DOWN": 173,
+        "KEY_EXIT": 146,
+        "KEY_FASTFORWARD": 154,
+        "KEY_INFO": 167,
+        "KEY_LEFT": 175,
+        "KEY_MENU": 145,
+        "KEY_NEXT": 152,
+        "KEY_OK": 187,
+        "KEY_PLAY": 160,
+        "KEY_POWER": 177,
+        "KEY_PREVIOUS": 153,
+        "KEY_REWIND": 155,
+        "KEY_RIGHT": 174,
+        "KEY_STOP": 161,
+        "KEY_UP": 172
+      },
+      "models": [
+        "RC-541",
+        "Unknown",
+        "DVD Player"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 0
+    },
+    "Denon": {
+      "device": 91,
+      "keys": {
+        "KEY_0": 86,
+        "KEY_1": 77,
+        "KEY_2": 78,
+        "KEY_3": 79,
+        "KEY_4": 80,
+        "KEY_5": 81,
+        "KEY_6": 82,
+        "KEY_7": 83,
+        "KEY_8": 84,
+        "KEY_9": 85,
+        "KEY_FASTFORWARD": 27,
+        "KEY_PLAY": 25,
+        "KEY_POWER": 0,
+        "KEY_RECORD": 31,
+        "KEY_STOP": 29,
+        "KEY_VOLUMEDOWN": 2,
+        "KEY_VOLUMEUP": 1
+      },
+      "models": [
+        "Denon"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "Laser Disc": {
+      "device": 168,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_NEXT": 82,
+        "KEY_PLAY": 23,
+        "KEY_POWER": 28
+      },
+      "models": [
+        "Laser Disc"
+      ],
+      "protocol": "Pioneer",
+      "subdevice": -1
+    },
+    "RC-861": {
+      "device": 2,
+      "keys": {
+        "KEY_0": 67,
+        "KEY_1": 2,
+        "KEY_2": 10,
+        "KEY_3": 18,
+        "KEY_4": 26,
+        "KEY_5": 66,
+        "KEY_6": 3,
+        "KEY_7": 11,
+        "KEY_8": 19,
+        "KEY_9": 27,
+        "KEY_FASTFORWARD": 81,
+        "KEY_MUTE": 79,
+        "KEY_NEXT": 83,
+        "KEY_OK": 70,
+        "KEY_POWER": 76,
+        "KEY_PREVIOUS": 82,
+        "KEY_RECORD": 6,
+        "KEY_REWIND": 86,
+        "KEY_STOP": 87,
+        "KEY_VOLUMEDOWN": 31,
+        "KEY_VOLUMEUP": 73
+      },
+      "models": [
+        "RC-861"
+      ],
+      "protocol": "NEC",
+      "subdevice": 2
+    },
+    "Receiver": {
+      "device": 6,
+      "keys": {
+        "KEY_1": 193,
+        "KEY_2": 194,
+        "KEY_3": 195,
+        "KEY_4": 196,
+        "KEY_5": 197,
+        "KEY_6": 198,
+        "KEY_7": 199,
+        "KEY_8": 200,
+        "KEY_9": 201,
+        "KEY_MUTE": 75,
+        "KEY_OK": 222,
+        "KEY_PLAY": 226,
+        "KEY_POWER": 104,
+        "KEY_STOP": 225,
+        "KEY_VIDEO": 116
+      },
+      "models": [
+        "Mini-Disc",
+        "Receiver",
+        "CD Receiver"
+      ],
+      "protocol": "Denon",
+      "subdevice": -1
+    },
+    "Receiver 2": {
+      "device": 80,
+      "keys": {
+        "KEY_0": 129,
+        "KEY_1": 130,
+        "KEY_2": 131,
+        "KEY_3": 132,
+        "KEY_4": 133,
+        "KEY_5": 134,
+        "KEY_6": 135,
+        "KEY_7": 136,
+        "KEY_8": 137,
+        "KEY_9": 138,
+        "KEY_DOWN": 173,
+        "KEY_EXIT": 146,
+        "KEY_FASTFORWARD": 90,
+        "KEY_LEFT": 175,
+        "KEY_MENU": 145,
+        "KEY_NEXT": 152,
+        "KEY_OK": 187,
+        "KEY_PLAY": 92,
+        "KEY_POWER": 104,
+        "KEY_PREVIOUS": 153,
+        "KEY_RIGHT": 174,
+        "KEY_STOP": 94,
+        "KEY_UP": 172,
+        "KEY_VIDEO": 116
+      },
+      "models": [
+        "Receiver"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    }
+  },
+  "Funai": {
+    "TV": {
+      "device": 132,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_BLUE": 124,
+        "KEY_CHANNELDOWN": 81,
+        "KEY_CHANNELUP": 80,
+        "KEY_DOWN": 116,
+        "KEY_EXIT": 121,
+        "KEY_GREEN": 123,
+        "KEY_LEFT": 118,
+        "KEY_MENU": 112,
+        "KEY_MUTE": 100,
+        "KEY_OK": 119,
+        "KEY_RED": 122,
+        "KEY_RIGHT": 117,
+        "KEY_UP": 115,
+        "KEY_VOLUMEDOWN": 97,
+        "KEY_VOLUMEUP": 96,
+        "KEY_YELLOW": 125
+      },
+      "models": [
+        "TV"
+      ],
+      "protocol": "NEC",
+      "subdevice": 224
+    }
+  },
+  "Harman Kardon": {
+    "Amplifier": {
+      "device": 128,
+      "keys": {
+        "KEY_0": 64,
+        "KEY_1": 17,
+        "KEY_2": 18,
+        "KEY_3": 19,
+        "KEY_4": 20,
+        "KEY_5": 21,
+        "KEY_6": 22,
+        "KEY_7": 23,
+        "KEY_8": 24,
+        "KEY_9": 25,
+        "KEY_MUTE": 193,
+        "KEY_PLAY": 2,
+        "KEY_STOP": 1,
+        "KEY_VOLUMEDOWN": 200,
+        "KEY_VOLUMEUP": 199
+      },
+      "models": [
+        "CD Changer",
+        "Amplifier"
+      ],
+      "protocol": "NEC",
+      "subdevice": 112
+    },
+    "Blu-Ray": {
+      "device": 132,
+      "keys": {
+        "KEY_0": 224,
+        "KEY_1": 225,
+        "KEY_2": 226,
+        "KEY_3": 227,
+        "KEY_4": 228,
+        "KEY_5": 229,
+        "KEY_6": 230,
+        "KEY_7": 231,
+        "KEY_8": 232,
+        "KEY_9": 233,
+        "KEY_AUDIO": 211,
+        "KEY_DOWN": 203,
+        "KEY_EXIT": 201,
+        "KEY_LEFT": 204,
+        "KEY_POWER": 192,
+        "KEY_RIGHT": 205,
+        "KEY_UP": 202
+      },
+      "models": [
+        "Blu-Ray"
+      ],
+      "protocol": "NEC",
+      "subdevice": 116
+    },
+    "HD730": {
+      "device": 131,
+      "keys": {
+        "KEY_0": 21,
+        "KEY_1": 28,
+        "KEY_2": 29,
+        "KEY_3": 30,
+        "KEY_4": 31,
+        "KEY_5": 24,
+        "KEY_6": 25,
+        "KEY_7": 26,
+        "KEY_8": 27,
+        "KEY_9": 20,
+        "KEY_FASTFORWARD": 1,
+        "KEY_PLAY": 3,
+        "KEY_STOP": 11
+      },
+      "models": [
+        "HD730"
+      ],
+      "protocol": "NEC",
+      "subdevice": 74
+    },
+    "Receiver": {
+      "device": 130,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_AUDIO": 53,
+        "KEY_CHANNELDOWN": 41,
+        "KEY_CHANNELUP": 40,
+        "KEY_DOWN": 81,
+        "KEY_EXIT": 37,
+        "KEY_FASTFORWARD": 4,
+        "KEY_INFO": 54,
+        "KEY_LEFT": 85,
+        "KEY_MENU": 82,
+        "KEY_MUTE": 13,
+        "KEY_NEXT": 49,
+        "KEY_OK": 132,
+        "KEY_PLAY": 43,
+        "KEY_POWER": 192,
+        "KEY_PREVIOUS": 46,
+        "KEY_REWIND": 46,
+        "KEY_RIGHT": 86,
+        "KEY_STOP": 45,
+        "KEY_UP": 80,
+        "KEY_VIDEO": 198,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "Cassette Tape",
+        "Pre-Amplifier",
+        "Surround Receiver",
+        "Tuner",
+        "DVD",
+        "Unknown",
+        "iPod",
+        "DVD Player",
+        "Kardon-DVD",
+        "Receiver",
+        "Surround Processor"
+      ],
+      "protocol": "NEC2",
+      "subdevice": 114
+    },
+    "Receiver 2": {
+      "device": 130,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 135,
+        "KEY_2": 1,
+        "KEY_3": 136,
+        "KEY_4": 138,
+        "KEY_5": 139,
+        "KEY_6": 140,
+        "KEY_7": 141,
+        "KEY_8": 142,
+        "KEY_9": 157,
+        "KEY_CHANNELDOWN": 41,
+        "KEY_CHANNELUP": 40,
+        "KEY_DOWN": 13,
+        "KEY_INFO": 54,
+        "KEY_LEFT": 14,
+        "KEY_MENU": 29,
+        "KEY_MUTE": 193,
+        "KEY_OK": 132,
+        "KEY_POWER": 33,
+        "KEY_RIGHT": 6,
+        "KEY_UP": 12,
+        "KEY_VIDEO": 198,
+        "KEY_VOLUMEDOWN": 200,
+        "KEY_VOLUMEUP": 199
+      },
+      "models": [
+        "Receiver",
+        "Amplifier"
+      ],
+      "protocol": "NEC2",
+      "subdevice": 114
+    },
+    "Surround Processor": {
+      "device": 17,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_DOWN": 81,
+        "KEY_LEFT": 85,
+        "KEY_MENU": 82,
+        "KEY_MUTE": 13,
+        "KEY_OK": 43,
+        "KEY_POWER": 192,
+        "KEY_RIGHT": 86,
+        "KEY_UP": 80,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "Surround Processor"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    }
+  },
+  "JVC": {
+    "DVD Player 2": {
+      "device": 26,
+      "keys": {
+        "KEY_0": 110,
+        "KEY_1": 97,
+        "KEY_2": 98,
+        "KEY_3": 99,
+        "KEY_4": 100,
+        "KEY_5": 101,
+        "KEY_6": 102,
+        "KEY_7": 103,
+        "KEY_8": 104,
+        "KEY_9": 105,
+        "KEY_AUDIO": 200,
+        "KEY_DOWN": 209,
+        "KEY_EXIT": 73,
+        "KEY_LEFT": 210,
+        "KEY_MENU": 193,
+        "KEY_NEXT": 89,
+        "KEY_OK": 212,
+        "KEY_PLAY": 76,
+        "KEY_POWER": 64,
+        "KEY_PREVIOUS": 88,
+        "KEY_RIGHT": 211,
+        "KEY_STOP": 67,
+        "KEY_UP": 208
+      },
+      "models": [
+        "DVD Player"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "DVD Recorder": {
+      "device": 111,
+      "keys": {
+        "KEY_1": 33,
+        "KEY_2": 34,
+        "KEY_3": 35,
+        "KEY_4": 36,
+        "KEY_5": 37,
+        "KEY_6": 38,
+        "KEY_7": 39,
+        "KEY_8": 40,
+        "KEY_9": 41,
+        "KEY_AUDIO": 23,
+        "KEY_CHANNELDOWN": 24,
+        "KEY_CHANNELUP": 25,
+        "KEY_DOWN": 134,
+        "KEY_EXIT": 212,
+        "KEY_LEFT": 132,
+        "KEY_MENU": 129,
+        "KEY_NEXT": 20,
+        "KEY_PLAY": 12,
+        "KEY_POWER": 11,
+        "KEY_PREVIOUS": 21,
+        "KEY_RIGHT": 128,
+        "KEY_UP": 130
+      },
+      "models": [
+        "DVD Recorder"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "LCD": {
+      "device": 15,
+      "keys": {
+        "KEY_0": 32,
+        "KEY_1": 33,
+        "KEY_2": 34,
+        "KEY_3": 35,
+        "KEY_4": 36,
+        "KEY_5": 37,
+        "KEY_6": 38,
+        "KEY_7": 39,
+        "KEY_8": 40,
+        "KEY_9": 41,
+        "KEY_CHANNELDOWN": 24,
+        "KEY_CHANNELUP": 25,
+        "KEY_DOWN": 123,
+        "KEY_EXIT": 3,
+        "KEY_INFO": 4,
+        "KEY_LEFT": 91,
+        "KEY_MENU": 122,
+        "KEY_MUTE": 28,
+        "KEY_OK": 10,
+        "KEY_POWER": 23,
+        "KEY_RIGHT": 90,
+        "KEY_UP": 124,
+        "KEY_VOLUMEDOWN": 30,
+        "KEY_VOLUMEUP": 31
+      },
+      "models": [
+        "HD-ILA Projection",
+        "LCD"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "LP20106-002": {
+      "device": 67,
+      "keys": {
+        "KEY_0": 51,
+        "KEY_1": 33,
+        "KEY_2": 34,
+        "KEY_3": 35,
+        "KEY_4": 36,
+        "KEY_5": 37,
+        "KEY_6": 38,
+        "KEY_7": 39,
+        "KEY_8": 40,
+        "KEY_9": 41,
+        "KEY_AUDIO": 23,
+        "KEY_CHANNELDOWN": 24,
+        "KEY_CHANNELUP": 25,
+        "KEY_DOWN": 24,
+        "KEY_FASTFORWARD": 6,
+        "KEY_LEFT": 21,
+        "KEY_MENU": 55,
+        "KEY_MUTE": 23,
+        "KEY_NEXT": 20,
+        "KEY_OK": 60,
+        "KEY_PLAY": 12,
+        "KEY_POWER": 11,
+        "KEY_PREVIOUS": 21,
+        "KEY_RECORD": 204,
+        "KEY_REWIND": 7,
+        "KEY_RIGHT": 20,
+        "KEY_STOP": 3,
+        "KEY_UP": 25
+      },
+      "models": [
+        "RM-V1E",
+        "LP20465-005-VCR",
+        "S-VHS",
+        "LP20106-002"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "PQ10543": {
+      "device": 83,
+      "keys": {
+        "KEY_0": 51,
+        "KEY_1": 33,
+        "KEY_2": 34,
+        "KEY_3": 35,
+        "KEY_4": 36,
+        "KEY_5": 37,
+        "KEY_6": 38,
+        "KEY_7": 39,
+        "KEY_8": 40,
+        "KEY_9": 41,
+        "KEY_BLUE": 49,
+        "KEY_DOWN": 24,
+        "KEY_EXIT": 3,
+        "KEY_GREEN": 59,
+        "KEY_LEFT": 7,
+        "KEY_MENU": 19,
+        "KEY_OK": 12,
+        "KEY_RED": 145,
+        "KEY_RIGHT": 6,
+        "KEY_UP": 25,
+        "KEY_YELLOW": 151
+      },
+      "models": [
+        "PQ10543"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "Plasma": {
+      "device": 31,
+      "keys": {
+        "KEY_POWER": 221
+      },
+      "models": [
+        "Plasma"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "Projector": {
+      "device": 115,
+      "keys": {
+        "KEY_DOWN": 2,
+        "KEY_EXIT": 3,
+        "KEY_INFO": 116,
+        "KEY_LEFT": 54,
+        "KEY_MENU": 46,
+        "KEY_OK": 47,
+        "KEY_POWER": 5,
+        "KEY_RIGHT": 52,
+        "KEY_UP": 1,
+        "KEY_VIDEO": 75
+      },
+      "models": [
+        "Projector"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "RM-SX263U": {
+      "device": 179,
+      "keys": {
+        "KEY_0": 110,
+        "KEY_1": 97,
+        "KEY_2": 98,
+        "KEY_3": 99,
+        "KEY_4": 100,
+        "KEY_5": 101,
+        "KEY_6": 102,
+        "KEY_7": 104,
+        "KEY_8": 104,
+        "KEY_9": 105,
+        "KEY_FASTFORWARD": 118,
+        "KEY_NEXT": 89,
+        "KEY_PLAY": 76,
+        "KEY_POWER": 64,
+        "KEY_PREVIOUS": 88,
+        "KEY_REWIND": 112,
+        "KEY_STOP": 67
+      },
+      "models": [
+        "RM-SX263U"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "RM-V718U": {
+      "device": 211,
+      "keys": {
+        "KEY_AUDIO": 23,
+        "KEY_PLAY": 12,
+        "KEY_REWIND": 7,
+        "KEY_STOP": 3
+      },
+      "models": [
+        "Camcorder",
+        "RM-V718U"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "RM-V730U": {
+      "device": 223,
+      "keys": {
+        "KEY_DOWN": 164,
+        "KEY_INFO": 168,
+        "KEY_LEFT": 165,
+        "KEY_PLAY": 173,
+        "KEY_RIGHT": 163,
+        "KEY_UP": 162
+      },
+      "models": [
+        "RM-V730U"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "Receiver": {
+      "device": 175,
+      "keys": {
+        "KEY_0": 32,
+        "KEY_1": 33,
+        "KEY_2": 34,
+        "KEY_3": 35,
+        "KEY_4": 36,
+        "KEY_5": 37,
+        "KEY_6": 38,
+        "KEY_7": 39,
+        "KEY_8": 40,
+        "KEY_9": 41,
+        "KEY_CHANNELDOWN": 24,
+        "KEY_CHANNELUP": 25,
+        "KEY_DOWN": 113,
+        "KEY_EXIT": 5,
+        "KEY_FASTFORWARD": 6,
+        "KEY_LEFT": 115,
+        "KEY_MENU": 122,
+        "KEY_MUTE": 28,
+        "KEY_NEXT": 5,
+        "KEY_PLAY": 12,
+        "KEY_POWER": 0,
+        "KEY_PREVIOUS": 6,
+        "KEY_REWIND": 7,
+        "KEY_RIGHT": 114,
+        "KEY_STOP": 3,
+        "KEY_UP": 112,
+        "KEY_VIDEO": 18,
+        "KEY_VOLUMEDOWN": 2,
+        "KEY_VOLUMEUP": 1
+      },
+      "models": [
+        "Mini System",
+        "Receiver"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "Receiver 2": {
+      "device": 143,
+      "keys": {
+        "KEY_DOWN": 149,
+        "KEY_FASTFORWARD": 146,
+        "KEY_POWER": 142,
+        "KEY_REWIND": 147,
+        "KEY_UP": 148,
+        "KEY_VOLUMEDOWN": 133,
+        "KEY_VOLUMEUP": 132
+      },
+      "models": [
+        "RM-RK60",
+        "Receiver"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "Receiver 3": {
+      "device": 175,
+      "keys": {
+        "KEY_0": 32,
+        "KEY_1": 33,
+        "KEY_2": 34,
+        "KEY_3": 35,
+        "KEY_4": 36,
+        "KEY_5": 37,
+        "KEY_6": 38,
+        "KEY_7": 39,
+        "KEY_8": 40,
+        "KEY_9": 41,
+        "KEY_CHANNELDOWN": 24,
+        "KEY_CHANNELUP": 25,
+        "KEY_DOWN": 113,
+        "KEY_EXIT": 5,
+        "KEY_FASTFORWARD": 6,
+        "KEY_LEFT": 115,
+        "KEY_MENU": 122,
+        "KEY_MUTE": 28,
+        "KEY_PLAY": 12,
+        "KEY_POWER": 0,
+        "KEY_REWIND": 7,
+        "KEY_RIGHT": 114,
+        "KEY_STOP": 3,
+        "KEY_UP": 112,
+        "KEY_VIDEO": 18,
+        "KEY_VOLUMEDOWN": 2,
+        "KEY_VOLUMEUP": 1
+      },
+      "models": [
+        "Receiver"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "Receiver 4": {
+      "device": 159,
+      "keys": {
+        "KEY_0": 42,
+        "KEY_1": 33,
+        "KEY_2": 34,
+        "KEY_3": 35,
+        "KEY_4": 36,
+        "KEY_5": 37,
+        "KEY_6": 38,
+        "KEY_7": 39,
+        "KEY_8": 40,
+        "KEY_9": 41,
+        "KEY_NEXT": 114,
+        "KEY_PLAY": 112,
+        "KEY_POWER": 0,
+        "KEY_STOP": 113,
+        "KEY_VOLUMEDOWN": 2,
+        "KEY_VOLUMEUP": 1
+      },
+      "models": [
+        "RM-RXUA4",
+        "Receiver"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "SXV037J": {
+      "device": 239,
+      "keys": {
+        "KEY_AUDIO": 200,
+        "KEY_DOWN": 209,
+        "KEY_LEFT": 210,
+        "KEY_MENU": 193,
+        "KEY_NEXT": 176,
+        "KEY_OK": 212,
+        "KEY_PLAY": 76,
+        "KEY_POWER": 64,
+        "KEY_PREVIOUS": 177,
+        "KEY_RIGHT": 211,
+        "KEY_STOP": 67,
+        "KEY_UP": 208
+      },
+      "models": [
+        "SXV037J"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "Sw": {
+      "device": 243,
+      "keys": {
+        "KEY_1": 161,
+        "KEY_2": 162,
+        "KEY_3": 163,
+        "KEY_4": 164,
+        "KEY_5": 165,
+        "KEY_6": 166,
+        "KEY_7": 167,
+        "KEY_AUDIO": 173,
+        "KEY_POWER": 151,
+        "KEY_VIDEO": 172
+      },
+      "models": [
+        "Video Switcher",
+        "Switcher",
+        "Sw"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "TV": {
+      "device": 3,
+      "keys": {
+        "KEY_0": 32,
+        "KEY_1": 33,
+        "KEY_2": 34,
+        "KEY_3": 35,
+        "KEY_4": 36,
+        "KEY_5": 37,
+        "KEY_6": 38,
+        "KEY_7": 39,
+        "KEY_8": 40,
+        "KEY_9": 41,
+        "KEY_CHANNELDOWN": 24,
+        "KEY_CHANNELUP": 25,
+        "KEY_DOWN": 123,
+        "KEY_EXIT": 5,
+        "KEY_FASTFORWARD": 6,
+        "KEY_INFO": 4,
+        "KEY_LEFT": 91,
+        "KEY_MENU": 58,
+        "KEY_MUTE": 28,
+        "KEY_OK": 5,
+        "KEY_PLAY": 12,
+        "KEY_POWER": 23,
+        "KEY_RECORD": 60,
+        "KEY_REWIND": 7,
+        "KEY_RIGHT": 90,
+        "KEY_UP": 124,
+        "KEY_VIDEO": 13,
+        "KEY_VOLUMEDOWN": 31,
+        "KEY_VOLUMEUP": 30
+      },
+      "models": [
+        "Monitor",
+        "TV",
+        "HD-ILA Projection",
+        "Receiver",
+        "LCD",
+        "LCD TV"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "TV 2": {
+      "device": 15,
+      "keys": {
+        "KEY_0": 32,
+        "KEY_1": 33,
+        "KEY_2": 34,
+        "KEY_3": 35,
+        "KEY_4": 36,
+        "KEY_5": 37,
+        "KEY_6": 38,
+        "KEY_7": 39,
+        "KEY_8": 40,
+        "KEY_9": 41,
+        "KEY_CHANNELDOWN": 24,
+        "KEY_CHANNELUP": 25,
+        "KEY_DOWN": 2,
+        "KEY_EXIT": 3,
+        "KEY_FASTFORWARD": 90,
+        "KEY_INFO": 116,
+        "KEY_LEFT": 54,
+        "KEY_MENU": 46,
+        "KEY_MUTE": 28,
+        "KEY_OK": 10,
+        "KEY_POWER": 23,
+        "KEY_RIGHT": 52,
+        "KEY_UP": 1,
+        "KEY_VIDEO": 19,
+        "KEY_VOLUMEDOWN": 31,
+        "KEY_VOLUMEUP": 30
+      },
+      "models": [
+        "TV",
+        "HD-ILA Projection"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "VCR": {
+      "device": 64,
+      "keys": {
+        "KEY_0": 32,
+        "KEY_1": 33,
+        "KEY_2": 34,
+        "KEY_3": 35,
+        "KEY_4": 36,
+        "KEY_5": 37,
+        "KEY_6": 38,
+        "KEY_7": 39,
+        "KEY_8": 40,
+        "KEY_9": 41,
+        "KEY_DOWN": 24,
+        "KEY_LEFT": 21,
+        "KEY_MENU": 55,
+        "KEY_OK": 60,
+        "KEY_PLAY": 12,
+        "KEY_POWER": 23,
+        "KEY_REWIND": 7,
+        "KEY_RIGHT": 20,
+        "KEY_STOP": 3,
+        "KEY_UP": 25,
+        "KEY_VOLUMEDOWN": 31,
+        "KEY_VOLUMEUP": 30
+      },
+      "models": [
+        "VCR"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "Video Projector": {
+      "device": 131,
+      "keys": {
+        "KEY_DOWN": 2,
+        "KEY_EXIT": 3,
+        "KEY_INFO": 29,
+        "KEY_LEFT": 54,
+        "KEY_MENU": 46,
+        "KEY_MUTE": 147,
+        "KEY_OK": 47,
+        "KEY_POWER": 5,
+        "KEY_RIGHT": 52,
+        "KEY_UP": 1,
+        "KEY_VIDEO": 17
+      },
+      "models": [
+        "Video Projector"
+      ],
+      "protocol": "NEC",
+      "subdevice": 85
+    }
+  },
+  "Kenwood": {
+    "Amplifier": {
+      "device": 184,
+      "keys": {
+        "KEY_0": 128,
+        "KEY_1": 129,
+        "KEY_2": 130,
+        "KEY_3": 131,
+        "KEY_4": 132,
+        "KEY_5": 133,
+        "KEY_6": 134,
+        "KEY_7": 135,
+        "KEY_8": 136,
+        "KEY_9": 137,
+        "KEY_MENU": 29,
+        "KEY_MUTE": 156,
+        "KEY_POWER": 157,
+        "KEY_VOLUMEDOWN": 154,
+        "KEY_VOLUMEUP": 155
+      },
+      "models": [
+        "Pre-Amplifier",
+        "Tuner",
+        "Amplifier"
+      ],
+      "protocol": "NEC",
+      "subdevice": 1
+    },
+    "CD Changer 2": {
+      "device": 182,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_NEXT": 23,
+        "KEY_PLAY": 203,
+        "KEY_POWER": 145,
+        "KEY_PREVIOUS": 22,
+        "KEY_REWIND": 206,
+        "KEY_STOP": 17
+      },
+      "models": [
+        "CD Changer"
+      ],
+      "protocol": "NEC",
+      "subdevice": 72
+    },
+    "RC-D0705": {
+      "device": 182,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_AUDIO": 201,
+        "KEY_DOWN": 215,
+        "KEY_EXIT": 69,
+        "KEY_FASTFORWARD": 21,
+        "KEY_INFO": 73,
+        "KEY_LEFT": 216,
+        "KEY_MENU": 192,
+        "KEY_MUTE": 156,
+        "KEY_NEXT": 21,
+        "KEY_OK": 196,
+        "KEY_PLAY": 19,
+        "KEY_POWER": 95,
+        "KEY_PREVIOUS": 20,
+        "KEY_REWIND": 20,
+        "KEY_RIGHT": 217,
+        "KEY_STOP": 17,
+        "KEY_UP": 214
+      },
+      "models": [
+        "DVD Changer",
+        "DVD Player",
+        "RC-D0705"
+      ],
+      "protocol": "NEC",
+      "subdevice": 12
+    },
+    "RC-M0701": {
+      "device": 182,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 6,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_FASTFORWARD": 23,
+        "KEY_OK": 200,
+        "KEY_PLAY": 31,
+        "KEY_POWER": 157,
+        "KEY_RECORD": 197,
+        "KEY_REWIND": 22,
+        "KEY_STOP": 17
+      },
+      "models": [
+        "RC-M0301",
+        "RC-M0701"
+      ],
+      "protocol": "NEC",
+      "subdevice": 4
+    },
+    "RC-P0400": {
+      "device": 182,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_DOWN": 72,
+        "KEY_EXIT": 22,
+        "KEY_FASTFORWARD": 21,
+        "KEY_NEXT": 23,
+        "KEY_PLAY": 19,
+        "KEY_POWER": 145,
+        "KEY_PREVIOUS": 22,
+        "KEY_REWIND": 20,
+        "KEY_STOP": 17,
+        "KEY_UP": 73,
+        "KEY_VOLUMEDOWN": 72,
+        "KEY_VOLUMEUP": 73
+      },
+      "models": [
+        "RC-P030",
+        "RC-P600",
+        "RC-P2030",
+        "RC-P0715",
+        "RC-P800",
+        "CD Changer",
+        "RC-P0702",
+        "RC-P070",
+        "RC-P87",
+        "RC-P0400"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "Receiver": {
+      "device": 182,
+      "keys": {
+        "KEY_0": 128,
+        "KEY_1": 129,
+        "KEY_2": 130,
+        "KEY_3": 131,
+        "KEY_4": 132,
+        "KEY_5": 133,
+        "KEY_6": 134,
+        "KEY_7": 135,
+        "KEY_8": 136,
+        "KEY_9": 137,
+        "KEY_FASTFORWARD": 7,
+        "KEY_MUTE": 156,
+        "KEY_NEXT": 207,
+        "KEY_OK": 65,
+        "KEY_PLAY": 217,
+        "KEY_POWER": 157,
+        "KEY_REWIND": 6,
+        "KEY_STOP": 201,
+        "KEY_VOLUMEDOWN": 154,
+        "KEY_VOLUMEUP": 155
+      },
+      "models": [
+        "Laser Disc",
+        "Receiver"
+      ],
+      "protocol": "NEC",
+      "subdevice": 75
+    },
+    "Receiver 2": {
+      "device": 184,
+      "keys": {
+        "KEY_0": 128,
+        "KEY_1": 129,
+        "KEY_2": 130,
+        "KEY_3": 131,
+        "KEY_4": 132,
+        "KEY_5": 133,
+        "KEY_6": 134,
+        "KEY_7": 135,
+        "KEY_8": 136,
+        "KEY_9": 137,
+        "KEY_AUDIO": 24,
+        "KEY_EXIT": 128,
+        "KEY_FASTFORWARD": 7,
+        "KEY_INFO": 13,
+        "KEY_MUTE": 156,
+        "KEY_NEXT": 207,
+        "KEY_OK": 65,
+        "KEY_PLAY": 217,
+        "KEY_POWER": 157,
+        "KEY_REWIND": 6,
+        "KEY_STOP": 201,
+        "KEY_VOLUMEDOWN": 154,
+        "KEY_VOLUMEUP": 155
+      },
+      "models": [
+        "Receiver"
+      ],
+      "protocol": "NEC",
+      "subdevice": 1
+    },
+    "Satellite Radio": {
+      "device": 2,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_CHANNELDOWN": 14,
+        "KEY_CHANNELUP": 16,
+        "KEY_OK": 19,
+        "KEY_POWER": 24
+      },
+      "models": [
+        "Sirius",
+        "Satellite Radio"
+      ],
+      "protocol": "NEC",
+      "subdevice": 255
+    },
+    "VCR": {
+      "device": 184,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_FASTFORWARD": 7,
+        "KEY_MENU": 29,
+        "KEY_MUTE": 156,
+        "KEY_NEXT": 23,
+        "KEY_OK": 65,
+        "KEY_PLAY": 203,
+        "KEY_POWER": 157,
+        "KEY_PREVIOUS": 22,
+        "KEY_RECORD": 222,
+        "KEY_REWIND": 206,
+        "KEY_STOP": 17,
+        "KEY_VIDEO": 147,
+        "KEY_VOLUMEDOWN": 154,
+        "KEY_VOLUMEUP": 155
+      },
+      "models": [
+        "CD Player",
+        "RC-RO503",
+        "VCR",
+        "Cassette Tape",
+        "Pre-Amplifier",
+        "Tuner",
+        "Receiver",
+        "CD Changer",
+        "RC-160",
+        "RC-A0400"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "VCR 2": {
+      "device": 184,
+      "keys": {
+        "KEY_0": 128,
+        "KEY_1": 129,
+        "KEY_2": 130,
+        "KEY_3": 131,
+        "KEY_4": 132,
+        "KEY_5": 133,
+        "KEY_6": 134,
+        "KEY_7": 135,
+        "KEY_8": 136,
+        "KEY_9": 137,
+        "KEY_AUDIO": 24,
+        "KEY_EXIT": 128,
+        "KEY_FASTFORWARD": 7,
+        "KEY_INFO": 13,
+        "KEY_MENU": 29,
+        "KEY_MUTE": 156,
+        "KEY_NEXT": 207,
+        "KEY_OK": 65,
+        "KEY_PLAY": 217,
+        "KEY_POWER": 157,
+        "KEY_REWIND": 6,
+        "KEY_STOP": 201,
+        "KEY_VOLUMEDOWN": 154,
+        "KEY_VOLUMEUP": 155
+      },
+      "models": [
+        "VCR",
+        "Pre-Amplifier",
+        "Receiver"
+      ],
+      "protocol": "NEC",
+      "subdevice": 1
+    }
+  },
+  "LG": {
+    "6710V00090D": {
+      "device": 0,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_BLUE": 52,
+        "KEY_CHANNELDOWN": 33,
+        "KEY_CHANNELUP": 32,
+        "KEY_GREEN": 54,
+        "KEY_MENU": 59,
+        "KEY_MUTE": 13,
+        "KEY_OK": 37,
+        "KEY_POWER": 12,
+        "KEY_RED": 55,
+        "KEY_TEXT": 60,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16,
+        "KEY_YELLOW": 50
+      },
+      "models": [
+        "6710V00067G",
+        "6710V00070A",
+        "6710V00090D"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "EV230": {
+      "device": 110,
+      "keys": {
+        "KEY_0": 4,
+        "KEY_1": 5,
+        "KEY_2": 6,
+        "KEY_3": 7,
+        "KEY_4": 12,
+        "KEY_5": 13,
+        "KEY_6": 14,
+        "KEY_7": 15,
+        "KEY_8": 28,
+        "KEY_9": 29,
+        "KEY_CHANNELDOWN": 25,
+        "KEY_CHANNELUP": 24,
+        "KEY_DOWN": 137,
+        "KEY_FASTFORWARD": 3,
+        "KEY_INFO": 22,
+        "KEY_LEFT": 131,
+        "KEY_MENU": 22,
+        "KEY_MUTE": 93,
+        "KEY_NEXT": 221,
+        "KEY_OK": 142,
+        "KEY_PLAY": 8,
+        "KEY_POWER": 184,
+        "KEY_RECORD": 9,
+        "KEY_REWIND": 2,
+        "KEY_RIGHT": 144,
+        "KEY_STOP": 1,
+        "KEY_UP": 130,
+        "KEY_VOLUMEDOWN": 89,
+        "KEY_VOLUMEUP": 88
+      },
+      "models": [
+        "PBAFA0189A",
+        "CC470TW",
+        "BC205P",
+        "6710V00005G",
+        "LG",
+        "EV230"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "Satellite": {
+      "device": 247,
+      "keys": {
+        "KEY_0": 16,
+        "KEY_1": 17,
+        "KEY_2": 18,
+        "KEY_3": 19,
+        "KEY_4": 20,
+        "KEY_5": 21,
+        "KEY_6": 22,
+        "KEY_7": 23,
+        "KEY_8": 24,
+        "KEY_9": 25,
+        "KEY_CHANNELDOWN": 1,
+        "KEY_CHANNELUP": 0,
+        "KEY_DOWN": 5,
+        "KEY_EXIT": 91,
+        "KEY_INFO": 170,
+        "KEY_LEFT": 7,
+        "KEY_MENU": 67,
+        "KEY_POWER": 8,
+        "KEY_RIGHT": 6,
+        "KEY_UP": 4,
+        "KEY_VIDEO": 222
+      },
+      "models": [
+        "HDTV Tuner",
+        "Satellite"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "TV": {
+      "device": 4,
+      "keys": {
+        "KEY_0": 16,
+        "KEY_1": 17,
+        "KEY_2": 18,
+        "KEY_3": 19,
+        "KEY_4": 20,
+        "KEY_5": 21,
+        "KEY_6": 22,
+        "KEY_7": 23,
+        "KEY_8": 24,
+        "KEY_9": 25,
+        "KEY_AUDIO": 82,
+        "KEY_BLUE": 97,
+        "KEY_CHANNELDOWN": 1,
+        "KEY_CHANNELUP": 0,
+        "KEY_DOWN": 65,
+        "KEY_EXIT": 91,
+        "KEY_FASTFORWARD": 142,
+        "KEY_GREEN": 113,
+        "KEY_INFO": 170,
+        "KEY_LEFT": 7,
+        "KEY_MENU": 67,
+        "KEY_MUTE": 9,
+        "KEY_NEXT": 142,
+        "KEY_OK": 68,
+        "KEY_PLAY": 176,
+        "KEY_POWER": 8,
+        "KEY_PREVIOUS": 143,
+        "KEY_RECORD": 189,
+        "KEY_RED": 114,
+        "KEY_REWIND": 143,
+        "KEY_RIGHT": 6,
+        "KEY_STOP": 177,
+        "KEY_TEXT": 32,
+        "KEY_UP": 64,
+        "KEY_VIDEO": 77,
+        "KEY_VOLUMEDOWN": 3,
+        "KEY_VOLUMEUP": 2,
+        "KEY_YELLOW": 99
+      },
+      "models": [
+        "6710V00090N",
+        "TV",
+        "6710V00008K",
+        "6710V00133A",
+        "Plasma",
+        "AKB73715601",
+        "42H3000",
+        "AKB72915207",
+        "AKB69680403",
+        "6710V00091N",
+        "MKJ40653807",
+        "6710T00009B",
+        "MKJ61842704"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "TV 2": {
+      "device": 1,
+      "keys": {
+        "KEY_0": 16,
+        "KEY_1": 17,
+        "KEY_2": 18,
+        "KEY_3": 19,
+        "KEY_4": 20,
+        "KEY_5": 21,
+        "KEY_6": 22,
+        "KEY_7": 23,
+        "KEY_8": 24,
+        "KEY_9": 25,
+        "KEY_AUDIO": 82,
+        "KEY_CHANNELDOWN": 1,
+        "KEY_CHANNELUP": 0,
+        "KEY_DOWN": 65,
+        "KEY_EXIT": 91,
+        "KEY_FASTFORWARD": 142,
+        "KEY_INFO": 170,
+        "KEY_LEFT": 7,
+        "KEY_MENU": 67,
+        "KEY_MUTE": 9,
+        "KEY_NEXT": 142,
+        "KEY_OK": 68,
+        "KEY_PLAY": 176,
+        "KEY_POWER": 8,
+        "KEY_PREVIOUS": 143,
+        "KEY_REWIND": 143,
+        "KEY_RIGHT": 6,
+        "KEY_STOP": 177,
+        "KEY_UP": 64,
+        "KEY_VIDEO": 11,
+        "KEY_VOLUMEDOWN": 3,
+        "KEY_VOLUMEUP": 2
+      },
+      "models": [
+        "TV",
+        "Plasma"
+      ],
+      "protocol": "NEC",
+      "subdevice": 1
+    }
+  },
+  "Marantz": {
+    "Amplifier": {
+      "device": 20,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_DOWN": 81,
+        "KEY_EXIT": 50,
+        "KEY_FASTFORWARD": 32,
+        "KEY_LEFT": 85,
+        "KEY_NEXT": 32,
+        "KEY_OK": 87,
+        "KEY_PLAY": 53,
+        "KEY_POWER": 12,
+        "KEY_PREVIOUS": 33,
+        "KEY_REWIND": 33,
+        "KEY_RIGHT": 86,
+        "KEY_STOP": 54,
+        "KEY_UP": 80,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "RC4000CD",
+        "CD Changer",
+        "Amplifier",
+        "CD Jukebox",
+        "RC4300CC",
+        "RC-65CD"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "Amplifier 2": {
+      "device": 17,
+      "keys": {
+        "KEY_DOWN": 81,
+        "KEY_LEFT": 85,
+        "KEY_OK": 87,
+        "KEY_POWER": 12,
+        "KEY_RIGHT": 86,
+        "KEY_UP": 80,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "Amplifier"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "D-VHS": {
+      "device": 3,
+      "keys": {
+        "KEY_0": 51,
+        "KEY_1": 33,
+        "KEY_2": 34,
+        "KEY_3": 35,
+        "KEY_4": 36,
+        "KEY_5": 37,
+        "KEY_6": 38,
+        "KEY_7": 39,
+        "KEY_8": 40,
+        "KEY_9": 41,
+        "KEY_AUDIO": 23,
+        "KEY_DOWN": 24,
+        "KEY_LEFT": 21,
+        "KEY_MENU": 55,
+        "KEY_NEXT": 20,
+        "KEY_OK": 60,
+        "KEY_PLAY": 12,
+        "KEY_REWIND": 12,
+        "KEY_RIGHT": 20,
+        "KEY_STOP": 3,
+        "KEY_UP": 25
+      },
+      "models": [
+        "D-VHS"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "DVD Player": {
+      "device": 69,
+      "keys": {
+        "KEY_0": 10,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_AUDIO": 39,
+        "KEY_DOWN": 129,
+        "KEY_EXIT": 34,
+        "KEY_FASTFORWARD": 19,
+        "KEY_LEFT": 81,
+        "KEY_MENU": 132,
+        "KEY_NEXT": 36,
+        "KEY_OK": 33,
+        "KEY_PLAY": 21,
+        "KEY_POWER": 18,
+        "KEY_REWIND": 25,
+        "KEY_RIGHT": 77,
+        "KEY_STOP": 20,
+        "KEY_UP": 128
+      },
+      "models": [
+        "DVD",
+        "DVD Player"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "MP3 Player": {
+      "device": 14,
+      "keys": {
+        "KEY_MUTE": 13,
+        "KEY_POWER": 12,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "iPod Dock",
+        "MP3 Player"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "Plasma": {
+      "device": 24,
+      "keys": {
+        "KEY_DOWN": 177,
+        "KEY_LEFT": 178,
+        "KEY_MENU": 180,
+        "KEY_MUTE": 9,
+        "KEY_OK": 181,
+        "KEY_POWER": 8,
+        "KEY_RIGHT": 179,
+        "KEY_UP": 176,
+        "KEY_VIDEO": 10,
+        "KEY_VOLUMEDOWN": 3,
+        "KEY_VOLUMEUP": 2
+      },
+      "models": [
+        "Plasma Displays",
+        "Plasma"
+      ],
+      "protocol": "NEC",
+      "subdevice": 24
+    },
+    "Plasma 2": {
+      "device": 80,
+      "keys": {
+        "KEY_DOWN": 177,
+        "KEY_LEFT": 178,
+        "KEY_MENU": 180,
+        "KEY_MUTE": 9,
+        "KEY_OK": 181,
+        "KEY_POWER": 8,
+        "KEY_RIGHT": 179,
+        "KEY_UP": 176,
+        "KEY_VIDEO": 10,
+        "KEY_VOLUMEDOWN": 3,
+        "KEY_VOLUMEUP": 2
+      },
+      "models": [
+        "Plasma"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "Projector": {
+      "device": 0,
+      "keys": {
+        "KEY_DOWN": 29,
+        "KEY_EXIT": 45,
+        "KEY_INFO": 15,
+        "KEY_LEFT": 44,
+        "KEY_MENU": 46,
+        "KEY_OK": 87,
+        "KEY_RIGHT": 43,
+        "KEY_UP": 28
+      },
+      "models": [
+        "Projector"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "Receiver": {
+      "device": 17,
+      "keys": {
+        "KEY_0": 37,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_CHANNELDOWN": 33,
+        "KEY_CHANNELUP": 32,
+        "KEY_DOWN": 81,
+        "KEY_EXIT": 83,
+        "KEY_INFO": 15,
+        "KEY_LEFT": 85,
+        "KEY_MENU": 82,
+        "KEY_MUTE": 13,
+        "KEY_OK": 87,
+        "KEY_POWER": 12,
+        "KEY_RIGHT": 86,
+        "KEY_UP": 80,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "Tuner",
+        "Tuner Section",
+        "Receiver",
+        "Amplifier"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "Receiver 2": {
+      "device": 17,
+      "keys": {
+        "KEY_0": 37,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_CHANNELDOWN": 33,
+        "KEY_CHANNELUP": 32,
+        "KEY_DOWN": 81,
+        "KEY_EXIT": 83,
+        "KEY_INFO": 15,
+        "KEY_LEFT": 85,
+        "KEY_MENU": 82,
+        "KEY_MUTE": 13,
+        "KEY_OK": 29,
+        "KEY_POWER": 12,
+        "KEY_RIGHT": 86,
+        "KEY_UP": 80,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "Receiver"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "TV": {
+      "device": 80,
+      "keys": {
+        "KEY_DOWN": 177,
+        "KEY_LEFT": 178,
+        "KEY_MENU": 180,
+        "KEY_MUTE": 9,
+        "KEY_OK": 181,
+        "KEY_POWER": 8,
+        "KEY_RIGHT": 179,
+        "KEY_UP": 176,
+        "KEY_VIDEO": 10,
+        "KEY_VOLUMEDOWN": 3,
+        "KEY_VOLUMEUP": 2
+      },
+      "models": [
+        "TV",
+        "Plasma"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "VCR": {
+      "device": 5,
+      "keys": {
+        "KEY_0": 37,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_AUDIO": 35,
+        "KEY_DOWN": 81,
+        "KEY_EXIT": 83,
+        "KEY_INFO": 15,
+        "KEY_LEFT": 85,
+        "KEY_MENU": 82,
+        "KEY_MUTE": 13,
+        "KEY_OK": 29,
+        "KEY_PLAY": 53,
+        "KEY_POWER": 12,
+        "KEY_REWIND": 18,
+        "KEY_RIGHT": 86,
+        "KEY_STOP": 14,
+        "KEY_UP": 80,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "VCR",
+        "Receiver"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    }
+  },
+  "Onkyo": {
+    "Laser Disc": {
+      "device": 168,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_POWER": 28
+      },
+      "models": [
+        "Laser Disc"
+      ],
+      "protocol": "Pioneer",
+      "subdevice": -1
+    },
+    "Onkyo 2": {
+      "device": 160,
+      "keys": {
+        "KEY_0": 14,
+        "KEY_1": 16,
+        "KEY_2": 17,
+        "KEY_3": 18,
+        "KEY_4": 19,
+        "KEY_5": 24,
+        "KEY_6": 25,
+        "KEY_7": 26,
+        "KEY_8": 12,
+        "KEY_9": 13,
+        "KEY_MUTE": 5,
+        "KEY_NEXT": 5,
+        "KEY_PLAY": 27,
+        "KEY_POWER": 4,
+        "KEY_STOP": 28,
+        "KEY_VOLUMEDOWN": 3,
+        "KEY_VOLUMEUP": 2
+      },
+      "models": [
+        "Onkyo"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 10
+    },
+    "RC-104C": {
+      "device": 210,
+      "keys": {
+        "KEY_0": 81,
+        "KEY_1": 88,
+        "KEY_2": 89,
+        "KEY_3": 90,
+        "KEY_4": 91,
+        "KEY_5": 76,
+        "KEY_6": 77,
+        "KEY_7": 78,
+        "KEY_8": 79,
+        "KEY_9": 80,
+        "KEY_FASTFORWARD": 95,
+        "KEY_NEXT": 93,
+        "KEY_PLAY": 73,
+        "KEY_PREVIOUS": 92,
+        "KEY_REWIND": 94,
+        "KEY_STOP": 74
+      },
+      "models": [
+        "RC-50",
+        "RC-104C"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "RC-146T": {
+      "device": 210,
+      "keys": {
+        "KEY_FASTFORWARD": 25,
+        "KEY_PLAY": 21,
+        "KEY_POWER": 4,
+        "KEY_REWIND": 26,
+        "KEY_STOP": 19
+      },
+      "models": [
+        "Cassette Tape",
+        "RC-146T"
+      ],
+      "protocol": "NEC",
+      "subdevice": 13
+    },
+    "RC-682M": {
+      "device": 210,
+      "keys": {
+        "KEY_0": 23,
+        "KEY_1": 14,
+        "KEY_2": 15,
+        "KEY_3": 16,
+        "KEY_4": 17,
+        "KEY_5": 18,
+        "KEY_6": 19,
+        "KEY_7": 20,
+        "KEY_8": 21,
+        "KEY_9": 22,
+        "KEY_AUDIO": 85,
+        "KEY_CHANNELDOWN": 212,
+        "KEY_CHANNELUP": 211,
+        "KEY_DOWN": 81,
+        "KEY_EXIT": 9,
+        "KEY_FASTFORWARD": 12,
+        "KEY_INFO": 78,
+        "KEY_LEFT": 82,
+        "KEY_MENU": 77,
+        "KEY_NEXT": 29,
+        "KEY_OK": 8,
+        "KEY_PLAY": 27,
+        "KEY_POWER": 4,
+        "KEY_PREVIOUS": 30,
+        "KEY_REWIND": 13,
+        "KEY_RIGHT": 83,
+        "KEY_STOP": 28,
+        "KEY_UP": 80
+      },
+      "models": [
+        "RC-425DV",
+        "DVD Player",
+        "RC-682M"
+      ],
+      "protocol": "NEC",
+      "subdevice": 43
+    },
+    "Receiver": {
+      "device": 210,
+      "keys": {
+        "KEY_0": 14,
+        "KEY_1": 16,
+        "KEY_2": 17,
+        "KEY_3": 18,
+        "KEY_4": 19,
+        "KEY_5": 24,
+        "KEY_6": 25,
+        "KEY_7": 26,
+        "KEY_8": 12,
+        "KEY_9": 13,
+        "KEY_DOWN": 131,
+        "KEY_EXIT": 84,
+        "KEY_FASTFORWARD": 81,
+        "KEY_LEFT": 132,
+        "KEY_MUTE": 5,
+        "KEY_NEXT": 0,
+        "KEY_OK": 151,
+        "KEY_PLAY": 78,
+        "KEY_POWER": 4,
+        "KEY_PREVIOUS": 1,
+        "KEY_REWIND": 82,
+        "KEY_RIGHT": 133,
+        "KEY_STOP": 77,
+        "KEY_UP": 130,
+        "KEY_VOLUMEDOWN": 3,
+        "KEY_VOLUMEUP": 2
+      },
+      "models": [
+        "CD Player",
+        "RC-211S",
+        "Onkyo",
+        "Tuner",
+        "RC-252S",
+        "Unknown",
+        "Receiver",
+        "RC-184s",
+        "CR-70R",
+        "Amplifier"
+      ],
+      "protocol": "NEC2",
+      "subdevice": 109
+    }
+  },
+  "Orion": {
+    "Orion": {
+      "device": 128,
+      "keys": {
+        "KEY_CHANNELDOWN": 11,
+        "KEY_CHANNELUP": 10,
+        "KEY_FASTFORWARD": 24,
+        "KEY_MENU": 80,
+        "KEY_OK": 69,
+        "KEY_PLAY": 22,
+        "KEY_POWER": 19,
+        "KEY_RECORD": 21,
+        "KEY_REWIND": 25,
+        "KEY_STOP": 23
+      },
+      "models": [
+        "orion"
+      ],
+      "protocol": "NEC",
+      "subdevice": 123
+    },
+    "RC57": {
+      "device": 128,
+      "keys": {
+        "KEY_FASTFORWARD": 14,
+        "KEY_PLAY": 12,
+        "KEY_POWER": 11,
+        "KEY_REWIND": 15,
+        "KEY_STOP": 13
+      },
+      "models": [
+        "orion-RC57"
+      ],
+      "protocol": "NEC",
+      "subdevice": 126
+    },
+    "TV-713": {
+      "device": 0,
+      "keys": {
+        "KEY_0": 68,
+        "KEY_1": 22,
+        "KEY_2": 26,
+        "KEY_3": 30,
+        "KEY_4": 27,
+        "KEY_5": 23,
+        "KEY_6": 19,
+        "KEY_7": 11,
+        "KEY_8": 7,
+        "KEY_9": 3,
+        "KEY_AUDIO": 18,
+        "KEY_CHANNELDOWN": 10,
+        "KEY_CHANNELUP": 5,
+        "KEY_EXIT": 9,
+        "KEY_INFO": 21,
+        "KEY_MENU": 17,
+        "KEY_MODE": 92,
+        "KEY_MUTE": 14,
+        "KEY_OK": 2,
+        "KEY_POWER": 0,
+        "KEY_TEXT": 25,
+        "KEY_VOLUMEDOWN": 1,
+        "KEY_VOLUMEUP": 6
+      },
+      "models": [
+        "TV-713"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    }
+  },
+  "Panasonic": {
+    "CARC60EX": {
+      "device": 129,
+      "keys": {
+        "KEY_MODE": 26,
+        "KEY_POWER": 18,
+        "KEY_VOLUMEDOWN": 25,
+        "KEY_VOLUMEUP": 29
+      },
+      "models": [
+        "CARC60EX"
+      ],
+      "protocol": "NEC",
+      "subdevice": 106
+    },
+    "DVD Player": {
+      "device": 128,
+      "keys": {
+        "KEY_0": 25,
+        "KEY_1": 16,
+        "KEY_2": 17,
+        "KEY_3": 18,
+        "KEY_4": 19,
+        "KEY_5": 20,
+        "KEY_6": 21,
+        "KEY_7": 22,
+        "KEY_8": 23,
+        "KEY_9": 24,
+        "KEY_AUDIO": 51,
+        "KEY_DOWN": 53,
+        "KEY_EXIT": 196,
+        "KEY_LEFT": 55,
+        "KEY_MENU": 192,
+        "KEY_MUTE": 50,
+        "KEY_NEXT": 5,
+        "KEY_OK": 198,
+        "KEY_PLAY": 10,
+        "KEY_POWER": 61,
+        "KEY_PREVIOUS": 4,
+        "KEY_RIGHT": 54,
+        "KEY_STOP": 0,
+        "KEY_UP": 52,
+        "KEY_VOLUMEDOWN": 33,
+        "KEY_VOLUMEUP": 32
+      },
+      "models": [
+        "DVD Player"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 0
+    },
+    "EUR643826": {
+      "device": 160,
+      "keys": {
+        "KEY_0": 153,
+        "KEY_1": 144,
+        "KEY_2": 145,
+        "KEY_3": 146,
+        "KEY_4": 147,
+        "KEY_5": 148,
+        "KEY_6": 149,
+        "KEY_7": 150,
+        "KEY_8": 151,
+        "KEY_9": 152,
+        "KEY_EXIT": 132,
+        "KEY_FASTFORWARD": 163,
+        "KEY_MODE": 129,
+        "KEY_NEXT": 133,
+        "KEY_POWER": 191,
+        "KEY_PREVIOUS": 132,
+        "KEY_RECORD": 189,
+        "KEY_REWIND": 162,
+        "KEY_STOP": 160,
+        "KEY_VOLUMEDOWN": 177,
+        "KEY_VOLUMEUP": 176
+      },
+      "models": [
+        "panasonic-RAX-RX318W",
+        "RX-ED70",
+        "EUR643820",
+        "EUR642162",
+        "RAK-RX309W",
+        "RAK-RX314W",
+        "Cd",
+        "EUR642195",
+        "N2QAHB0048",
+        "EUR643826"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 194
+    },
+    "EUR7621010": {
+      "device": 176,
+      "keys": {
+        "KEY_0": 25,
+        "KEY_1": 16,
+        "KEY_2": 17,
+        "KEY_3": 18,
+        "KEY_4": 19,
+        "KEY_5": 20,
+        "KEY_6": 21,
+        "KEY_7": 22,
+        "KEY_8": 23,
+        "KEY_9": 24,
+        "KEY_AUDIO": 51,
+        "KEY_DOWN": 134,
+        "KEY_FASTFORWARD": 5,
+        "KEY_LEFT": 135,
+        "KEY_MENU": 128,
+        "KEY_NEXT": 74,
+        "KEY_OK": 129,
+        "KEY_PLAY": 10,
+        "KEY_POWER": 61,
+        "KEY_PREVIOUS": 73,
+        "KEY_RIGHT": 136,
+        "KEY_STOP": 0,
+        "KEY_UP": 133
+      },
+      "models": [
+        "PANASONIC",
+        "Veq2249",
+        "EUR7621010"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 0
+    },
+    "HDTV Tuner": {
+      "device": 128,
+      "keys": {
+        "KEY_0": 169,
+        "KEY_1": 160,
+        "KEY_2": 161,
+        "KEY_3": 162,
+        "KEY_4": 163,
+        "KEY_5": 164,
+        "KEY_6": 165,
+        "KEY_7": 166,
+        "KEY_8": 167,
+        "KEY_9": 168,
+        "KEY_CHANNELDOWN": 203,
+        "KEY_CHANNELUP": 202,
+        "KEY_DOWN": 203,
+        "KEY_EXIT": 198,
+        "KEY_INFO": 185,
+        "KEY_LEFT": 205,
+        "KEY_OK": 195,
+        "KEY_POWER": 189,
+        "KEY_RIGHT": 206,
+        "KEY_UP": 202
+      },
+      "models": [
+        "HDTV Tuner"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 2
+    },
+    "Laser Disc": {
+      "device": 144,
+      "keys": {
+        "KEY_0": 25,
+        "KEY_1": 16,
+        "KEY_2": 17,
+        "KEY_3": 18,
+        "KEY_4": 19,
+        "KEY_5": 20,
+        "KEY_6": 21,
+        "KEY_7": 22,
+        "KEY_8": 23,
+        "KEY_9": 24,
+        "KEY_NEXT": 74,
+        "KEY_PLAY": 10,
+        "KEY_POWER": 61,
+        "KEY_PREVIOUS": 73,
+        "KEY_STOP": 0
+      },
+      "models": [
+        "Laser Disc"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 64
+    },
+    "Receiver": {
+      "device": 160,
+      "keys": {
+        "KEY_MUTE": 50,
+        "KEY_VOLUMEDOWN": 33,
+        "KEY_VOLUMEUP": 32
+      },
+      "models": [
+        "Receiver"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 28
+    },
+    "TV": {
+      "device": 128,
+      "keys": {
+        "KEY_DOWN": 75,
+        "KEY_EXIT": 211,
+        "KEY_LEFT": 78,
+        "KEY_MENU": 82,
+        "KEY_NEXT": 221,
+        "KEY_PLAY": 192,
+        "KEY_POWER": 62,
+        "KEY_PREVIOUS": 220,
+        "KEY_REWIND": 196,
+        "KEY_RIGHT": 79,
+        "KEY_STOP": 194,
+        "KEY_UP": 74
+      },
+      "models": [
+        "TV"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 4
+    },
+    "VCR": {
+      "device": 144,
+      "keys": {
+        "KEY_0": 25,
+        "KEY_1": 16,
+        "KEY_2": 17,
+        "KEY_3": 18,
+        "KEY_4": 19,
+        "KEY_5": 20,
+        "KEY_6": 21,
+        "KEY_7": 22,
+        "KEY_8": 23,
+        "KEY_9": 24,
+        "KEY_MENU": 86,
+        "KEY_PLAY": 10,
+        "KEY_POWER": 61,
+        "KEY_STOP": 0
+      },
+      "models": [
+        "VCR"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 1
+    },
+    "VCR 2": {
+      "device": 144,
+      "keys": {
+        "KEY_0": 25,
+        "KEY_1": 16,
+        "KEY_2": 17,
+        "KEY_3": 18,
+        "KEY_4": 19,
+        "KEY_5": 20,
+        "KEY_6": 21,
+        "KEY_7": 22,
+        "KEY_8": 23,
+        "KEY_9": 24,
+        "KEY_AUDIO": 51,
+        "KEY_CHANNELDOWN": 53,
+        "KEY_CHANNELUP": 52,
+        "KEY_DOWN": 3,
+        "KEY_EXIT": 102,
+        "KEY_FASTFORWARD": 3,
+        "KEY_LEFT": 5,
+        "KEY_MENU": 86,
+        "KEY_NEXT": 142,
+        "KEY_PLAY": 10,
+        "KEY_POWER": 61,
+        "KEY_PREVIOUS": 143,
+        "KEY_RECORD": 8,
+        "KEY_REWIND": 2,
+        "KEY_RIGHT": 4,
+        "KEY_STOP": 0,
+        "KEY_UP": 2
+      },
+      "models": [
+        "VCR",
+        "Panasonic",
+        "VEQ1309",
+        "VEQ0910",
+        "NV-F65",
+        "EUR57510",
+        "EUR571100"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 0
+    },
+    "VEQ1697": {
+      "device": 112,
+      "keys": {
+        "KEY_FASTFORWARD": 3,
+        "KEY_PLAY": 10,
+        "KEY_REWIND": 2,
+        "KEY_STOP": 204
+      },
+      "models": [
+        "VEQ1697"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 8
+    }
+  },
+  "Philips": {
+    "130A": {
+      "device": 138,
+      "keys": {
+        "KEY_0": 16,
+        "KEY_1": 29,
+        "KEY_2": 21,
+        "KEY_3": 13,
+        "KEY_4": 30,
+        "KEY_5": 22,
+        "KEY_6": 14,
+        "KEY_7": 31,
+        "KEY_8": 23,
+        "KEY_9": 15,
+        "KEY_CHANNELDOWN": 10,
+        "KEY_CHANNELUP": 9,
+        "KEY_MUTE": 3,
+        "KEY_POWER": 28,
+        "KEY_VIDEO": 17
+      },
+      "models": [
+        "130A"
+      ],
+      "protocol": "NEC",
+      "subdevice": 245
+    },
+    "8243": {
+      "device": 10,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_DOWN": 81,
+        "KEY_EXIT": 83,
+        "KEY_INFO": 15,
+        "KEY_LEFT": 85,
+        "KEY_MENU": 106,
+        "KEY_MUTE": 70,
+        "KEY_OK": 87,
+        "KEY_POWER": 12,
+        "KEY_RIGHT": 86,
+        "KEY_UP": 80
+      },
+      "models": [
+        "RC8244",
+        "8243"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "CD-R": {
+      "device": 26,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_NEXT": 32,
+        "KEY_PLAY": 53,
+        "KEY_PREVIOUS": 33,
+        "KEY_RECORD": 55,
+        "KEY_REWIND": 50,
+        "KEY_STOP": 54
+      },
+      "models": [
+        "RC7925",
+        "CD-R"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "FW2104": {
+      "device": 134,
+      "keys": {
+        "KEY_0": 22,
+        "KEY_1": 23,
+        "KEY_2": 24,
+        "KEY_3": 25,
+        "KEY_4": 26,
+        "KEY_5": 27,
+        "KEY_6": 28,
+        "KEY_7": 29,
+        "KEY_8": 30,
+        "KEY_9": 31,
+        "KEY_MUTE": 6,
+        "KEY_POWER": 1,
+        "KEY_VOLUMEDOWN": 8,
+        "KEY_VOLUMEUP": 7
+      },
+      "models": [
+        "FW2104"
+      ],
+      "protocol": "NEC",
+      "subdevice": 83
+    },
+    "MULTI": {
+      "device": 0,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_CHANNELDOWN": 33,
+        "KEY_CHANNELUP": 32,
+        "KEY_FASTFORWARD": 46,
+        "KEY_MUTE": 13,
+        "KEY_PLAY": 53,
+        "KEY_POWER": 12,
+        "KEY_RECORD": 55,
+        "KEY_REWIND": 44,
+        "KEY_STOP": 54,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "MULTI"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "PHDVD5": {
+      "device": 26,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_CHANNELDOWN": 17,
+        "KEY_CHANNELUP": 16,
+        "KEY_DOWN": 96,
+        "KEY_EXIT": 99,
+        "KEY_FASTFORWARD": 28,
+        "KEY_LEFT": 98,
+        "KEY_MENU": 111,
+        "KEY_OK": 11,
+        "KEY_PLAY": 26,
+        "KEY_POWER": 21,
+        "KEY_RECORD": 29,
+        "KEY_REWIND": 27,
+        "KEY_RIGHT": 97,
+        "KEY_STOP": 35,
+        "KEY_UP": 95
+      },
+      "models": [
+        "PHDVD5"
+      ],
+      "protocol": "Sony20",
+      "subdevice": 154
+    },
+    "PMDVD6T-Universal-AUX": {
+      "device": 64,
+      "keys": {
+        "KEY_0": 21,
+        "KEY_1": 8,
+        "KEY_2": 10,
+        "KEY_3": 9,
+        "KEY_4": 12,
+        "KEY_5": 14,
+        "KEY_6": 13,
+        "KEY_7": 16,
+        "KEY_8": 17,
+        "KEY_9": 18,
+        "KEY_CHANNELDOWN": 6,
+        "KEY_CHANNELUP": 5,
+        "KEY_MENU": 19,
+        "KEY_OK": 26,
+        "KEY_PLAY": 24,
+        "KEY_POWER": 3,
+        "KEY_RECORD": 20,
+        "KEY_STOP": 28,
+        "KEY_VOLUMEDOWN": 31,
+        "KEY_VOLUMEUP": 27
+      },
+      "models": [
+        "Philips-PMDVD6T-Universal-AUX"
+      ],
+      "protocol": "NEC",
+      "subdevice": 47
+    },
+    "RC8861": {
+      "device": 1,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_CHANNELDOWN": 17,
+        "KEY_CHANNELUP": 16,
+        "KEY_MUTE": 20,
+        "KEY_POWER": 21,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "RC8861"
+      ],
+      "protocol": "Sony12",
+      "subdevice": -1
+    },
+    "RCLE011": {
+      "device": 0,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_BLUE": 110,
+        "KEY_CHANNELDOWN": 33,
+        "KEY_CHANNELUP": 32,
+        "KEY_DOWN": 81,
+        "KEY_EXIT": 83,
+        "KEY_FASTFORWARD": 52,
+        "KEY_GREEN": 108,
+        "KEY_INFO": 53,
+        "KEY_LEFT": 85,
+        "KEY_MENU": 82,
+        "KEY_MODE": 15,
+        "KEY_MUTE": 13,
+        "KEY_NEXT": 32,
+        "KEY_OK": 87,
+        "KEY_PLAY": 53,
+        "KEY_POWER": 12,
+        "KEY_PREVIOUS": 33,
+        "KEY_RECORD": 55,
+        "KEY_RED": 107,
+        "KEY_REWIND": 50,
+        "KEY_RIGHT": 86,
+        "KEY_STOP": 54,
+        "KEY_TEXT": 60,
+        "KEY_UP": 80,
+        "KEY_VIDEO": 56,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16,
+        "KEY_YELLOW": 109
+      },
+      "models": [
+        "SBC",
+        "Digital",
+        "RC",
+        "01",
+        "RC-7843",
+        "RCLE011"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "Receiver": {
+      "device": 20,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_DOWN": 81,
+        "KEY_LEFT": 85,
+        "KEY_MUTE": 13,
+        "KEY_NEXT": 32,
+        "KEY_OK": 82,
+        "KEY_PLAY": 53,
+        "KEY_PREVIOUS": 33,
+        "KEY_RIGHT": 86,
+        "KEY_STOP": 54,
+        "KEY_UP": 80,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "rd5860",
+        "CD",
+        "Receiver",
+        "LV2",
+        "RC",
+        "CD720"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "Receiver 2": {
+      "device": 17,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_DOWN": 81,
+        "KEY_LEFT": 85,
+        "KEY_MUTE": 13,
+        "KEY_OK": 82,
+        "KEY_REWIND": 31,
+        "KEY_RIGHT": 86,
+        "KEY_UP": 80
+      },
+      "models": [
+        "Receiver"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "TV": {
+      "device": 0,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_AUDIO": 15,
+        "KEY_BLUE": 63,
+        "KEY_CHANNELDOWN": 33,
+        "KEY_CHANNELUP": 32,
+        "KEY_DOWN": 81,
+        "KEY_EXIT": 50,
+        "KEY_FASTFORWARD": 46,
+        "KEY_GREEN": 14,
+        "KEY_INFO": 15,
+        "KEY_LEFT": 85,
+        "KEY_MENU": 82,
+        "KEY_MUTE": 13,
+        "KEY_NEXT": 32,
+        "KEY_OK": 87,
+        "KEY_PLAY": 53,
+        "KEY_POWER": 12,
+        "KEY_PREVIOUS": 33,
+        "KEY_RECORD": 55,
+        "KEY_RED": 60,
+        "KEY_REWIND": 44,
+        "KEY_RIGHT": 86,
+        "KEY_STOP": 54,
+        "KEY_TEXT": 60,
+        "KEY_UP": 80,
+        "KEY_VIDEO": 60,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16,
+        "KEY_YELLOW": 43
+      },
+      "models": [
+        "uDigital",
+        "5373",
+        "TV",
+        "RC5-BP6",
+        "SRU",
+        "5300",
+        "RC19335003-01P",
+        "RC7843",
+        "RC2070",
+        "PHILIPS",
+        "RU120",
+        "Receiver",
+        "SBC",
+        "17PT1563",
+        "01",
+        "5260",
+        "MULTI"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "TV 2": {
+      "device": 3,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_CHANNELDOWN": 33,
+        "KEY_CHANNELUP": 32,
+        "KEY_DOWN": 29,
+        "KEY_EXIT": 15,
+        "KEY_LEFT": 44,
+        "KEY_MENU": 46,
+        "KEY_MUTE": 13,
+        "KEY_POWER": 12,
+        "KEY_RIGHT": 43,
+        "KEY_UP": 28,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "TV"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "VCR": {
+      "device": 5,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_AUDIO": 35,
+        "KEY_CHANNELDOWN": 33,
+        "KEY_CHANNELUP": 32,
+        "KEY_DOWN": 81,
+        "KEY_FASTFORWARD": 38,
+        "KEY_LEFT": 85,
+        "KEY_MENU": 82,
+        "KEY_MODE": 60,
+        "KEY_MUTE": 13,
+        "KEY_NEXT": 106,
+        "KEY_OK": 87,
+        "KEY_PLAY": 53,
+        "KEY_POWER": 12,
+        "KEY_PREVIOUS": 113,
+        "KEY_RECORD": 55,
+        "KEY_REWIND": 37,
+        "KEY_RIGHT": 86,
+        "KEY_STOP": 54,
+        "KEY_UP": 80,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "VCR",
+        "RT150",
+        "Receiver",
+        "101",
+        "AV5609",
+        "95",
+        "MULTI",
+        "VR175"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "rc2592-MODE-v1": {
+      "device": 8,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_BLUE": 110,
+        "KEY_DOWN": 81,
+        "KEY_EXIT": 111,
+        "KEY_GREEN": 108,
+        "KEY_LEFT": 85,
+        "KEY_MENU": 82,
+        "KEY_OK": 87,
+        "KEY_POWER": 12,
+        "KEY_RED": 107,
+        "KEY_RIGHT": 86,
+        "KEY_UP": 80,
+        "KEY_YELLOW": 109
+      },
+      "models": [
+        "philips-rc2592-MODE-v1"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    }
+  },
+  "Pioneer": {
+    "AXD-7306": {
+      "device": 166,
+      "keys": {
+        "KEY_FASTFORWARD": 147,
+        "KEY_MENU": 114,
+        "KEY_NEXT": 145,
+        "KEY_PREVIOUS": 146,
+        "KEY_REWIND": 148,
+        "KEY_STOP": 144,
+        "KEY_VOLUMEDOWN": 11,
+        "KEY_VOLUMEUP": 10
+      },
+      "models": [
+        "AXD-7306"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "Amplifier": {
+      "device": 162,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_AUDIO": 30,
+        "KEY_DOWN": 17,
+        "KEY_EXIT": 17,
+        "KEY_FASTFORWARD": 14,
+        "KEY_LEFT": 156,
+        "KEY_MODE": 156,
+        "KEY_MUTE": 94,
+        "KEY_NEXT": 16,
+        "KEY_OK": 132,
+        "KEY_PLAY": 23,
+        "KEY_POWER": 28,
+        "KEY_PREVIOUS": 17,
+        "KEY_REWIND": 15,
+        "KEY_RIGHT": 155,
+        "KEY_STOP": 22,
+        "KEY_UP": 16,
+        "KEY_VOLUMEDOWN": 11,
+        "KEY_VOLUMEUP": 10
+      },
+      "models": [
+        "CU-PD089",
+        "CD Player",
+        "CU-PD038",
+        "Pioneer",
+        "PD-M650",
+        "CU-PD008",
+        "CD",
+        "CU-PD096",
+        "CU-PD046",
+        "Amplifier",
+        "CD Jukebox",
+        "CU-PD069",
+        "CU-PD085"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "Cable Box": {
+      "device": 172,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_CHANNELDOWN": 17,
+        "KEY_CHANNELUP": 16,
+        "KEY_MUTE": 20,
+        "KEY_POWER": 28,
+        "KEY_VOLUMEDOWN": 11,
+        "KEY_VOLUMEUP": 10
+      },
+      "models": [
+        "Cable Box"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "Cassette Tape": {
+      "device": 161,
+      "keys": {
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_EXIT": 30,
+        "KEY_PLAY": 23,
+        "KEY_STOP": 22
+      },
+      "models": [
+        "Cassette Tape"
+      ],
+      "protocol": "Pioneer",
+      "subdevice": -1
+    },
+    "DEH-D8850": {
+      "device": 0,
+      "keys": {
+        "KEY_0": 22,
+        "KEY_1": 3,
+        "KEY_2": 1,
+        "KEY_3": 6,
+        "KEY_4": 29,
+        "KEY_5": 31,
+        "KEY_6": 13,
+        "KEY_7": 27,
+        "KEY_8": 17,
+        "KEY_9": 21,
+        "KEY_DOWN": 15,
+        "KEY_LEFT": 30,
+        "KEY_MENU": 0,
+        "KEY_MUTE": 64,
+        "KEY_PLAY": 14,
+        "KEY_POWER": 16,
+        "KEY_RIGHT": 26,
+        "KEY_UP": 4,
+        "KEY_VOLUMEDOWN": 23,
+        "KEY_VOLUMEUP": 9
+      },
+      "models": [
+        "DEH-D8850"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "DVD Jukebox": {
+      "device": 163,
+      "keys": {
+        "KEY_0": 153,
+        "KEY_1": 153,
+        "KEY_2": 153,
+        "KEY_3": 153,
+        "KEY_4": 153,
+        "KEY_5": 153,
+        "KEY_6": 153,
+        "KEY_7": 153,
+        "KEY_8": 153,
+        "KEY_9": 153,
+        "KEY_AUDIO": 153,
+        "KEY_DOWN": 153,
+        "KEY_EXIT": 153,
+        "KEY_FASTFORWARD": 154,
+        "KEY_LEFT": 153,
+        "KEY_MENU": 153,
+        "KEY_NEXT": 156,
+        "KEY_OK": 153,
+        "KEY_PLAY": 158,
+        "KEY_POWER": 153,
+        "KEY_PREVIOUS": 157,
+        "KEY_RIGHT": 153,
+        "KEY_STOP": 152,
+        "KEY_UP": 153
+      },
+      "models": [
+        "VXX2801",
+        "DVD Jukebox"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "Laser Disc": {
+      "device": 175,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_AUDIO": 153,
+        "KEY_DOWN": 152,
+        "KEY_EXIT": 153,
+        "KEY_FASTFORWARD": 40,
+        "KEY_LEFT": 153,
+        "KEY_MENU": 153,
+        "KEY_NEXT": 82,
+        "KEY_OK": 153,
+        "KEY_PLAY": 23,
+        "KEY_POWER": 28,
+        "KEY_PREVIOUS": 83,
+        "KEY_RIGHT": 153,
+        "KEY_STOP": 22,
+        "KEY_UP": 153
+      },
+      "models": [
+        "DVD Player",
+        "Laser Disc"
+      ],
+      "protocol": "NEC2",
+      "subdevice": -1
+    },
+    "Receiver": {
+      "device": 165,
+      "keys": {
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_EXIT": 93,
+        "KEY_MUTE": 94,
+        "KEY_OK": 132,
+        "KEY_POWER": 28,
+        "KEY_VOLUMEDOWN": 11,
+        "KEY_VOLUMEUP": 10
+      },
+      "models": [
+        "Receiver",
+        "Amplifier"
+      ],
+      "protocol": "Pioneer",
+      "subdevice": -1
+    },
+    "TV": {
+      "device": 175,
+      "keys": {
+        "KEY_0": 153,
+        "KEY_1": 153,
+        "KEY_2": 153,
+        "KEY_3": 153,
+        "KEY_4": 153,
+        "KEY_5": 153,
+        "KEY_6": 153,
+        "KEY_7": 153,
+        "KEY_8": 153,
+        "KEY_9": 153,
+        "KEY_AUDIO": 153,
+        "KEY_CHANNELDOWN": 17,
+        "KEY_CHANNELUP": 16,
+        "KEY_DOWN": 153,
+        "KEY_EXIT": 153,
+        "KEY_FASTFORWARD": 154,
+        "KEY_LEFT": 153,
+        "KEY_MENU": 153,
+        "KEY_MUTE": 73,
+        "KEY_NEXT": 156,
+        "KEY_OK": 153,
+        "KEY_PLAY": 158,
+        "KEY_POWER": 153,
+        "KEY_PREVIOUS": 157,
+        "KEY_RIGHT": 153,
+        "KEY_STOP": 152,
+        "KEY_UP": 153,
+        "KEY_VOLUMEDOWN": 11,
+        "KEY_VOLUMEUP": 10
+      },
+      "models": [
+        "DVD Changer",
+        "TV",
+        "DVD Player",
+        "DVD Jukebox"
+      ],
+      "protocol": "Pioneer",
+      "subdevice": -1
+    }
+  },
+  "Samsung": {
+    "MF59": {
+      "device": 0,
+      "keys": {
+        "KEY_0": 17,
+        "KEY_1": 4,
+        "KEY_2": 5,
+        "KEY_3": 6,
+        "KEY_4": 8,
+        "KEY_5": 9,
+        "KEY_6": 10,
+        "KEY_7": 12,
+        "KEY_8": 13,
+        "KEY_9": 14,
+        "KEY_BLUE": 22,
+        "KEY_CHANNELDOWN": 16,
+        "KEY_CHANNELUP": 18,
+        "KEY_DOWN": 97,
+        "KEY_EXIT": 45,
+        "KEY_GREEN": 20,
+        "KEY_LEFT": 101,
+        "KEY_MENU": 26,
+        "KEY_MUTE": 15,
+        "KEY_OK": 104,
+        "KEY_POWER": 2,
+        "KEY_RED": 100,
+        "KEY_RIGHT": 98,
+        "KEY_UP": 96,
+        "KEY_VIDEO": 56,
+        "KEY_VOLUMEDOWN": 11,
+        "KEY_VOLUMEUP": 7,
+        "KEY_YELLOW": 21
+      },
+      "models": [
+        "10107N",
+        "Test",
+        "10116A",
+        "MF59"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "SAT": {
+      "device": 21,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_AUDIO": 22,
+        "KEY_CHANNELDOWN": 19,
+        "KEY_CHANNELUP": 18,
+        "KEY_EXIT": 24,
+        "KEY_MENU": 28,
+        "KEY_MUTE": 11,
+        "KEY_OK": 27,
+        "KEY_POWER": 10,
+        "KEY_TEXT": 26,
+        "KEY_VOLUMEDOWN": 13,
+        "KEY_VOLUMEUP": 14
+      },
+      "models": [
+        "SAT"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "SFT-702E": {
+      "device": 64,
+      "keys": {
+        "KEY_0": 71,
+        "KEY_1": 28,
+        "KEY_2": 29,
+        "KEY_3": 30,
+        "KEY_4": 64,
+        "KEY_5": 65,
+        "KEY_6": 66,
+        "KEY_7": 68,
+        "KEY_8": 69,
+        "KEY_9": 70,
+        "KEY_BLUE": 27,
+        "KEY_CHANNELDOWN": 3,
+        "KEY_CHANNELUP": 2,
+        "KEY_DOWN": 19,
+        "KEY_EXIT": 12,
+        "KEY_GREEN": 25,
+        "KEY_LEFT": 22,
+        "KEY_MENU": 17,
+        "KEY_MUTE": 4,
+        "KEY_OK": 21,
+        "KEY_POWER": 0,
+        "KEY_PREVIOUS": 16,
+        "KEY_RED": 24,
+        "KEY_RIGHT": 20,
+        "KEY_UP": 18,
+        "KEY_VOLUMEDOWN": 7,
+        "KEY_VOLUMEUP": 6,
+        "KEY_YELLOW": 26
+      },
+      "models": [
+        "SFT-702E"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "SMT-1000T": {
+      "device": 64,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_BLUE": 25,
+        "KEY_CHANNELDOWN": 30,
+        "KEY_CHANNELUP": 31,
+        "KEY_DOWN": 14,
+        "KEY_EXIT": 65,
+        "KEY_GREEN": 23,
+        "KEY_LEFT": 16,
+        "KEY_MENU": 64,
+        "KEY_MUTE": 12,
+        "KEY_OK": 13,
+        "KEY_POWER": 10,
+        "KEY_RED": 22,
+        "KEY_RIGHT": 17,
+        "KEY_TEXT": 69,
+        "KEY_UP": 11,
+        "KEY_VOLUMEDOWN": 28,
+        "KEY_VOLUMEUP": 21,
+        "KEY_YELLOW": 24
+      },
+      "models": [
+        "SMT-1000T"
+      ],
+      "protocol": "NEC",
+      "subdevice": 64
+    },
+    "TV": {
+      "device": 7,
+      "keys": {
+        "KEY_0": 17,
+        "KEY_1": 4,
+        "KEY_2": 5,
+        "KEY_3": 6,
+        "KEY_4": 8,
+        "KEY_5": 9,
+        "KEY_6": 10,
+        "KEY_7": 12,
+        "KEY_8": 13,
+        "KEY_9": 14,
+        "KEY_CHANNELDOWN": 16,
+        "KEY_CHANNELUP": 18,
+        "KEY_DOWN": 97,
+        "KEY_EXIT": 45,
+        "KEY_INFO": 31,
+        "KEY_LEFT": 101,
+        "KEY_MENU": 26,
+        "KEY_MUTE": 15,
+        "KEY_OK": 104,
+        "KEY_POWER": 153,
+        "KEY_RIGHT": 98,
+        "KEY_UP": 96,
+        "KEY_VIDEO": 1,
+        "KEY_VOLUMEDOWN": 11,
+        "KEY_VOLUMEUP": 7
+      },
+      "models": [
+        "TV",
+        "Rear Projection DLP TV"
+      ],
+      "protocol": "NECx2",
+      "subdevice": 7
+    },
+    "VCR": {
+      "device": 5,
+      "keys": {
+        "KEY_0": 17,
+        "KEY_1": 4,
+        "KEY_2": 5,
+        "KEY_3": 6,
+        "KEY_4": 8,
+        "KEY_5": 9,
+        "KEY_6": 10,
+        "KEY_7": 12,
+        "KEY_8": 13,
+        "KEY_9": 14,
+        "KEY_AUDIO": 34,
+        "KEY_CHANNELDOWN": 16,
+        "KEY_CHANNELUP": 18,
+        "KEY_DOWN": 80,
+        "KEY_LEFT": 115,
+        "KEY_MENU": 31,
+        "KEY_OK": 92,
+        "KEY_PLAY": 25,
+        "KEY_POWER": 2,
+        "KEY_REWIND": 24,
+        "KEY_RIGHT": 119,
+        "KEY_STOP": 21,
+        "KEY_UP": 82
+      },
+      "models": [
+        "VCR"
+      ],
+      "protocol": "NECx2",
+      "subdevice": 5
+    }
+  },
+  "Sanyo": {
+    "RB-DA300": {
+      "device": 60,
+      "keys": {
+        "KEY_0": 137,
+        "KEY_1": 128,
+        "KEY_2": 129,
+        "KEY_3": 130,
+        "KEY_4": 131,
+        "KEY_5": 132,
+        "KEY_6": 133,
+        "KEY_7": 134,
+        "KEY_8": 135,
+        "KEY_9": 136,
+        "KEY_FASTFORWARD": 85,
+        "KEY_PLAY": 6,
+        "KEY_POWER": 64,
+        "KEY_REWIND": 86,
+        "KEY_VIDEO": 70,
+        "KEY_VOLUMEDOWN": 66,
+        "KEY_VOLUMEUP": 65
+      },
+      "models": [
+        "RB-DA300"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "RB-SL22": {
+      "device": 60,
+      "keys": {
+        "KEY_0": 26,
+        "KEY_1": 17,
+        "KEY_2": 18,
+        "KEY_3": 19,
+        "KEY_4": 20,
+        "KEY_5": 21,
+        "KEY_6": 22,
+        "KEY_7": 23,
+        "KEY_8": 24,
+        "KEY_9": 25,
+        "KEY_AUDIO": 10,
+        "KEY_DOWN": 12,
+        "KEY_FASTFORWARD": 35,
+        "KEY_LEFT": 13,
+        "KEY_MENU": 2,
+        "KEY_NEXT": 33,
+        "KEY_OK": 15,
+        "KEY_PLAY": 31,
+        "KEY_POWER": 0,
+        "KEY_PREVIOUS": 34,
+        "KEY_RIGHT": 14,
+        "KEY_STOP": 30,
+        "KEY_UP": 11
+      },
+      "models": [
+        "RB-SL22"
+      ],
+      "protocol": "NEC",
+      "subdevice": 196
+    },
+    "TV": {
+      "device": 56,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_CHANNELDOWN": 11,
+        "KEY_CHANNELUP": 10,
+        "KEY_GREEN": 74,
+        "KEY_MENU": 23,
+        "KEY_MUTE": 24,
+        "KEY_POWER": 18,
+        "KEY_RECORD": 24,
+        "KEY_RED": 73,
+        "KEY_VIDEO": 19,
+        "KEY_VOLUMEDOWN": 15,
+        "KEY_VOLUMEUP": 14
+      },
+      "models": [
+        "Sanyo-JXZB",
+        "TV",
+        "RC700",
+        "Sanyo",
+        "TV01"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "VCR": {
+      "device": 49,
+      "keys": {
+        "KEY_0": 29,
+        "KEY_1": 4,
+        "KEY_2": 5,
+        "KEY_3": 6,
+        "KEY_4": 7,
+        "KEY_5": 12,
+        "KEY_6": 13,
+        "KEY_7": 14,
+        "KEY_8": 15,
+        "KEY_9": 28,
+        "KEY_AUDIO": 3,
+        "KEY_CHANNELDOWN": 2,
+        "KEY_CHANNELUP": 1,
+        "KEY_DOWN": 150,
+        "KEY_FASTFORWARD": 19,
+        "KEY_LEFT": 149,
+        "KEY_MENU": 202,
+        "KEY_MUTE": 24,
+        "KEY_OK": 75,
+        "KEY_PLAY": 20,
+        "KEY_POWER": 91,
+        "KEY_RECORD": 21,
+        "KEY_REWIND": 18,
+        "KEY_RIGHT": 148,
+        "KEY_STOP": 16,
+        "KEY_UP": 151,
+        "KEY_VIDEO": 19,
+        "KEY_VOLUMEDOWN": 15,
+        "KEY_VOLUMEUP": 14
+      },
+      "models": [
+        "VCR",
+        "B13509",
+        "B13537",
+        "Sanyo",
+        "B13540",
+        "B01004",
+        "B01007",
+        "A05800",
+        "B12628"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "Video Projector": {
+      "device": 48,
+      "keys": {
+        "KEY_MENU": 28,
+        "KEY_MUTE": 11,
+        "KEY_POWER": 0,
+        "KEY_VOLUMEDOWN": 10,
+        "KEY_VOLUMEUP": 9
+      },
+      "models": [
+        "Video Projector"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    }
+  },
+  "Sonos": {
+    "Playbar": {
+      "device": 128,
+      "keys": {
+        "KEY_STOP": 140,
+        "KEY_VIDEO": 134,
+        "KEY_VOLUMEDOWN": 136,
+        "KEY_VOLUMEUP": 138
+      },
+      "models": [
+        "Playbar"
+      ],
+      "protocol": "NEC2",
+      "subdevice": 217
+    }
+  },
+  "Sony": {
+    "Boombox": {
+      "device": 100,
+      "keys": {
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_PLAY": 50,
+        "KEY_POWER": 21,
+        "KEY_STOP": 56,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "Boombox"
+      ],
+      "protocol": "Sony15",
+      "subdevice": -1
+    },
+    "Cassette Tape": {
+      "device": 14,
+      "keys": {
+        "KEY_STOP": 56
+      },
+      "models": [
+        "Cassette Tape"
+      ],
+      "protocol": "Sony12",
+      "subdevice": -1
+    },
+    "D1000": {
+      "device": 89,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_CHANNELDOWN": 17,
+        "KEY_CHANNELUP": 16,
+        "KEY_INFO": 27
+      },
+      "models": [
+        "D1000"
+      ],
+      "protocol": "Sony15",
+      "subdevice": -1
+    },
+    "DAT": {
+      "device": 28,
+      "keys": {
+        "KEY_0": 20,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_FASTFORWARD": 60,
+        "KEY_MUTE": 20,
+        "KEY_NEXT": 105,
+        "KEY_OK": 11,
+        "KEY_PLAY": 122,
+        "KEY_POWER": 21,
+        "KEY_PREVIOUS": 104,
+        "KEY_RECORD": 62,
+        "KEY_REWIND": 59,
+        "KEY_STOP": 56,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "DAT"
+      ],
+      "protocol": "Sony12",
+      "subdevice": -1
+    },
+    "DSP": {
+      "device": 26,
+      "keys": {
+        "KEY_MUTE": 20
+      },
+      "models": [
+        "DSP"
+      ],
+      "protocol": "Sony20",
+      "subdevice": 233
+    },
+    "Digital Recorder": {
+      "device": 26,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_EXIT": 14,
+        "KEY_FASTFORWARD": 28,
+        "KEY_MENU": 27,
+        "KEY_MUTE": 20,
+        "KEY_NEXT": 49,
+        "KEY_PLAY": 26,
+        "KEY_POWER": 21,
+        "KEY_REWIND": 51,
+        "KEY_STOP": 56,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "Digital Recorder"
+      ],
+      "protocol": "Sony20",
+      "subdevice": 73
+    },
+    "RM-D10P": {
+      "device": 26,
+      "keys": {
+        "KEY_0": 48,
+        "KEY_1": 49,
+        "KEY_2": 50,
+        "KEY_3": 51,
+        "KEY_4": 52,
+        "KEY_5": 53,
+        "KEY_6": 54,
+        "KEY_7": 55,
+        "KEY_8": 56,
+        "KEY_9": 57
+      },
+      "models": [
+        "rm-d10p"
+      ],
+      "protocol": "Sony20",
+      "subdevice": 97
+    },
+    "RM-D7M": {
+      "device": 15,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_FASTFORWARD": 44,
+        "KEY_NEXT": 33,
+        "KEY_OK": 11,
+        "KEY_PLAY": 42,
+        "KEY_POWER": 21,
+        "KEY_PREVIOUS": 32,
+        "KEY_RECORD": 45,
+        "KEY_REWIND": 43,
+        "KEY_STOP": 40,
+        "KEY_VOLUMEDOWN": 18,
+        "KEY_VOLUMEUP": 19
+      },
+      "models": [
+        "RM-D7M"
+      ],
+      "protocol": "Sony12",
+      "subdevice": -1
+    },
+    "RM-D820": {
+      "device": 17,
+      "keys": {
+        "KEY_0": 32,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_DOWN": 122,
+        "KEY_FASTFORWARD": 52,
+        "KEY_LEFT": 123,
+        "KEY_NEXT": 49,
+        "KEY_OK": 11,
+        "KEY_PLAY": 50,
+        "KEY_POWER": 21,
+        "KEY_PREVIOUS": 48,
+        "KEY_REWIND": 51,
+        "KEY_RIGHT": 124,
+        "KEY_STOP": 56,
+        "KEY_UP": 121,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "CD Jukebox",
+        "RM-D820"
+      ],
+      "protocol": "Sony12",
+      "subdevice": -1
+    },
+    "RM-DM9": {
+      "device": 223,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_PLAY": 107,
+        "KEY_STOP": 56,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "rm-dm9"
+      ],
+      "protocol": "Sony15",
+      "subdevice": -1
+    },
+    "RM-PJP1": {
+      "device": 26,
+      "keys": {
+        "KEY_0": 96,
+        "KEY_1": 10,
+        "KEY_2": 11,
+        "KEY_3": 12,
+        "KEY_4": 13,
+        "KEY_5": 14,
+        "KEY_6": 15,
+        "KEY_7": 16,
+        "KEY_8": 17,
+        "KEY_9": 105,
+        "KEY_DOWN": 54,
+        "KEY_LEFT": 124,
+        "KEY_MENU": 41,
+        "KEY_OK": 90,
+        "KEY_POWER": 21,
+        "KEY_RIGHT": 123,
+        "KEY_UP": 53,
+        "KEY_VIDEO": 42,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "Video Projector",
+        "RM-PJP1"
+      ],
+      "protocol": "Sony20",
+      "subdevice": 42
+    },
+    "RM-SG7": {
+      "device": 131,
+      "keys": {
+        "KEY_FASTFORWARD": 150,
+        "KEY_NEXT": 148,
+        "KEY_PLAY": 144,
+        "KEY_POWER": 0,
+        "KEY_PREVIOUS": 149,
+        "KEY_REWIND": 151,
+        "KEY_STOP": 147,
+        "KEY_VOLUMEDOWN": 3,
+        "KEY_VOLUMEUP": 2
+      },
+      "models": [
+        "RM-SG20",
+        "RM-SG5",
+        "RM-SG7"
+      ],
+      "protocol": "NEC",
+      "subdevice": 0
+    },
+    "RM-X47": {
+      "device": 132,
+      "keys": {
+        "KEY_FASTFORWARD": 48,
+        "KEY_MENU": 10,
+        "KEY_MODE": 71,
+        "KEY_MUTE": 20,
+        "KEY_OK": 92,
+        "KEY_REWIND": 49,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "RM-X30",
+        "RM-X95",
+        "RM-X40",
+        "RM-X42",
+        "RM-X47"
+      ],
+      "protocol": "Sony15",
+      "subdevice": -1
+    },
+    "RMT-506": {
+      "device": 7,
+      "keys": {
+        "KEY_FASTFORWARD": 28,
+        "KEY_PLAY": 26,
+        "KEY_REWIND": 27,
+        "KEY_STOP": 24
+      },
+      "models": [
+        "RMT-506"
+      ],
+      "protocol": "Sony12",
+      "subdevice": -1
+    },
+    "RMT-B101A": {
+      "device": 26,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_AUDIO": 100,
+        "KEY_BLUE": 51,
+        "KEY_GREEN": 11,
+        "KEY_NEXT": 86,
+        "KEY_OK": 61,
+        "KEY_PLAY": 26,
+        "KEY_POWER": 46,
+        "KEY_PREVIOUS": 87,
+        "KEY_RED": 115,
+        "KEY_STOP": 24,
+        "KEY_VIDEO": 80,
+        "KEY_YELLOW": 75
+      },
+      "models": [
+        "RMT-B101A"
+      ],
+      "protocol": "Sony20",
+      "subdevice": 226
+    },
+    "RMT-CF1A": {
+      "device": 26,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_MENU": 72,
+        "KEY_OK": 48,
+        "KEY_POWER": 21
+      },
+      "models": [
+        "RMT-CF1A"
+      ],
+      "protocol": "Sony20",
+      "subdevice": 19
+    },
+    "RMT-DSC2": {
+      "device": 26,
+      "keys": {
+        "KEY_DOWN": 59,
+        "KEY_MENU": 56,
+        "KEY_UP": 58
+      },
+      "models": [
+        "RMT-DSC2"
+      ],
+      "protocol": "Sony20",
+      "subdevice": 241
+    },
+    "RMT-V501A": {
+      "device": 26,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_AUDIO": 23,
+        "KEY_CHANNELDOWN": 17,
+        "KEY_CHANNELUP": 16,
+        "KEY_DOWN": 67,
+        "KEY_EXIT": 27,
+        "KEY_FASTFORWARD": 28,
+        "KEY_LEFT": 98,
+        "KEY_MENU": 35,
+        "KEY_NEXT": 86,
+        "KEY_OK": 11,
+        "KEY_PLAY": 26,
+        "KEY_POWER": 21,
+        "KEY_PREVIOUS": 87,
+        "KEY_RECORD": 29,
+        "KEY_RIGHT": 97,
+        "KEY_STOP": 24,
+        "KEY_UP": 66
+      },
+      "models": [
+        "RMT-V501A"
+      ],
+      "protocol": "Sony20",
+      "subdevice": 83
+    },
+    "Receiver": {
+      "device": 17,
+      "keys": {
+        "KEY_0": 32,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_BLUE": 30,
+        "KEY_CHANNELDOWN": 48,
+        "KEY_CHANNELUP": 49,
+        "KEY_DOWN": 121,
+        "KEY_EXIT": 48,
+        "KEY_FASTFORWARD": 49,
+        "KEY_GREEN": 53,
+        "KEY_LEFT": 122,
+        "KEY_MENU": 77,
+        "KEY_MUTE": 20,
+        "KEY_NEXT": 49,
+        "KEY_OK": 11,
+        "KEY_PLAY": 50,
+        "KEY_POWER": 21,
+        "KEY_PREVIOUS": 48,
+        "KEY_RED": 31,
+        "KEY_REWIND": 51,
+        "KEY_RIGHT": 123,
+        "KEY_STOP": 56,
+        "KEY_UP": 120,
+        "KEY_VIDEO": 34,
+        "KEY_VOLUMEDOWN": 18,
+        "KEY_VOLUMEUP": 19,
+        "KEY_YELLOW": 29
+      },
+      "models": [
+        "RM-D706",
+        "CD Player",
+        "RM-D270",
+        "RM-D391",
+        "Pre-Amplifier",
+        "RM-D90",
+        "RM-D991",
+        "RM-D921",
+        "RM-D320",
+        "Mini-Disc",
+        "Lircd",
+        "RM-D797",
+        "CD",
+        "Receiver",
+        "CD Changer",
+        "CDIR",
+        "RM-DM7",
+        "RM-D520",
+        "RM-D190",
+        "RM-D5",
+        "RM-D55",
+        "RM-D325"
+      ],
+      "protocol": "Sony12",
+      "subdevice": -1
+    },
+    "Receiver 2": {
+      "device": 17,
+      "keys": {
+        "KEY_0": 32,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_DOWN": 122,
+        "KEY_EXIT": 51,
+        "KEY_FASTFORWARD": 52,
+        "KEY_LEFT": 123,
+        "KEY_MENU": 77,
+        "KEY_MUTE": 20,
+        "KEY_NEXT": 49,
+        "KEY_OK": 11,
+        "KEY_PLAY": 50,
+        "KEY_POWER": 21,
+        "KEY_PREVIOUS": 48,
+        "KEY_REWIND": 51,
+        "KEY_RIGHT": 124,
+        "KEY_STOP": 56,
+        "KEY_UP": 121,
+        "KEY_VIDEO": 34,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "Receiver",
+        "RM-D295",
+        "RM-D690",
+        "CD",
+        "CDP-790",
+        "RM-DX740",
+        "CD Jukebox",
+        "SONY"
+      ],
+      "protocol": "Sony12",
+      "subdevice": -1
+    },
+    "TV": {
+      "device": 1,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_AUDIO": 98,
+        "KEY_BLUE": 97,
+        "KEY_CHANNELDOWN": 17,
+        "KEY_CHANNELUP": 16,
+        "KEY_DOWN": 50,
+        "KEY_EXIT": 99,
+        "KEY_GREEN": 124,
+        "KEY_INFO": 58,
+        "KEY_LEFT": 52,
+        "KEY_MENU": 96,
+        "KEY_MUTE": 20,
+        "KEY_NEXT": 49,
+        "KEY_OK": 101,
+        "KEY_PLAY": 50,
+        "KEY_POWER": 21,
+        "KEY_PREVIOUS": 48,
+        "KEY_RED": 116,
+        "KEY_RIGHT": 51,
+        "KEY_STOP": 56,
+        "KEY_TEXT": 63,
+        "KEY_UP": 49,
+        "KEY_VIDEO": 37,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18,
+        "KEY_YELLOW": 117
+      },
+      "models": [
+        "RM-873",
+        "TV",
+        "DSS",
+        "RM-Y155B",
+        "RM-861",
+        "tv",
+        "RM-687C",
+        "Receiver",
+        "RM-Y180",
+        "870",
+        "Digital Recorder",
+        "RM-W101",
+        "CD Jukebox",
+        "RM-Y173",
+        "RM-860"
+      ],
+      "protocol": "Sony12",
+      "subdevice": -1
+    },
+    "TV 2": {
+      "device": 2,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_AUDIO": 98,
+        "KEY_CHANNELDOWN": 17,
+        "KEY_CHANNELUP": 16,
+        "KEY_DOWN": 121,
+        "KEY_EXIT": 99,
+        "KEY_INFO": 96,
+        "KEY_LEFT": 122,
+        "KEY_MENU": 77,
+        "KEY_MUTE": 20,
+        "KEY_NEXT": 41,
+        "KEY_OK": 107,
+        "KEY_PLAY": 26,
+        "KEY_POWER": 21,
+        "KEY_PREVIOUS": 40,
+        "KEY_RECORD": 29,
+        "KEY_RIGHT": 123,
+        "KEY_STOP": 24,
+        "KEY_UP": 120,
+        "KEY_VIDEO": 34,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "TV",
+        "Receiver"
+      ],
+      "protocol": "Sony12",
+      "subdevice": -1
+    },
+    "TiVo": {
+      "device": 183,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_CHANNELDOWN": 17,
+        "KEY_CHANNELUP": 16,
+        "KEY_DOWN": 115,
+        "KEY_EXIT": 99,
+        "KEY_FASTFORWARD": 28,
+        "KEY_INFO": 42,
+        "KEY_LEFT": 117,
+        "KEY_MENU": 56,
+        "KEY_MUTE": 16,
+        "KEY_OK": 11,
+        "KEY_PLAY": 26,
+        "KEY_POWER": 21,
+        "KEY_REWIND": 27,
+        "KEY_RIGHT": 116,
+        "KEY_STOP": 24,
+        "KEY_UP": 114,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "RM-Y812",
+        "DSS",
+        "TiVo"
+      ],
+      "protocol": "Sony15",
+      "subdevice": -1
+    },
+    "VCR": {
+      "device": 180,
+      "keys": {
+        "KEY_0": 9,
+        "KEY_1": 0,
+        "KEY_2": 1,
+        "KEY_3": 2,
+        "KEY_4": 3,
+        "KEY_5": 4,
+        "KEY_6": 5,
+        "KEY_7": 6,
+        "KEY_8": 7,
+        "KEY_9": 8,
+        "KEY_CHANNELDOWN": 17,
+        "KEY_CHANNELUP": 16,
+        "KEY_DOWN": 67,
+        "KEY_EXIT": 8,
+        "KEY_FASTFORWARD": 28,
+        "KEY_LEFT": 98,
+        "KEY_MENU": 77,
+        "KEY_NEXT": 41,
+        "KEY_OK": 11,
+        "KEY_PLAY": 26,
+        "KEY_POWER": 21,
+        "KEY_PREVIOUS": 40,
+        "KEY_REWIND": 27,
+        "KEY_RIGHT": 97,
+        "KEY_STOP": 24,
+        "KEY_UP": 10,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "VCR"
+      ],
+      "protocol": "Sony15",
+      "subdevice": -1
+    },
+    "VPL-W400": {
+      "device": 84,
+      "keys": {
+        "KEY_MENU": 41,
+        "KEY_MUTE": 20,
+        "KEY_OK": 90,
+        "KEY_POWER": 21,
+        "KEY_VIDEO": 42,
+        "KEY_VOLUMEDOWN": 19,
+        "KEY_VOLUMEUP": 18
+      },
+      "models": [
+        "VPL-W400"
+      ],
+      "protocol": "Sony15",
+      "subdevice": -1
+    }
+  },
+  "TCM": {
+    "225925": {
+      "device": 24,
+      "keys": {
+        "KEY_0": 20,
+        "KEY_1": 3,
+        "KEY_2": 198,
+        "KEY_3": 4,
+        "KEY_4": 5,
+        "KEY_5": 39,
+        "KEY_6": 250,
+        "KEY_7": 13,
+        "KEY_8": 16,
+        "KEY_9": 241,
+        "KEY_BLUE": 75,
+        "KEY_CHANNELDOWN": 74,
+        "KEY_CHANNELUP": 137,
+        "KEY_DOWN": 95,
+        "KEY_EXIT": 37,
+        "KEY_GREEN": 140,
+        "KEY_INFO": 23,
+        "KEY_LEFT": 93,
+        "KEY_MENU": 70,
+        "KEY_MUTE": 71,
+        "KEY_OK": 23,
+        "KEY_POWER": 8,
+        "KEY_RED": 32,
+        "KEY_RIGHT": 92,
+        "KEY_UP": 94,
+        "KEY_VOLUMEDOWN": 73,
+        "KEY_VOLUMEUP": 72,
+        "KEY_YELLOW": 139
+      },
+      "models": [
+        "225925"
+      ],
+      "protocol": "NEC",
+      "subdevice": 233
+    },
+    "225926": {
+      "device": 35,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_BLUE": 26,
+        "KEY_CHANNELDOWN": 19,
+        "KEY_CHANNELUP": 18,
+        "KEY_DOWN": 24,
+        "KEY_EXIT": 27,
+        "KEY_GREEN": 24,
+        "KEY_INFO": 29,
+        "KEY_LEFT": 25,
+        "KEY_MENU": 28,
+        "KEY_MUTE": 11,
+        "KEY_OK": 29,
+        "KEY_POWER": 10,
+        "KEY_RED": 25,
+        "KEY_RIGHT": 26,
+        "KEY_UP": 23,
+        "KEY_VOLUMEDOWN": 21,
+        "KEY_VOLUMEUP": 20,
+        "KEY_YELLOW": 23
+      },
+      "models": [
+        "225926"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "96518": {
+      "device": 0,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_CHANNELDOWN": 33,
+        "KEY_CHANNELUP": 32,
+        "KEY_DOWN": 19,
+        "KEY_EXIT": 11,
+        "KEY_FASTFORWARD": 52,
+        "KEY_LEFT": 21,
+        "KEY_MENU": 14,
+        "KEY_MUTE": 13,
+        "KEY_OK": 10,
+        "KEY_PLAY": 50,
+        "KEY_POWER": 12,
+        "KEY_RECORD": 46,
+        "KEY_REWIND": 55,
+        "KEY_RIGHT": 20,
+        "KEY_STOP": 54,
+        "KEY_UP": 18,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16
+      },
+      "models": [
+        "96518"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "TCM": {
+      "device": 176,
+      "keys": {
+        "KEY_0": 25,
+        "KEY_1": 16,
+        "KEY_2": 17,
+        "KEY_3": 18,
+        "KEY_4": 19,
+        "KEY_5": 20,
+        "KEY_6": 21,
+        "KEY_7": 22,
+        "KEY_8": 23,
+        "KEY_9": 24,
+        "KEY_BLUE": 155,
+        "KEY_CHANNELDOWN": 73,
+        "KEY_CHANNELUP": 74,
+        "KEY_DOWN": 134,
+        "KEY_EXIT": 131,
+        "KEY_FASTFORWARD": 5,
+        "KEY_GREEN": 51,
+        "KEY_LEFT": 135,
+        "KEY_MENU": 128,
+        "KEY_OK": 130,
+        "KEY_PLAY": 10,
+        "KEY_POWER": 61,
+        "KEY_RECORD": 142,
+        "KEY_RED": 145,
+        "KEY_RIGHT": 136,
+        "KEY_STOP": 0,
+        "KEY_UP": 133,
+        "KEY_YELLOW": 144
+      },
+      "models": [
+        "TCM"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 0
+    }
+  },
+  "Thomson": {
+    "230": {
+      "device": 0,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_BLUE": 30,
+        "KEY_CHANNELDOWN": 33,
+        "KEY_CHANNELUP": 32,
+        "KEY_EXIT": 46,
+        "KEY_FASTFORWARD": 52,
+        "KEY_GREEN": 44,
+        "KEY_MENU": 14,
+        "KEY_MUTE": 35,
+        "KEY_OK": 13,
+        "KEY_PLAY": 50,
+        "KEY_POWER": 12,
+        "KEY_RED": 45,
+        "KEY_REWIND": 55,
+        "KEY_STOP": 54,
+        "KEY_VOLUMEDOWN": 17,
+        "KEY_VOLUMEUP": 16,
+        "KEY_YELLOW": 43
+      },
+      "models": [
+        "230"
+      ],
+      "protocol": "RC5",
+      "subdevice": -1
+    },
+    "TM9258": {
+      "device": 128,
+      "keys": {
+        "KEY_MODE": 149,
+        "KEY_PLAY": 132,
+        "KEY_STOP": 136,
+        "KEY_VOLUMEDOWN": 141,
+        "KEY_VOLUMEUP": 145
+      },
+      "models": [
+        "TM9258"
+      ],
+      "protocol": "NEC",
+      "subdevice": 255
+    }
+  },
+  "Toshiba": {
+    "CT-90038": {
+      "device": 231,
+      "keys": {
+        "KEY_DOWN": 65,
+        "KEY_LEFT": 66,
+        "KEY_MENU": 27,
+        "KEY_MUTE": 17,
+        "KEY_OK": 19,
+        "KEY_POWER": 18,
+        "KEY_RIGHT": 67,
+        "KEY_UP": 64,
+        "KEY_VIDEO": 11,
+        "KEY_VOLUMEDOWN": 66,
+        "KEY_VOLUMEUP": 67
+      },
+      "models": [
+        "CT-90205",
+        "CT-90038"
+      ],
+      "protocol": "NEC",
+      "subdevice": 10
+    },
+    "CT-9881": {
+      "device": 134,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_BLUE": 75,
+        "KEY_CHANNELDOWN": 31,
+        "KEY_CHANNELUP": 27,
+        "KEY_DOWN": 29,
+        "KEY_GREEN": 73,
+        "KEY_LEFT": 30,
+        "KEY_MENU": 91,
+        "KEY_MUTE": 16,
+        "KEY_POWER": 18,
+        "KEY_RED": 72,
+        "KEY_RIGHT": 26,
+        "KEY_UP": 25,
+        "KEY_VOLUMEDOWN": 30,
+        "KEY_VOLUMEUP": 26,
+        "KEY_YELLOW": 74
+      },
+      "models": [
+        "CT-9881"
+      ],
+      "protocol": "NEC",
+      "subdevice": 107
+    },
+    "RM-A210": {
+      "device": 42,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_FASTFORWARD": 24,
+        "KEY_STOP": 19
+      },
+      "models": [
+        "toshiba-RM-A210"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "SE-R0058": {
+      "device": 69,
+      "keys": {
+        "KEY_0": 10,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_AUDIO": 39,
+        "KEY_DOWN": 129,
+        "KEY_EXIT": 34,
+        "KEY_FASTFORWARD": 19,
+        "KEY_LEFT": 81,
+        "KEY_MENU": 32,
+        "KEY_NEXT": 36,
+        "KEY_OK": 33,
+        "KEY_PLAY": 21,
+        "KEY_POWER": 18,
+        "KEY_PREVIOUS": 35,
+        "KEY_REWIND": 25,
+        "KEY_RIGHT": 77,
+        "KEY_STOP": 20,
+        "KEY_UP": 128
+      },
+      "models": [
+        "Toshiba-SE-R0090",
+        "SE-R0049",
+        "SE-R0047",
+        "SE-R0031",
+        "SE-R0127",
+        "DVD Player",
+        "SE-R0058"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "TSR-101R": {
+      "device": 66,
+      "keys": {
+        "KEY_0": 138,
+        "KEY_1": 129,
+        "KEY_2": 130,
+        "KEY_3": 131,
+        "KEY_4": 132,
+        "KEY_5": 133,
+        "KEY_6": 134,
+        "KEY_7": 135,
+        "KEY_8": 136,
+        "KEY_9": 137,
+        "KEY_CHANNELDOWN": 159,
+        "KEY_CHANNELUP": 155,
+        "KEY_DOWN": 201,
+        "KEY_EXIT": 209,
+        "KEY_INFO": 148,
+        "KEY_LEFT": 203,
+        "KEY_MENU": 212,
+        "KEY_OK": 139,
+        "KEY_POWER": 146,
+        "KEY_RECORD": 219,
+        "KEY_RIGHT": 202,
+        "KEY_UP": 200
+      },
+      "models": [
+        "TSR-101R"
+      ],
+      "protocol": "NEC",
+      "subdevice": 187
+    },
+    "TV": {
+      "device": 64,
+      "keys": {
+        "KEY_0": 0,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_BLUE": 75,
+        "KEY_CHANNELDOWN": 31,
+        "KEY_CHANNELUP": 27,
+        "KEY_DOWN": 31,
+        "KEY_EXIT": 67,
+        "KEY_FASTFORWARD": 19,
+        "KEY_GREEN": 73,
+        "KEY_INFO": 22,
+        "KEY_LEFT": 30,
+        "KEY_MENU": 91,
+        "KEY_MUTE": 16,
+        "KEY_OK": 137,
+        "KEY_PLAY": 21,
+        "KEY_POWER": 18,
+        "KEY_PREVIOUS": 147,
+        "KEY_RECORD": 24,
+        "KEY_RED": 72,
+        "KEY_REWIND": 25,
+        "KEY_RIGHT": 26,
+        "KEY_STOP": 20,
+        "KEY_TEXT": 23,
+        "KEY_UP": 27,
+        "KEY_VIDEO": 13,
+        "KEY_VOLUMEDOWN": 30,
+        "KEY_VOLUMEUP": 26,
+        "KEY_YELLOW": 74
+      },
+      "models": [
+        "TOSHTV",
+        "CT-9784",
+        "CT-90326",
+        "TV",
+        "CT-826",
+        "CT-9952",
+        "CT-832",
+        "CT-9573",
+        "TOSHIBA",
+        "CT-90298",
+        "CT-859",
+        "CT-816"
+      ],
+      "protocol": "Pioneer",
+      "subdevice": -1
+    },
+    "VCR": {
+      "device": 68,
+      "keys": {
+        "KEY_0": 10,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_AUDIO": 83,
+        "KEY_CHANNELDOWN": 31,
+        "KEY_CHANNELUP": 27,
+        "KEY_EXIT": 81,
+        "KEY_FASTFORWARD": 19,
+        "KEY_MENU": 92,
+        "KEY_OK": 11,
+        "KEY_PLAY": 21,
+        "KEY_POWER": 18,
+        "KEY_RECORD": 24,
+        "KEY_REWIND": 25,
+        "KEY_STOP": 20
+      },
+      "models": [
+        "VCR",
+        "VT-204G",
+        "TOSHIBA",
+        "VT-11",
+        "VC-90B",
+        "VT-209W",
+        "VT-75F",
+        "VC-642T"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    }
+  },
+  "Vizio": {
+    "Vizio": {
+      "device": 4,
+      "keys": {
+        "KEY_0": 16,
+        "KEY_1": 17,
+        "KEY_2": 18,
+        "KEY_3": 19,
+        "KEY_4": 20,
+        "KEY_5": 21,
+        "KEY_6": 22,
+        "KEY_7": 23,
+        "KEY_8": 24,
+        "KEY_9": 25,
+        "KEY_AUDIO": 11,
+        "KEY_CHANNELUP": 0,
+        "KEY_DOWN": 70,
+        "KEY_EXIT": 73,
+        "KEY_INFO": 28,
+        "KEY_LEFT": 71,
+        "KEY_MENU": 67,
+        "KEY_MODE": 103,
+        "KEY_MUTE": 9,
+        "KEY_OK": 68,
+        "KEY_POWER": 8,
+        "KEY_RIGHT": 72,
+        "KEY_UP": 69,
+        "KEY_VOLUMEDOWN": 3,
+        "KEY_VOLUMEUP": 2
+      },
+      "models": [
+        "VX37L",
+        "Vizio"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    }
+  },
+  "Yamaha": {
+    "AMP": {
+      "device": 122,
+      "keys": {
+        "KEY_0": 16,
+        "KEY_1": 17,
+        "KEY_2": 18,
+        "KEY_3": 19,
+        "KEY_4": 20,
+        "KEY_5": 21,
+        "KEY_6": 22,
+        "KEY_7": 23,
+        "KEY_8": 24,
+        "KEY_9": 25,
+        "KEY_CHANNELDOWN": 17,
+        "KEY_CHANNELUP": 16,
+        "KEY_DOWN": 153,
+        "KEY_FASTFORWARD": 2,
+        "KEY_LEFT": 83,
+        "KEY_MUTE": 28,
+        "KEY_NEXT": 6,
+        "KEY_OK": 63,
+        "KEY_PLAY": 2,
+        "KEY_POWER": 31,
+        "KEY_PREVIOUS": 4,
+        "KEY_RECORD": 4,
+        "KEY_REWIND": 1,
+        "KEY_RIGHT": 82,
+        "KEY_STOP": 86,
+        "KEY_UP": 152,
+        "KEY_VIDEO": 25,
+        "KEY_VOLUMEDOWN": 27,
+        "KEY_VOLUMEUP": 26
+      },
+      "models": [
+        "yamaha-amp",
+        "YAMAHA",
+        "VM70300",
+        "RX-CX800",
+        "RAV14",
+        "Av",
+        "DSP",
+        "CD Changer",
+        "Receiver",
+        "VK38010",
+        "RX-450",
+        "VP59040",
+        "CD Jukebox",
+        "RS-CX600"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "AV Receiver": {
+      "device": 126,
+      "keys": {
+        "KEY_MUTE": 114,
+        "KEY_POWER": 42,
+        "KEY_VOLUMEDOWN": 113,
+        "KEY_VOLUMEUP": 112
+      },
+      "models": [
+        "Stereo Receiver",
+        "AV Receiver"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "Amplifier": {
+      "device": 120,
+      "keys": {
+        "KEY_0": 147,
+        "KEY_1": 148,
+        "KEY_2": 149,
+        "KEY_3": 150,
+        "KEY_4": 151,
+        "KEY_5": 152,
+        "KEY_6": 153,
+        "KEY_7": 154,
+        "KEY_8": 155,
+        "KEY_9": 156,
+        "KEY_AUDIO": 173,
+        "KEY_CHANNELUP": 182,
+        "KEY_DOWN": 179,
+        "KEY_EXIT": 183,
+        "KEY_LEFT": 181,
+        "KEY_MENU": 178,
+        "KEY_MUTE": 156,
+        "KEY_NEXT": 135,
+        "KEY_OK": 184,
+        "KEY_PLAY": 130,
+        "KEY_POWER": 15,
+        "KEY_PREVIOUS": 134,
+        "KEY_RIGHT": 182,
+        "KEY_STOP": 133,
+        "KEY_UP": 180,
+        "KEY_VOLUMEDOWN": 31,
+        "KEY_VOLUMEUP": 30
+      },
+      "models": [
+        "Sound Projector",
+        "Amplifier",
+        "DVD Pre-amp"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "DSP": {
+      "device": 80,
+      "keys": {
+        "KEY_DOWN": 153,
+        "KEY_EXIT": 192,
+        "KEY_LEFT": 83,
+        "KEY_MENU": 19,
+        "KEY_MUTE": 156,
+        "KEY_OK": 24,
+        "KEY_POWER": 29,
+        "KEY_RIGHT": 82,
+        "KEY_UP": 152,
+        "KEY_VOLUMEDOWN": 31,
+        "KEY_VOLUMEUP": 30
+      },
+      "models": [
+        "Plasma",
+        "DSP"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "DVD 2": {
+      "device": 69,
+      "keys": {
+        "KEY_0": 10,
+        "KEY_1": 1,
+        "KEY_2": 2,
+        "KEY_3": 3,
+        "KEY_4": 4,
+        "KEY_5": 5,
+        "KEY_6": 6,
+        "KEY_7": 7,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_DOWN": 129,
+        "KEY_FASTFORWARD": 19,
+        "KEY_LEFT": 81,
+        "KEY_MENU": 132,
+        "KEY_OK": 34,
+        "KEY_PLAY": 21,
+        "KEY_POWER": 18,
+        "KEY_REWIND": 25,
+        "KEY_RIGHT": 77,
+        "KEY_STOP": 20,
+        "KEY_UP": 128
+      },
+      "models": [
+        "DVD"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "DVD Player": {
+      "device": 176,
+      "keys": {
+        "KEY_0": 147,
+        "KEY_1": 128,
+        "KEY_2": 148,
+        "KEY_3": 150,
+        "KEY_4": 151,
+        "KEY_5": 152,
+        "KEY_6": 153,
+        "KEY_7": 154,
+        "KEY_8": 155,
+        "KEY_9": 156,
+        "KEY_AUDIO": 173,
+        "KEY_DOWN": 179,
+        "KEY_EXIT": 177,
+        "KEY_LEFT": 181,
+        "KEY_MENU": 178,
+        "KEY_MUTE": 228,
+        "KEY_NEXT": 135,
+        "KEY_OK": 184,
+        "KEY_PLAY": 130,
+        "KEY_POWER": 128,
+        "KEY_PREVIOUS": 134,
+        "KEY_REWIND": 134,
+        "KEY_RIGHT": 182,
+        "KEY_STOP": 133,
+        "KEY_UP": 180
+      },
+      "models": [
+        "DVD",
+        "DVD Player"
+      ],
+      "protocol": "Panasonic",
+      "subdevice": 0
+    },
+    "DVD Pre-amp": {
+      "device": 124,
+      "keys": {
+        "KEY_0": 147,
+        "KEY_1": 148,
+        "KEY_2": 149,
+        "KEY_3": 150,
+        "KEY_4": 151,
+        "KEY_5": 152,
+        "KEY_6": 153,
+        "KEY_7": 154,
+        "KEY_8": 155,
+        "KEY_9": 156,
+        "KEY_AUDIO": 173,
+        "KEY_CHANNELUP": 182,
+        "KEY_DOWN": 179,
+        "KEY_EXIT": 183,
+        "KEY_LEFT": 181,
+        "KEY_MENU": 178,
+        "KEY_NEXT": 135,
+        "KEY_OK": 184,
+        "KEY_PLAY": 130,
+        "KEY_POWER": 246,
+        "KEY_PREVIOUS": 134,
+        "KEY_RIGHT": 182,
+        "KEY_STOP": 133,
+        "KEY_UP": 180
+      },
+      "models": [
+        "Blu-Ray",
+        "DVD Pre-amp"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "DVD-RC": {
+      "device": 32,
+      "keys": {
+        "KEY_0": 73,
+        "KEY_1": 19,
+        "KEY_2": 16,
+        "KEY_3": 17,
+        "KEY_4": 15,
+        "KEY_5": 12,
+        "KEY_6": 13,
+        "KEY_7": 11,
+        "KEY_8": 8,
+        "KEY_9": 9,
+        "KEY_DOWN": 29,
+        "KEY_EXIT": 25,
+        "KEY_FASTFORWARD": 24,
+        "KEY_LEFT": 28,
+        "KEY_MENU": 2,
+        "KEY_MUTE": 3,
+        "KEY_PLAY": 92,
+        "KEY_POWER": 14,
+        "KEY_REWIND": 27,
+        "KEY_RIGHT": 72,
+        "KEY_STOP": 81,
+        "KEY_UP": 68
+      },
+      "models": [
+        "DVD-RC"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "JVCDVD": {
+      "device": 239,
+      "keys": {
+        "KEY_0": 110,
+        "KEY_1": 97,
+        "KEY_2": 98,
+        "KEY_3": 99,
+        "KEY_4": 100,
+        "KEY_5": 101,
+        "KEY_6": 102,
+        "KEY_7": 103,
+        "KEY_8": 104,
+        "KEY_9": 105,
+        "KEY_DOWN": 209,
+        "KEY_EXIT": 177,
+        "KEY_FASTFORWARD": 176,
+        "KEY_LEFT": 210,
+        "KEY_MENU": 193,
+        "KEY_OK": 213,
+        "KEY_PLAY": 76,
+        "KEY_POWER": 64,
+        "KEY_RIGHT": 211,
+        "KEY_STOP": 67,
+        "KEY_UP": 208
+      },
+      "models": [
+        "JVCDVD"
+      ],
+      "protocol": "JVC",
+      "subdevice": -1
+    },
+    "Music Server": {
+      "device": 128,
+      "keys": {
+        "KEY_1": 136,
+        "KEY_2": 131,
+        "KEY_3": 137,
+        "KEY_4": 134,
+        "KEY_5": 133,
+        "KEY_6": 135,
+        "KEY_7": 138,
+        "KEY_DOWN": 83,
+        "KEY_LEFT": 84,
+        "KEY_MENU": 81,
+        "KEY_MUTE": 157,
+        "KEY_OK": 86,
+        "KEY_PLAY": 34,
+        "KEY_POWER": 32,
+        "KEY_RIGHT": 85,
+        "KEY_STOP": 37,
+        "KEY_UP": 82,
+        "KEY_VOLUMEDOWN": 158,
+        "KEY_VOLUMEUP": 159
+      },
+      "models": [
+        "DAT",
+        "Music Server"
+      ],
+      "protocol": "NEC",
+      "subdevice": 55
+    },
+    "Receiver": {
+      "device": 209,
+      "keys": {
+        "KEY_0": 148,
+        "KEY_1": 149,
+        "KEY_2": 150,
+        "KEY_3": 151,
+        "KEY_4": 152,
+        "KEY_5": 153,
+        "KEY_6": 154,
+        "KEY_7": 155,
+        "KEY_8": 156,
+        "KEY_9": 157,
+        "KEY_AUDIO": 173,
+        "KEY_DOWN": 109,
+        "KEY_EXIT": 183,
+        "KEY_LEFT": 110,
+        "KEY_MENU": 211,
+        "KEY_MUTE": 114,
+        "KEY_NEXT": 186,
+        "KEY_OK": 184,
+        "KEY_PLAY": 130,
+        "KEY_POWER": 97,
+        "KEY_PREVIOUS": 185,
+        "KEY_REWIND": 134,
+        "KEY_RIGHT": 111,
+        "KEY_STOP": 133,
+        "KEY_UP": 108,
+        "KEY_VIDEO": 121,
+        "KEY_VOLUMEDOWN": 113,
+        "KEY_VOLUMEUP": 112
+      },
+      "models": [
+        "Video Projector",
+        "Tuner",
+        "VI47320",
+        "Receiver",
+        "Projector"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "VI77760": {
+      "device": 127,
+      "keys": {
+        "KEY_0": 16,
+        "KEY_1": 17,
+        "KEY_2": 18,
+        "KEY_3": 19,
+        "KEY_4": 20,
+        "KEY_5": 21,
+        "KEY_6": 22,
+        "KEY_7": 23,
+        "KEY_8": 24,
+        "KEY_9": 25,
+        "KEY_FASTFORWARD": 2,
+        "KEY_MENU": 186,
+        "KEY_NEXT": 135,
+        "KEY_OK": 183,
+        "KEY_PLAY": 0,
+        "KEY_PREVIOUS": 134,
+        "KEY_RECORD": 4,
+        "KEY_REWIND": 1,
+        "KEY_STOP": 3
+      },
+      "models": [
+        "Cassette Tape",
+        "RS-K3",
+        "CD-R",
+        "VI77760"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "VQ95010": {
+      "device": 121,
+      "keys": {
+        "KEY_0": 16,
+        "KEY_1": 17,
+        "KEY_2": 18,
+        "KEY_3": 19,
+        "KEY_4": 20,
+        "KEY_5": 21,
+        "KEY_6": 22,
+        "KEY_7": 23,
+        "KEY_8": 24,
+        "KEY_9": 25,
+        "KEY_MODE": 30,
+        "KEY_NEXT": 6,
+        "KEY_OK": 63,
+        "KEY_PLAY": 2,
+        "KEY_POWER": 96,
+        "KEY_PREVIOUS": 4,
+        "KEY_STOP": 86
+      },
+      "models": [
+        "VJ59810",
+        "CDX-493",
+        "VK34080",
+        "CD Jukebox",
+        "VU71330",
+        "VQ95010"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "VR81350": {
+      "device": 123,
+      "keys": {
+        "KEY_POWER": 128,
+        "KEY_VOLUMEDOWN": 131,
+        "KEY_VOLUMEUP": 130
+      },
+      "models": [
+        "VR81350"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "Y-TV-1004": {
+      "device": 4,
+      "keys": {
+        "KEY_0": 16,
+        "KEY_1": 17,
+        "KEY_2": 18,
+        "KEY_3": 19,
+        "KEY_4": 20,
+        "KEY_5": 21,
+        "KEY_6": 22,
+        "KEY_7": 23,
+        "KEY_8": 24,
+        "KEY_9": 25,
+        "KEY_CHANNELDOWN": 1,
+        "KEY_CHANNELUP": 0,
+        "KEY_MUTE": 9,
+        "KEY_VOLUMEDOWN": 3,
+        "KEY_VOLUMEUP": 2
+      },
+      "models": [
+        "Y-TV-1004"
+      ],
+      "protocol": "NEC",
+      "subdevice": -1
+    },
+    "iPod Dock": {
+      "device": 127,
+      "keys": {
+        "KEY_DOWN": 20,
+        "KEY_FASTFORWARD": 24,
+        "KEY_MENU": 15,
+        "KEY_NEXT": 28,
+        "KEY_OK": 17,
+        "KEY_PLAY": 30,
+        "KEY_PREVIOUS": 27,
+        "KEY_REWIND": 23,
+        "KEY_STOP": 29,
+        "KEY_UP": 14
+      },
+      "models": [
+        "iPod Dock"
+      ],
+      "protocol": "NEC",
+      "subdevice": 1
+    }
+  }
+}

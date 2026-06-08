@@ -1,4 +1,4 @@
-from Plugins.SystemPlugins.DMBluetoothSetup.InputDeviceAdapterFlasher import InputDeviceAdapterFlasher
+from Plugins.SystemPlugins.BluetoothSetup.InputDeviceAdapterFlasher import InputDeviceAdapterFlasher
 from Screens.MessageBox import MessageBox
 from Tools.DreamboxHardware import getFPVersion
 from enigma import quitMainloop

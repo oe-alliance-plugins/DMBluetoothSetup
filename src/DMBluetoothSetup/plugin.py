@@ -1,6 +1,6 @@
 from . import ensureInputDeviceManagerConfig, filterInputDevices, getInputDeviceAddress, isValidInputDeviceAddress
 ensureInputDeviceManagerConfig()
-from Plugins.SystemPlugins.DMBluetoothSetup.InputDeviceUpdateHandlerBase import InputDeviceUpdateHandlerBase
+from Plugins.SystemPlugins.BluetoothSetup.InputDeviceUpdateHandlerBase import InputDeviceUpdateHandlerBase
 from enigma import eInputDeviceManager, eManagedInputDevice
 from Plugins.Plugin import PluginDescriptor
 from Tools.Notifications import AddNotificationWithCallback

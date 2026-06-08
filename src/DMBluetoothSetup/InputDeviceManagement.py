@@ -365,7 +365,7 @@ class InputDeviceManagement(Screen, InputDeviceManagementBase, InputDeviceUpdate
         self.session.open(InputDeviceSettings)
 
     def _rescan(self):
-        Log.i("[DMBluetoothSetup] Rescan requested")
+        Log.i("[BluetoothSetup] Rescan requested")
         self._rescanStatusActive = True
         self["description"].text = _("Rescanning...")
         try:
@@ -379,7 +379,7 @@ class InputDeviceManagement(Screen, InputDeviceManagementBase, InputDeviceUpdate
     def _finishRescan(self):
         self._reload()
         count = self._getInputDevicesCount()
-        Log.i("[DMBluetoothSetup] Rescan complete: %d devices" % count)
+        Log.i("[BluetoothSetup] Rescan complete: %d devices" % count)
         self["description"].text = _("Scan complete (%d devices)") % count
         reactor.callLater(1.2, self._endRescanStatus)
 

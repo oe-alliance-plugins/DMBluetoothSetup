@@ -6,24 +6,24 @@ from Components.Sources.StaticText import StaticText
 from Components.Label import Label
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
-try:
-    from Screens.SetupGuide import SetupGuide
-except ImportError:
-    SetupGuide = None
-from Tools.DreamboxHardware import getFPVersion
 from Tools.Log import Log
 
 from twisted.internet import reactor
 
-from .InputDeviceAdapterFlasher import InputDeviceAdapterFlasher, InputDeviceUpdateChecker
+from .InputDeviceAdapterFlasher import InputDeviceUpdateChecker
 from .InputDeviceUpdateHandlerBase import InputDeviceUpdateHandlerBase
 from .InputDeviceIRProg import InputDeviceIRProg
 from .InputDeviceSettings import InputDeviceSettings
 from . import (
-    ensureInputDeviceManagerConfig, filterInputDevices, getInputDeviceAddress,
+    _, ensureInputDeviceManagerConfig, filterInputDevices, getInputDeviceAddress,
     getInputDeviceConnected, isValidInputDeviceAddress, markInputDeviceConnected,
     markInputDeviceDisconnected
 )
+
+try:
+    from Screens.SetupGuide import SetupGuide
+except ImportError:
+    SetupGuide = None
 
 
 INPUT_DEVICE_MANAGEMENT_SKIN = """
@@ -401,7 +401,7 @@ class InputDeviceManagement(Screen, InputDeviceManagementBase, InputDeviceUpdate
             self.session.openWithCallback(
                 self._onUpdateAnswer,
                 MessageBox,
-                _("Your Dreambox bluetooth receiver has no firmware installed.\nInstall the latest firmware now?"),
+                _("Your Dreambox Bluetooth receiver has no firmware installed.\nInstall the latest firmware now?"),
                 type=MessageBox.TYPE_YESNO,
                 windowTitle=_("Flash Bluetooth Receiver Firmware?"))
             return
@@ -412,7 +412,7 @@ class InputDeviceManagement(Screen, InputDeviceManagementBase, InputDeviceUpdate
         if getattr(self, "_rescanStatusActive", False):
             return
         if not self.available():
-            self["description"].text = _("No dreambox bluetooth receiver detected! Sorry!")
+            self["description"].text = _("No Dreambox Bluetooth receiver detected! Sorry!")
             return
         text = ""
         device = self._currentInputDevice

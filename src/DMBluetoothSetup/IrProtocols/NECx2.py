@@ -1,4 +1,4 @@
-from enigma import IrProtocol, IrKey
+from enigma import IrProtocol
 
 from .NEC import NECBase
 

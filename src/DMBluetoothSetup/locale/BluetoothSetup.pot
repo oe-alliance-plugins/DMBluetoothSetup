@@ -1,160 +1,161 @@
-# DMBluetoothSetup translation template.
+# BluetoothSetup translation template.
 # Copyright (C) 2026 OpenATV
-# This file is distributed under the same license as the DMBluetoothSetup plugin.
-#, fuzzy
+# This file is distributed under the same license as the BluetoothSetup plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: DMBluetoothSetup 1.0\n"
+"Project-Id-Version: BluetoothSetup 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 23:40+0200\n"
+"POT-Creation-Date: 2026-06-09 00:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: OpenATV\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: Dfu/DfuFlashGuard.py:23
+#: Dfu/DfuFlashGuard.py:26
 msgid "DFU Log"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:54
+#: Dfu/DfuFlashGuard.py:58
 msgid "DFU Firmware Upgrade"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:64
+#: Dfu/DfuFlashGuard.py:68
 msgid "Show Full Log"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:147
+#: Dfu/DfuFlashGuard.py:151
 msgid "Initializing DFU Mode..."
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:153
+#: Dfu/DfuFlashGuard.py:156
 msgid ""
 "Your remote is likely to become unresponsive during the first half of the update Process.\n"
 "After the Bootloader/System has been updated you will regain control for the rest of this and all future updates."
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:162
+#: Dfu/DfuFlashGuard.py:166
 msgid "Please read carefully!"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:169
-msgid "DFU is not available on this device. A firmware update may be required upfront!"
+#: Dfu/DfuFlashGuard.py:173
+msgid ""
+"DFU is not available on this device. A firmware update may be required upfront!"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:174
+#: Dfu/DfuFlashGuard.py:178
 msgid ""
 "DFU device did not show up. Cancelling!\n"
 "You may want to try this again!"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:178
+#: Dfu/DfuFlashGuard.py:182
 #, python-brace-format
 msgid ""
 "Device battery level of {0}% is too low.\n"
 "It's required to be at least {1}%!"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:179 Dfu/DfuFlashGuard.py:217
+#: Dfu/DfuFlashGuard.py:183 Dfu/DfuFlashGuard.py:221
 msgid "Upload rejected!"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:184
+#: Dfu/DfuFlashGuard.py:188
 msgid "SYSTEM"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:186
+#: Dfu/DfuFlashGuard.py:190
 msgid "APPLICATION"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:187
+#: Dfu/DfuFlashGuard.py:191
 #, python-brace-format
 msgid "Package Content: {0}"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:192
+#: Dfu/DfuFlashGuard.py:196
 msgid "System"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:192
+#: Dfu/DfuFlashGuard.py:196
 msgid "Application"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:198
+#: Dfu/DfuFlashGuard.py:202
 msgid "BIN"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:198
+#: Dfu/DfuFlashGuard.py:202
 msgid "DAT"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:201
+#: Dfu/DfuFlashGuard.py:205
 msgid "DFU device ready!"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:204
+#: Dfu/DfuFlashGuard.py:208
 msgid "DFU device connected!"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:208
+#: Dfu/DfuFlashGuard.py:212
 #, python-brace-format
 msgid "Starting DFU Upload of {0}"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:211
+#: Dfu/DfuFlashGuard.py:215
 msgid "You can remove the batteries of your remote for a short moment to reboot it!"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:215
+#: Dfu/DfuFlashGuard.py:219
 msgid ""
 "The firmware files are invalid or corrupted!\n"
 "The upload was rejected by the device!"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:221
-msgid "Update initialization failed!\n"
-msgstr ""
-
-#: Dfu/DfuFlashGuard.py:223
-msgid "Init failed!"
+#: Dfu/DfuFlashGuard.py:225
+msgid ""
+"Update initialization failed!\n"
 msgstr ""
 
 #: Dfu/DfuFlashGuard.py:227
-#, python-format
-msgid "Control write failed! Code %i\n"
+msgid "Init failed!"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:229
+#: Dfu/DfuFlashGuard.py:231
+#, python-format
+msgid ""
+"Control write failed! Code %i\n"
+msgstr ""
+
+#: Dfu/DfuFlashGuard.py:233
 msgid "Control write failed!"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:246
+#: Dfu/DfuFlashGuard.py:250
 #, python-brace-format
 msgid "Uploaded {0} of {1} bytes"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:249 KeyBindingList.py:20
+#: Dfu/DfuFlashGuard.py:253 KeyBindingList.py:22
 msgid "OK"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:249
+#: Dfu/DfuFlashGuard.py:253
 msgid "ERROR"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:257
+#: Dfu/DfuFlashGuard.py:261
 msgid "Waiting for device reboot..."
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:260
+#: Dfu/DfuFlashGuard.py:264
 msgid "System rejected! (Already the latest version?!). Skipping!"
 msgstr ""
 
-#: Dfu/DfuFlashGuard.py:265
+#: Dfu/DfuFlashGuard.py:268
 msgid ""
 "\n"
 "Your remote control will restart in a few seconds (up to 40)!\n"
@@ -162,11 +163,11 @@ msgid ""
 "Press [OK] or [EXIT] to close this window once it finished booting!"
 msgstr ""
 
-#: Dfu/DfuGuide.py:19
+#: Dfu/DfuGuide.py:22
 msgid "Welcome..."
 msgstr ""
 
-#: Dfu/DfuGuide.py:21
+#: Dfu/DfuGuide.py:23
 msgid ""
 "to the Remote Control Firmware Update Assistant.\n"
 "We will now guide you through the remote control firmware update procedure!\n"
@@ -176,122 +177,123 @@ msgid ""
 "[Press OK]"
 msgstr ""
 
-#: Dfu/DfuGuide.py:71
+#: Dfu/DfuGuide.py:75
 msgid "Available Remotes"
 msgstr ""
 
-#: Dfu/DfuGuide.py:72 Dfu/DfuGuide.py:124
+#: Dfu/DfuGuide.py:76 Dfu/DfuGuide.py:128
 msgid "Press OK to finish the Remote Control Firmware Update Assistant."
 msgstr ""
 
-#: Dfu/DfuGuide.py:85 InputDeviceManagement.py:163
+#: Dfu/DfuGuide.py:89 InputDeviceManagement.py:164
 msgid "bound"
 msgstr ""
 
-#: Dfu/DfuGuide.py:88 InputDeviceManagement.py:166
+#: Dfu/DfuGuide.py:92 InputDeviceManagement.py:167
 msgid "..."
 msgstr ""
 
-#: Dfu/DfuGuide.py:90 InputDeviceManagement.py:208
+#: Dfu/DfuGuide.py:94 InputDeviceManagement.py:209
 msgid "DM Remote"
 msgstr ""
 
-#: Dfu/DfuGuide.py:92
+#: Dfu/DfuGuide.py:96
 msgid "DFU - DM Remote"
 msgstr ""
 
-#: Dfu/DfuGuide.py:98 InputDeviceManagement.py:173
+#: Dfu/DfuGuide.py:102 InputDeviceManagement.py:174
 msgid "connected"
 msgstr ""
 
-#: Dfu/DfuGuide.py:98 InputDeviceManagement.py:173
+#: Dfu/DfuGuide.py:102 InputDeviceManagement.py:174
 msgid "disconnected"
 msgstr ""
 
-#: Dfu/DfuGuide.py:109 InputDeviceManagement.py:352
+#: Dfu/DfuGuide.py:113 InputDeviceManagement.py:354
 msgid "Update"
 msgstr ""
 
-#: Dfu/DfuGuide.py:111 Dfu/DfuGuide.py:152
+#: Dfu/DfuGuide.py:115 Dfu/DfuGuide.py:156
 msgid "Force Update"
 msgstr ""
 
-#: Dfu/DfuGuide.py:114
+#: Dfu/DfuGuide.py:117
 #, python-brace-format
-msgid "Press Blue to update the firmware of the selected remote control to application version {0} and bootloader version {1}"
+msgid ""
+"Press Blue to update the firmware of the selected remote control to application version {0} and bootloader version {1}"
 msgstr ""
 
-#: Dfu/DfuGuide.py:119
+#: Dfu/DfuGuide.py:123
 msgid "Connect"
 msgstr ""
 
-#: Dfu/DfuGuide.py:120
+#: Dfu/DfuGuide.py:124
 msgid ""
 "Firmware updates can only be applied to connected remotes!\n"
 "Press Yellow to connect the selected remote control."
 msgstr ""
 
-#: Dfu/DfuGuide.py:150
+#: Dfu/DfuGuide.py:154
 msgid ""
 "The selected remote is already running the latest firmware!\n"
 "Update anyways?"
 msgstr ""
 
-#: Dfu/DfuGuide.py:191
+#: Dfu/DfuGuide.py:196
 msgid "Thank you..."
 msgstr ""
 
-#: Dfu/DfuGuide.py:192
+#: Dfu/DfuGuide.py:197
 msgid ""
 "for using the Remote Control Firmware Update Assistant.\n"
 "\n"
 "[Press OK to close]"
 msgstr ""
 
-#: InputDeviceAdapterFlasher.py:22
+#: InputDeviceAdapterFlasher.py:24
 msgid "Flashing Frontprocessor Firmware"
 msgstr ""
 
-#: InputDeviceAdapterFlasher.py:23
+#: InputDeviceAdapterFlasher.py:25
 msgid "Frontprocessor Firmware"
 msgstr ""
 
-#: InputDeviceAdapterFlasher.py:25
+#: InputDeviceAdapterFlasher.py:27
 msgid "Flashing Adapter Firmware"
 msgstr ""
 
-#: InputDeviceAdapterFlasher.py:26
+#: InputDeviceAdapterFlasher.py:28
 msgid "Bluetooth Frontprocessor Firmware"
 msgstr ""
 
-#: InputDeviceAdapterFlasher.py:48
+#: InputDeviceAdapterFlasher.py:50
 msgid "Please wait! We are about to start..."
 msgstr ""
 
-#: InputDeviceAdapterFlasher.py:54
+#: InputDeviceAdapterFlasher.py:56
 msgid "Firmware flasher is missing or broken! Cancelled!"
 msgstr ""
 
-#: InputDeviceAdapterFlasher.py:67
+#: InputDeviceAdapterFlasher.py:69
 msgid "Working..."
 msgstr ""
 
-#: InputDeviceAdapterFlasher.py:72
+#: InputDeviceAdapterFlasher.py:74
 msgid "Flashing firmware..."
 msgstr ""
 
-#: InputDeviceAdapterFlasher.py:75
+#: InputDeviceAdapterFlasher.py:77
 msgid "Verifying firmware..."
 msgstr ""
 
-#: InputDeviceAdapterFlasher.py:79
+#: InputDeviceAdapterFlasher.py:81
 msgid ""
 "\n"
 "\n"
 "DO NOT TURN OFF YOUR DREAMBOX!"
 msgstr ""
 
-#: InputDeviceAdapterFlasher.py:86
+#: InputDeviceAdapterFlasher.py:88
 #, python-format
 msgid ""
 "%s\n"
@@ -299,7 +301,7 @@ msgid ""
 "%03d blocks written (%s)"
 msgstr ""
 
-#: InputDeviceAdapterFlasher.py:89
+#: InputDeviceAdapterFlasher.py:91
 #, python-format
 msgid ""
 "%s\n"
@@ -308,185 +310,191 @@ msgid ""
 "%03d blocks verified (%s)"
 msgstr ""
 
-#: InputDeviceIRProg.py:97 InputDeviceIRProg.py:339 KeyBindingList.py:33
+#: InputDeviceIRProg.py:99 InputDeviceIRProg.py:342 KeyBindingList.py:35
 msgid "Exit"
 msgstr ""
 
-#: InputDeviceIRProg.py:151
+#: InputDeviceIRProg.py:153
 #, python-format
 msgid "IR setup complete. %s IR codes acknowledged."
 msgstr ""
 
-#: InputDeviceIRProg.py:154
+#: InputDeviceIRProg.py:156
 #, python-format
 msgid ""
 "IR setup complete.\n"
 "%s of %s IR codes acknowledged."
 msgstr ""
 
-#: InputDeviceIRProg.py:210
+#: InputDeviceIRProg.py:212
 #, python-format
 msgid "%s devices"
 msgstr ""
 
-#: InputDeviceIRProg.py:227
+#: InputDeviceIRProg.py:229
 msgid "Unknown"
 msgstr ""
 
-#: InputDeviceIRProg.py:230
+#: InputDeviceIRProg.py:232
 #, python-format
 msgid "%s mapped keys"
 msgstr ""
 
-#: InputDeviceIRProg.py:248
+#: InputDeviceIRProg.py:250
 msgid "Vendors"
 msgstr ""
 
-#: InputDeviceIRProg.py:249
+#: InputDeviceIRProg.py:251
 msgid "Select"
 msgstr ""
 
-#: InputDeviceIRProg.py:254
+#: InputDeviceIRProg.py:253
+#, python-format
+msgid "%s entries"
+msgstr ""
+
+#: InputDeviceIRProg.py:256
 msgid "Apply"
 msgstr ""
 
-#: InputDeviceIRProg.py:255 KeyBindingList.py:25
+#: InputDeviceIRProg.py:257 KeyBindingList.py:27
 msgid "Info"
 msgstr ""
 
-#: InputDeviceIRProg.py:298
+#: InputDeviceIRProg.py:300
 #, python-format
 msgid "Transferring %s IR codes..."
 msgstr ""
 
-#: InputDeviceIRProg.py:305
+#: InputDeviceIRProg.py:307
 msgid "IR codes sent. Waiting for remote confirmation..."
 msgstr ""
 
-#: InputDeviceIRProg.py:315
+#: InputDeviceIRProg.py:317
 #, python-format
 msgid "Transferring IR codes... %s/%s"
 msgstr ""
 
-#: InputDeviceIRProg.py:327
+#: InputDeviceIRProg.py:329
 #, python-format
 msgid "Press OK to apply %s IR keys for '%s'"
 msgstr ""
 
-#: InputDeviceManagement.py:185
+#: InputDeviceManagement.py:186
 msgid "Battery: unknown"
 msgstr ""
 
-#: InputDeviceManagement.py:186 InputDeviceManagement.py:220
+#: InputDeviceManagement.py:187 InputDeviceManagement.py:221
 #, python-format
 msgid "Battery: %d%%"
 msgstr ""
 
-#: InputDeviceManagement.py:190 InputDeviceManagement.py:222
+#: InputDeviceManagement.py:191 InputDeviceManagement.py:223
 #, python-format
 msgid "RSSI: %d dBm"
 msgstr ""
 
-#: InputDeviceManagement.py:192
+#: InputDeviceManagement.py:193
 msgid "RSSI: unknown"
 msgstr ""
 
-#: InputDeviceManagement.py:204
+#: InputDeviceManagement.py:205
 msgid "Firmware: unknown"
 msgstr ""
 
-#: InputDeviceManagement.py:205
+#: InputDeviceManagement.py:206
 #, python-format
 msgid "Firmware: %s"
 msgstr ""
 
-#: InputDeviceManagement.py:212
+#: InputDeviceManagement.py:213
 #, python-format
 msgid "%s  FW %s"
 msgstr ""
 
-#: InputDeviceManagement.py:218
+#: InputDeviceManagement.py:219
 msgid "Battery: --"
 msgstr ""
 
-#: InputDeviceManagement.py:224
+#: InputDeviceManagement.py:225
 msgid "RSSI: --"
 msgstr ""
 
-#: InputDeviceManagement.py:295
+#: InputDeviceManagement.py:297
 msgid "Input devices"
 msgstr ""
 
-#: InputDeviceManagement.py:312
+#: InputDeviceManagement.py:314
 msgid "Rescan"
 msgstr ""
 
-#: InputDeviceManagement.py:313
+#: InputDeviceManagement.py:315
 msgid "Settings"
 msgstr ""
 
-#: InputDeviceManagement.py:334
+#: InputDeviceManagement.py:336
 msgid "DFU update setup is not available on this image."
 msgstr ""
 
-#: InputDeviceManagement.py:347
+#: InputDeviceManagement.py:349
 msgid "IR-Setup"
 msgstr ""
 
-#: InputDeviceManagement.py:368
+#: InputDeviceManagement.py:370
 msgid "Rescanning..."
 msgstr ""
 
-#: InputDeviceManagement.py:381
+#: InputDeviceManagement.py:383
 #, python-format
 msgid "Scan complete (%d devices)"
 msgstr ""
 
-#: InputDeviceManagement.py:395
+#: InputDeviceManagement.py:397
 msgid "Update Bluetooth Receiver Firmware?"
 msgstr ""
 
-#: InputDeviceManagement.py:403
+#: InputDeviceManagement.py:404
 msgid ""
-"Your Dreambox bluetooth receiver has no firmware installed.\n"
+"Your Dreambox Bluetooth receiver has no firmware installed.\n"
 "Install the latest firmware now?"
 msgstr ""
 
-#: InputDeviceManagement.py:405
+#: InputDeviceManagement.py:406
 msgid "Flash Bluetooth Receiver Firmware?"
 msgstr ""
 
-#: InputDeviceManagement.py:414
-msgid "No dreambox bluetooth receiver detected! Sorry!"
+#: InputDeviceManagement.py:415
+msgid "No Dreambox Bluetooth receiver detected! Sorry!"
 msgstr ""
 
-#: InputDeviceManagement.py:419
+#: InputDeviceManagement.py:420
 msgid "Press OK to disconnect"
 msgstr ""
 
-#: InputDeviceManagement.py:421
+#: InputDeviceManagement.py:422
 msgid "Press OK to connect the selected remote control."
 msgstr ""
 
-#: InputDeviceManagement.py:423
-msgid "Please pick up the remote control you want to connect and press any number key on it to select it in the list."
+#: InputDeviceManagement.py:424
+msgid ""
+"Please pick up the remote control you want to connect and press any number key on it to select it in the list."
 msgstr ""
 
-#: InputDeviceManagement.py:451
+#: InputDeviceManagement.py:452
 #, python-format
 msgid "Really disconnect %s (%s)?"
 msgstr ""
 
-#: InputDeviceManagement.py:452
+#: InputDeviceManagement.py:453
 msgid "Disconnect paired remote?"
 msgstr ""
 
-#: InputDeviceManagement.py:458
+#: InputDeviceManagement.py:459
 #, python-format
 msgid "Do you really want to connect %s (%s) "
 msgstr ""
 
-#: InputDeviceManagement.py:459
+#: InputDeviceManagement.py:460
 msgid "Connect new remote?"
 msgstr ""
 
@@ -515,10 +523,11 @@ msgid "Haptic feedback in lists"
 msgstr ""
 
 #: InputDeviceSettings.py:48
-msgid "Enable vibration feedback when moving through Bluetooth remote-control lists."
+msgid ""
+"Enable vibration feedback when moving through Bluetooth remote-control lists."
 msgstr ""
 
-#: InputDeviceUpdateHandlerBase.py:13
+#: InputDeviceUpdateHandlerBase.py:14
 msgid "There is a new firmware for your frontprocessor available. Update now?"
 msgstr ""
 
@@ -532,28 +541,28 @@ msgid ""
 "!!! ATTENTION !!!!"
 msgstr ""
 
-#: InputDeviceUpdateHandlerBase.py:35
+#: InputDeviceUpdateHandlerBase.py:36
 msgid ""
 "The Frontprocessor was updated successfully!\n"
 "Your Dreambox must be rebooted for the changes to take effect.\n"
 "Reboot now?"
 msgstr ""
 
-#: InputDeviceUpdateHandlerBase.py:37 InputDeviceUpdateHandlerBase.py:38
+#: InputDeviceUpdateHandlerBase.py:38 InputDeviceUpdateHandlerBase.py:39
 msgid "Reboot required"
 msgstr ""
 
-#: InputDeviceUpdateHandlerBase.py:44
+#: InputDeviceUpdateHandlerBase.py:45
 msgid ""
 "Frontprocessor update failed!\n"
 "Retry?"
 msgstr ""
 
-#: InputDeviceUpdateHandlerBase.py:46
+#: InputDeviceUpdateHandlerBase.py:47
 msgid "Retry?"
 msgstr ""
 
-#: InputDeviceUpdateHandlerBase.py:47
+#: InputDeviceUpdateHandlerBase.py:48
 msgid "ERROR! Retry Firmware Update?"
 msgstr ""
 
@@ -566,186 +575,186 @@ msgid ""
 "on a console manually"
 msgstr ""
 
-#: InputDeviceUpdateHandlerBase.py:60
+#: InputDeviceUpdateHandlerBase.py:61
 msgid "ERROR!"
 msgstr ""
 
-#: InputDeviceUpdateHandlerBase.py:61
+#: InputDeviceUpdateHandlerBase.py:62
 msgid "ERROR! Frontprocessor Update"
 msgstr ""
 
-#: KeyBindingList.py:11
+#: KeyBindingList.py:13
 msgid "Mute"
 msgstr ""
 
-#: KeyBindingList.py:12
+#: KeyBindingList.py:14
 msgid "Mode"
 msgstr ""
 
-#: KeyBindingList.py:13
+#: KeyBindingList.py:15
 msgid "Power"
 msgstr ""
 
-#: KeyBindingList.py:14
+#: KeyBindingList.py:16
 msgid "Red"
 msgstr ""
 
-#: KeyBindingList.py:15
+#: KeyBindingList.py:17
 msgid "Blue"
 msgstr ""
 
-#: KeyBindingList.py:16
+#: KeyBindingList.py:18
 msgid "Green"
 msgstr ""
 
-#: KeyBindingList.py:17
+#: KeyBindingList.py:19
 msgid "Yellow"
 msgstr ""
 
-#: KeyBindingList.py:18
+#: KeyBindingList.py:20
 msgid "Up"
 msgstr ""
 
-#: KeyBindingList.py:19
+#: KeyBindingList.py:21
 msgid "Down"
 msgstr ""
 
-#: KeyBindingList.py:21
+#: KeyBindingList.py:23
 msgid "Left"
 msgstr ""
 
-#: KeyBindingList.py:22
+#: KeyBindingList.py:24
 msgid "Right"
 msgstr ""
 
-#: KeyBindingList.py:23
+#: KeyBindingList.py:25
 msgid "Menu"
 msgstr ""
 
-#: KeyBindingList.py:24
+#: KeyBindingList.py:26
 msgid "PVR"
 msgstr ""
 
-#: KeyBindingList.py:26
+#: KeyBindingList.py:28
 msgid "Audio"
 msgstr ""
 
-#: KeyBindingList.py:27
+#: KeyBindingList.py:29
 msgid "TXT"
 msgstr ""
 
-#: KeyBindingList.py:28
+#: KeyBindingList.py:30
 msgid "<"
 msgstr ""
 
-#: KeyBindingList.py:29
+#: KeyBindingList.py:31
 msgid ">"
 msgstr ""
 
-#: KeyBindingList.py:30
+#: KeyBindingList.py:32
 msgid "Play/Pause"
 msgstr ""
 
-#: KeyBindingList.py:31
+#: KeyBindingList.py:33
 msgid "+"
 msgstr ""
 
-#: KeyBindingList.py:32
+#: KeyBindingList.py:34
 msgid "-"
 msgstr ""
 
-#: KeyBindingList.py:34
+#: KeyBindingList.py:36
 msgid "Stop"
 msgstr ""
 
-#: KeyBindingList.py:35
+#: KeyBindingList.py:37
 msgid "Record"
 msgstr ""
 
-#: KeyBindingList.py:36
+#: KeyBindingList.py:38
 msgid "Volume +"
 msgstr ""
 
-#: KeyBindingList.py:37
+#: KeyBindingList.py:39
 msgid "Volume -"
 msgstr ""
 
-#: KeyBindingList.py:38
+#: KeyBindingList.py:40
 msgid "Fast Forward"
 msgstr ""
 
-#: KeyBindingList.py:39
+#: KeyBindingList.py:41
 msgid "Rewind"
 msgstr ""
 
-#: __init__.py:5
+#: __init__.py:28
 msgid "red"
 msgstr ""
 
-#: __init__.py:6
+#: __init__.py:29
 msgid "rose"
 msgstr ""
 
-#: __init__.py:7
+#: __init__.py:30
 msgid "orange"
 msgstr ""
 
-#: __init__.py:8
+#: __init__.py:31
 msgid "yellow"
 msgstr ""
 
-#: __init__.py:9
+#: __init__.py:32
 msgid "lime"
 msgstr ""
 
-#: __init__.py:10
+#: __init__.py:33
 msgid "green"
 msgstr ""
 
-#: __init__.py:11
+#: __init__.py:34
 msgid "aqua"
 msgstr ""
 
-#: __init__.py:12
+#: __init__.py:35
 msgid "olympic blue"
 msgstr ""
 
-#: __init__.py:13
+#: __init__.py:36
 msgid "blue"
 msgstr ""
 
-#: __init__.py:14
+#: __init__.py:37
 msgid "azure"
 msgstr ""
 
-#: __init__.py:15
+#: __init__.py:38
 msgid "purple"
 msgstr ""
 
-#: __init__.py:16
+#: __init__.py:39
 msgid "pink"
 msgstr ""
 
-#: plugin.py:82
-msgid "A new bluetooth remote has been discovered. Connect now?"
+#: plugin.py:83
+msgid "A new Bluetooth remote has been discovered. Connect now?"
 msgstr ""
 
-#: plugin.py:84
+#: plugin.py:85
 msgid "New Bluetooth Remote"
 msgstr ""
 
-#: plugin.py:98
+#: plugin.py:99
 msgid "New Firmware"
 msgstr ""
 
-#: plugin.py:106 plugin.py:121
+#: plugin.py:109 plugin.py:126
 msgid "Bluetooth Setup"
 msgstr ""
 
-#: plugin.py:116
+#: plugin.py:121
 msgid "Bluetooth Setup Autosetup"
 msgstr ""
 
-#: plugin.py:122
+#: plugin.py:127
 msgid "Set up Bluetooth remote controls"
 msgstr ""

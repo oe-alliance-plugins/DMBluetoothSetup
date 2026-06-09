@@ -5,6 +5,8 @@ from Tools.Directories import fileExists
 
 from Tools.HardwareInfo import HardwareInfo
 
+from . import _
+
 
 def ensure_text(value):
     if isinstance(value, bytes):

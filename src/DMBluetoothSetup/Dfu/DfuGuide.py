@@ -1,8 +1,9 @@
 from Tools.Directories import SCOPE_RCU_FIRMWARE, fileExists, resolveFilename
 
+from .. import _
+
 from enigma import eManagedInputDevicePtr
 
-from Components.config import config
 from Components.SetupGuide.BaseStep import SetupTextStep, SetupListStep
 from Components.Sources.List import List
 from Screens.MessageBox import MessageBox

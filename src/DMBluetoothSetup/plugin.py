@@ -1,19 +1,19 @@
-from . import ensureInputDeviceManagerConfig, filterInputDevices, getInputDeviceAddress, isValidInputDeviceAddress
-ensureInputDeviceManagerConfig()
-from Plugins.SystemPlugins.BluetoothSetup.InputDeviceUpdateHandlerBase import InputDeviceUpdateHandlerBase
-from enigma import eInputDeviceManager, eManagedInputDevice
-from Plugins.Plugin import PluginDescriptor
-from Tools.Notifications import AddNotificationWithCallback
-from Screens.MessageBox import MessageBox
 from Components.config import config
+from enigma import eInputDeviceManager
+from Plugins.Plugin import PluginDescriptor
+from Screens.MessageBox import MessageBox
 from Tools.Directories import createDir, fileExists
-from Tools.DreamboxHardware import getFPVersion
 from Tools.Log import Log
+from Tools.Notifications import AddNotificationWithCallback
+from twisted.internet import reactor
 import time
 
+from . import _, ensureInputDeviceManagerConfig, filterInputDevices, getInputDeviceAddress, isValidInputDeviceAddress
+from .InputDeviceAdapterFlasher import InputDeviceUpdateChecker
 from .InputDeviceManagement import InputDeviceManagement
-from .InputDeviceAdapterFlasher import InputDeviceUpdateChecker, InputDeviceAdapterFlasher
-from twisted.internet import reactor
+from Plugins.SystemPlugins.BluetoothSetup.InputDeviceUpdateHandlerBase import InputDeviceUpdateHandlerBase
+
+ensureInputDeviceManagerConfig()
 
 global inputDeviceWatcher
 inputDeviceWatcher = None
@@ -80,7 +80,7 @@ class InputDeviceWatcher(InputDeviceUpdateHandlerBase):
             AddNotificationWithCallback(
                 self._onDiscoveryAnswer,
                 MessageBox,
-                _("A new bluetooth remote has been discovered. Connect now?"),
+                _("A new Bluetooth remote has been discovered. Connect now?"),
                 type=MessageBox.TYPE_YESNO,
                 windowTitle=_("New Bluetooth Remote"),
             )

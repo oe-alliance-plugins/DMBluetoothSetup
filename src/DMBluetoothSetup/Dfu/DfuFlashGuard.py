@@ -5,11 +5,12 @@ from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
 from Tools.Directories import SCOPE_RCU_FIRMWARE, resolveFilename
 
+from .. import _
+
 from enigma import eInputDeviceDfuFlasher, DFU_BATTERY_MIN
 
 from .DfuFlash import DfuFileset, DfuFlash
 
-from os.path import dirname
 
 
 class DfuLog(Screen):
@@ -177,7 +178,7 @@ class DfuFlashGuard(Screen):
         self._enableActions()
 
     def _onDfuBatteryLow(self):
-        text = _("Device battery level of {0}% is too low.\nIt's required to be at least {1}%!".format(self._device.batteryLevel(), DFU_BATTERY_MIN))
+        text = _("Device battery level of {0}% is too low.\nIt's required to be at least {1}%!").format(self._device.batteryLevel(), DFU_BATTERY_MIN)
         self.session.openWithCallback(self._onErrorAck, MessageBox, text, type=MessageBox.TYPE_ERROR, windowTitle=_("Upload rejected!"))
 
     def _onLoadFinished(self, types):

@@ -15,6 +15,7 @@ from Tools.Log import Log
 from os import path as os_path
 
 
+from . import _
 from .CharJump import CharJump
 from .InputDeviceIRDatabase import irdb
 from .IrProtocols.ProtocolMaster import ProtocolMaster
@@ -249,7 +250,7 @@ class InputDeviceIRProg(Screen, CharJump):
             self.setTitle(_("Vendors"))
             self["key_green"].setText(_("Select"))
             self["key_blue"].setText("")
-            self["status"].setText("%s entries" % (len(mlist),))
+            self["status"].setText(_("%s entries") % (len(mlist),))
         else:
             self.setTitle(self._lastVendor)
             self["key_green"].setText(_("Apply"))

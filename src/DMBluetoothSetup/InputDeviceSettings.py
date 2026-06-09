@@ -3,7 +3,7 @@ from Components.ConfigList import ConfigListScreen
 from Components.config import config, getConfigListEntry
 from Components.Sources.StaticText import StaticText
 
-from . import ensureInputDeviceManagerConfig
+from . import _, ensureInputDeviceManagerConfig
 
 
 INPUT_DEVICE_SETTINGS_SKIN = """

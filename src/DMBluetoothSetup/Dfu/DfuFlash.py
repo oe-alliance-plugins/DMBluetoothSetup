@@ -5,7 +5,7 @@ import json
 
 from twisted.internet import reactor
 
-from Tools.Directories import createDir, fileExists, pathExists
+from Tools.Directories import fileExists, pathExists
 
 
 class DfuFileset:

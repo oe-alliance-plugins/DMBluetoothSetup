@@ -5,6 +5,8 @@ from enigma import RT_VALIGN_CENTER, eListbox, eListboxPythonMultiContent, gFont
 from keyids import KEYIDNAMES, KEYIDS
 from skin import fonts as skinFonts
 
+from . import _
+
 
 class KeyBindingList(GUIComponent):
     KEY_NAMES = {

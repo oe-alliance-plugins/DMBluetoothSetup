@@ -12,7 +12,6 @@ from enigma import eInputDeviceDfuFlasher, DFU_BATTERY_MIN
 from .DfuFlash import DfuFileset, DfuFlash
 
 
-
 class DfuLog(Screen):
     IS_DIALOG = True
 

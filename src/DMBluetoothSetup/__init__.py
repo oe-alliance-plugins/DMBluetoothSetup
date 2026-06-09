@@ -2,8 +2,7 @@
 from __future__ import print_function
 from Components.config import config, ConfigOnOff, ConfigSelection, ConfigSubsection, ConfigYesNo
 from Components.Language import language
-from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
-import os
+from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 import gettext
 
 PluginLanguageDomain = "BluetoothSetup"
@@ -92,7 +91,7 @@ def _setLedColor(methodName, value, label):
     sent = False
     devices = filterInputDevices(manager.getAvailableDevices())
     for device in devices:
-        address = getInputDeviceAddress(device)
+        address = getInputDeviceAddress(device)  # noqa F841
         if not getInputDeviceConnected(device):
             continue
         method = getattr(device, methodName, None)

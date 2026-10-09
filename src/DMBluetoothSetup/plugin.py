@@ -4,7 +4,7 @@ from Plugins.Plugin import PluginDescriptor
 from Screens.MessageBox import MessageBox
 from Tools.Directories import createDir, fileExists
 from Tools.Log import Log
-from Tools.Notifications import AddNotificationWithCallback
+from Tools.Notifications import AddNotificationWithCallback, AddPopup
 from twisted.internet import reactor
 import time
 
@@ -21,6 +21,7 @@ inputDeviceWatcher = None
 
 class InputDeviceWatcher(InputDeviceUpdateHandlerBase):
     BATTERY_LOG_DIR = "/var/lib/enigma2"
+    BATTERY_LOW_LEVEL = 20  # same threshold as the batteryLow signal (DFU_BATTERY_MIN)
 
     def __init__(self, session):
         ensureInputDeviceManagerConfig()
@@ -31,8 +32,10 @@ class InputDeviceWatcher(InputDeviceUpdateHandlerBase):
         self._updateChecker.check()
         self._dm = eInputDeviceManager.getInstance()
         self._dm.deviceStateChanged.append(self._onDeviceStateChanged)
+        self._dm.batteryLow.append(self._onBatteryLow)
         self.__deviceListChangedRegistered = False
         self._batteryStates = {}
+        self._batteryLowWarned = set()
         logdir = "/tmp"
         if fileExists(self.BATTERY_LOG_DIR) or createDir(self.BATTERY_LOG_DIR):
             logdir = self.BATTERY_LOG_DIR
@@ -62,6 +65,17 @@ class InputDeviceWatcher(InputDeviceUpdateHandlerBase):
                     except Exception as e:
                         Log.w(e)
                 self._batteryStates[address] = device.batteryLevel()
+            if new >= self.BATTERY_LOW_LEVEL:
+                self._batteryLowWarned.discard(address)
+
+    def _onBatteryLow(self, address):
+        # Sent with every battery report below the threshold, warn once per remote.
+        if not isValidInputDeviceAddress(address) or address in self._batteryLowWarned:
+            return
+        self._batteryLowWarned.add(address)
+        device = self._dm.getDevice(address)
+        level = device.batteryLevel() if device else 0
+        AddPopup(_("The battery of the Bluetooth remote control is low (%d%%). Please replace the batteries.") % (level,), MessageBox.TYPE_WARNING, 10, "dmbluetooth_battery_low")
 
     def _onDeviceListChanged(self):
         if config.misc.firstrun.value:  # Wizard will run!

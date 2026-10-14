@@ -48,7 +48,6 @@ class InputDeviceAdapterFlasher(MessageBox):
 
     def __onShow(self):
         t = _("Please wait! We are about to start...")
-        self["Text"].setText(t)
         self["text"].setText(t)
 
     def _check(self):
@@ -93,7 +92,6 @@ class InputDeviceAdapterFlasher(MessageBox):
                 text = "%s\n\n%s" % (pre, data)
         else:
             text = pre
-        self["Text"].setText(text)
         self["text"].setText(text)
         if data.find("success:") >= 0:
             self._success = True

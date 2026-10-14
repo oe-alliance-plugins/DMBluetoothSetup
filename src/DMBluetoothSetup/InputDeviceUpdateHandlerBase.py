@@ -12,7 +12,12 @@ class InputDeviceUpdateHandlerBase:
     def _fpUpdateText(self):
         self._numTries = 0
         updateText = _("There is a new firmware for your frontprocessor available. Update now?")
-        if getFPVersion() <= 1.12:
+        # "major.minor" as numbers, 1.9 is older than 1.12
+        try:
+            version = tuple(int(x) for x in str(getFPVersion()).strip().split("."))
+        except (TypeError, ValueError):
+            version = None
+        if version is not None and version <= (1, 12):
             updateText += _(
                 "\n\n!!! ATTENTION !!!\n"
                 "Due to major firmware changes you can not downgrade to images "

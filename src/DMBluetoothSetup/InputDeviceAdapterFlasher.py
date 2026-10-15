@@ -1,133 +1,144 @@
 from enigma import eConsoleAppContainer, eEnv, eInputDeviceManager
-from Tools.Log import Log
+
 from Screens.MessageBox import MessageBox
 from Tools.Directories import fileExists
-
 from Tools.HardwareInfo import HardwareInfo
+from Tools.Log import Log
 
 from . import _
 
 
-def ensure_text(value):
-    if isinstance(value, bytes):
-        return value.decode("utf-8", "replace")
-    return str(value)
-
-
 class InputDeviceAdapterFlasher(MessageBox):
-    FLASHER_BINARY = eEnv.resolve("${sbindir}/flash-nrf52")
-    NRF_AS_FRONTPROCESSOR_DEVICES = ["one", "two"]
+	FLASHER_BINARY = eEnv.resolve("${sbindir}/flash-nrf52")
+	NRF_AS_FRONTPROCESSOR_DEVICES = ("one", "two", "dreamone", "dreamtwo")
 
-    def __init__(self, session):
-        self._isFrontProcessor = HardwareInfo().get_device_name() in self.NRF_AS_FRONTPROCESSOR_DEVICES
-        if self._isFrontProcessor:
-            title = _("Flashing Frontprocessor Firmware")
-            windowTitle = _("Frontprocessor Firmware")
-        else:
-            title = _("Flashing Adapter Firmware")
-            windowTitle = _("Bluetooth Frontprocessor Firmware")
+	def __init__(self, session):
+		self.frontProcessor = HardwareInfo().get_device_name() in self.NRF_AS_FRONTPROCESSOR_DEVICES
+		if self.frontProcessor:
+			title = _("Flashing Frontprocessor Firmware")
+			windowTitle = _("Frontprocessor Firmware")
+		else:
+			title = _("Flashing Adapter Firmware")
+			windowTitle = _("Bluetooth Receiver Firmware")
 
-        fakeText = "\n.                                                         .\n.\n.\n."  # Reserve space for future text in the message box.
-        MessageBox.__init__(self, session, fakeText, title=title, type=MessageBox.TYPE_WARNING, windowTitle=windowTitle)
-        self.skinName = "MessageBox"
-        self._console = eConsoleAppContainer()
-        self._console.dataAvail.append(self._onData)
-        self._console.appClosed.append(self._onAppClosed)
-        self._dm = eInputDeviceManager.getInstance()
-        self._success = False
-        self._flasherMissing = False
+		fakeText = "\n.                                                         .\n.\n.\n."  # Reserve space for future text in the message box.
+		MessageBox.__init__(self, session, fakeText, title=title, type=MessageBox.TYPE_WARNING, windowTitle=windowTitle, enableInput=False)
+		self.skinName = "MessageBox"
+		self.console = eConsoleAppContainer()
+		self.console.dataAvail.append(self.onData)
+		self.console.appClosed.append(self.onAppClosed)
+		self.deviceManager = eInputDeviceManager.getInstance()
+		self.success = False
+		self.flasherMissing = False
+		self.outputBuffer = ""
+		self.managerStopped = False
 
-        self.onFirstExecBegin.append(self._check)
-        self.onShow.append(self.__onShow)
-        self.onClose.append(self.__onClose)
+		self.onShown.append(self.flashFirmware)
+		self.onShow.append(self.showStart)
+		self.onClose.append(self.finishFlash)
 
-        self.blockFlashed = 0
-        self.blocksVerified = 0
+		self.blockFlashed = 0
+		self.blocksVerified = 0
 
-        self._flashFirmware()
+	def showStart(self):
+		self["text"].setText(_("Please wait! We are about to start..."))
 
-    def __onShow(self):
-        t = _("Please wait! We are about to start...")
-        self["text"].setText(t)
+	def checkFlasher(self):
+		if self.flasherMissing:
+			self.session.openWithCallback(self.onMissingFlasherClosed, MessageBox, _("Firmware flasher is missing or broken! Cancelled!"), type=MessageBox.TYPE_ERROR)
 
-    def _check(self):
-        if self._flasherMissing:
-            self.session.openWithCallback(self.close, MessageBox, _("Firmware flasher is missing or broken! Cancelled!"), type=MessageBox.TYPE_ERROR)
-            self.close(False)
+	def onMissingFlasherClosed(self, answer):
+		self.close(False)
 
-    def __onClose(self):
-        if self._onData in self._console.dataAvail:
-            self._console.dataAvail.remove(self._onData)
-        if self._onAppClosed in self._console.appClosed:
-            self._console.appClosed.remove(self._onAppClosed)
-        self._dm.start()
+	def finishFlash(self):
+		if self.onData in self.console.dataAvail:
+			self.console.dataAvail.remove(self.onData)
+		if self.onAppClosed in self.console.appClosed:
+			self.console.appClosed.remove(self.onAppClosed)
+		if self.managerStopped:
+			self.deviceManager.start()
 
-    def _onData(self, data):
-        data = ensure_text(data)
-        Log.i(data)
-        pre = _("Working...")
-        isVerifying = False
-        isFlashing = False
+	def onData(self, data):
+		data = data.decode("utf-8", "replace") if isinstance(data, bytes) else str(data)
+		self.outputBuffer += data.replace("\r", "\n")
+		while "\n" in self.outputBuffer:
+			line, self.outputBuffer = self.outputBuffer.split("\n", 1)
+			self.showProgress(line)
 
-        if data.strip().startswith("flashing"):
-            pre = _("Flashing firmware...")
-            isFlashing = True
-        elif data.strip().startswith("verifying"):
-            pre = _("Verifying firmware...")
-            isVerifying = True
+	def showProgress(self, data):
+		if not data.strip():
+			return
+		Log.i(data)
+		pre = _("Working...")
+		isVerifying = False
+		isFlashing = False
 
-        if self._isFrontProcessor:
-            pre += _("\n\nDO NOT TURN OFF YOUR DREAMBOX!")
-        if pre:
-            if isFlashing or isVerifying:
-                splitted = data.split(" ")
-                address = splitted[3]
-                if isFlashing:
-                    self.blockFlashed += 1
-                    text = _("%s\n\n%03d blocks written (%s)") % (pre, self.blockFlashed, address)
-                elif isVerifying:
-                    self.blocksVerified += 1
-                    text = _("%s\n\n%03d blocks written\n%03d blocks verified (%s)") % (pre, self.blockFlashed, self.blocksVerified, address)
-            else:
-                text = "%s\n\n%s" % (pre, data)
-        else:
-            text = pre
-        self["text"].setText(text)
-        if data.find("success:") >= 0:
-            self._success = True
+		if data.strip().startswith("flashing"):
+			pre = _("Flashing firmware...")
+			isFlashing = True
+		elif data.strip().startswith("verifying"):
+			pre = _("Verifying firmware...")
+			isVerifying = True
 
-    def _onAppClosed(self, data):
-        self.close(self._success)
+		if self.frontProcessor:
+			pre += _("\n\nDO NOT TURN OFF YOUR DREAMBOX!")
+		if pre:
+			if isFlashing or isVerifying:
+				fields = data.split()
+				address = fields[3] if len(fields) > 3 else ""
+				if isFlashing:
+					self.blockFlashed += 1
+					text = _("%s\n\n%03d blocks written (%s)") % (pre, self.blockFlashed, address)
+				elif isVerifying:
+					self.blocksVerified += 1
+					text = _("%s\n\n%03d blocks written\n%03d blocks verified (%s)") % (pre, self.blockFlashed, self.blocksVerified, address)
+			else:
+				text = f"{pre}\n\n{data}"
+		else:
+			text = pre
+		self["text"].setText(text)
+		if data.startswith("success:") and "bytes verified" in data:
+			self.success = True
 
-    def _flashFirmware(self):
-        if not fileExists(self.FLASHER_BINARY):
-            self._flasherMissing = True
-            return
-        self._dm.stop()
-        res = self._console.execute("%s --program --force --verify --start" % (self.FLASHER_BINARY))
-        Log.w("%s" % (res,))
+	def onAppClosed(self, returnCode):
+		self.showProgress(self.outputBuffer)
+		self.outputBuffer = ""
+		self.close(returnCode == 0 and self.success)
+
+	def flashFirmware(self):
+		self.onShown.remove(self.flashFirmware)
+		if not fileExists(self.FLASHER_BINARY):
+			self.flasherMissing = True
+			self.checkFlasher()
+			return
+		self.deviceManager.stop()
+		self.managerStopped = True
+		result = self.console.execute(self.FLASHER_BINARY, self.FLASHER_BINARY, "--program", "--force", "--verify", "--start")
+		Log.w(f"Flasher start result: {result}")
+		if result:
+			self.close(False)
 
 
 class InputDeviceUpdateChecker:
-    def __init__(self):
-        self._console = eConsoleAppContainer()
-        self._console.dataAvail.append(self._onData)
-        self._console.appClosed.append(self._onAppClosed)
-        self._flasherMissing = not fileExists(InputDeviceAdapterFlasher.FLASHER_BINARY)
-        self.onUpdateAvailable = []
+	def __init__(self):
+		self.console = eConsoleAppContainer()
+		self.console.dataAvail.append(self.onData)
+		self.console.appClosed.append(self.onAppClosed)
+		self.flasherMissing = not fileExists(InputDeviceAdapterFlasher.FLASHER_BINARY)
+		self.onUpdateAvailable = []
 
-    def check(self):
-        if self._flasherMissing:
-            return
-        res = self._console.execute("%s --check" % (InputDeviceAdapterFlasher.FLASHER_BINARY))
-        Log.d("%s" % (res,))
+	def check(self):
+		if self.flasherMissing:
+			return
+		result = self.console.execute(InputDeviceAdapterFlasher.FLASHER_BINARY, InputDeviceAdapterFlasher.FLASHER_BINARY, "--check")
+		Log.d(f"Firmware check start result: {result}")
 
-    def _onData(self, data):
-        data = ensure_text(data)
-        Log.d(data)
+	def onData(self, data):
+		data = data.decode("utf-8", "replace") if isinstance(data, bytes) else str(data)
+		Log.d(data)
 
-    def _onAppClosed(self, returncode):
-        Log.w("%s" % (returncode,))
-        if returncode == 1:  # 0 == no update, 1 == update, everything else is an error.
-            for callback in self.onUpdateAvailable:
-                callback()
+	def onAppClosed(self, returnCode):
+		Log.w(f"Firmware check result: {returnCode}")
+		if returnCode == 1:  # 0 == no update, 1 == update, everything else is an error.
+			for callback in self.onUpdateAvailable:
+				callback()

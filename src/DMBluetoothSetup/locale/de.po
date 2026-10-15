@@ -822,3 +822,33 @@ msgstr "Bluetooth-Einrichtung Auto-Setup"
 #: plugin.py:127
 msgid "Set up Bluetooth remote controls"
 msgstr "Bluetooth-Fernbedienungen einrichten"
+
+msgid "Bluetooth Receiver Firmware"
+msgstr "Firmware des Bluetooth-Empfängers"
+
+msgid "Bluetooth remote connected: %s"
+msgstr "Bluetooth-Fernbedienung verbunden: %s"
+
+msgid "Bluetooth remote discovered: %s"
+msgstr "Bluetooth-Fernbedienung gefunden: %s"
+
+msgid "Could not connect the Bluetooth remote."
+msgstr "Die Bluetooth-Fernbedienung konnte nicht verbunden werden."
+
+msgid "There is a new firmware for your Bluetooth receiver available. Update now?"
+msgstr "Für Ihren Bluetooth-Empfänger ist eine neue Firmware verfügbar. Jetzt aktualisieren?"
+
+msgid "Bluetooth receiver firmware was updated successfully!"
+msgstr "Die Firmware des Bluetooth-Empfängers wurde erfolgreich aktualisiert!"
+
+msgid "Bluetooth receiver update failed!\nRetry?"
+msgstr "Die Aktualisierung des Bluetooth-Empfängers ist fehlgeschlagen!\nErneut versuchen?"
+
+msgid "Bluetooth receiver update failed multiple times!"
+msgstr "Die Aktualisierung des Bluetooth-Empfängers ist mehrfach fehlgeschlagen!"
+
+msgid "Frontprocessor update failed multiple times!"
+msgstr "Die Aktualisierung des Frontprozessors ist mehrfach fehlgeschlagen!"
+
+msgid "\nPlease contact the support!\nYou can try executing\n'flash-nrf52 --program --verify --start'\non a console manually"
+msgstr "\nBitte wenden Sie sich an den Support!\nSie können versuchen,\n'flash-nrf52 --program --verify --start'\nmanuell auf einer Konsole auszuführen"

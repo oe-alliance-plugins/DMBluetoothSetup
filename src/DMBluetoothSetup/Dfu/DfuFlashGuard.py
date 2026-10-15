@@ -1,269 +1,145 @@
+from enigma import DFU_BATTERY_MIN, eInputDeviceDfuFlasher as Dfu, eInputDeviceManager
+
 from Components.ActionMap import ActionMap
 from Components.Label import Label
 from Components.Sources.Progress import Progress
-from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
-from Tools.Directories import SCOPE_RCU_FIRMWARE, resolveFilename
-
-from .. import _
-
-from enigma import eInputDeviceDfuFlasher, DFU_BATTERY_MIN
+from Screens.Screen import Screen
 
 from .DfuFlash import DfuFileset, DfuFlash
+from .. import _
 
 
 class DfuLog(Screen):
-    IS_DIALOG = True
+	IS_DIALOG = True
+	skin = """<screen name="DfuLog" position="center,center" size="820,520">
+		<widget name="log" position="10,10" size="800,500" font="Regular;22" />
+	</screen>"""
 
-    skin = """<screen name="DfuLog" position="center,120" size="820,520">
-            <widget name="log" position="10,10" size="800,500" halign="left" valign="top" font="Regular;22"/>
-        </screen>"""
+	def __init__(self, session, text):
+		Screen.__init__(self, session)
+		self.setTitle(_("DFU Log"))
+		self["log"] = Label(text)
+		self["actions"] = ActionMap(["OkCancelActions"], {"ok": self.close, "cancel": self.close})
 
-    def __init__(self, session, text):
-        Screen.__init__(self, session)
-        self.setTitle(_("DFU Log"))
-        self._log = Label(text)
-        self["log"] = self._log
+	def getText(self):
+		return self["log"].text
 
-        self["actions"] = ActionMap(["OkCancelActions"],
-            actions={
-                "ok": self.close,
-                "cancel": self.close,
-            })
+	def setText(self, text):
+		self["log"].text = text
 
-    def _getText(self):
-        return self._log.text
-
-    def _setText(self, text):
-        self._log.text = text
-
-    text = property(_getText, _setText)
+	text = property(getText, setText)
 
 
 class DfuFlashGuard(Screen):
-    IS_DIALOG = True
+	IS_DIALOG = True
+	ALLOW_SUSPEND = False
+	# Existing screen and widget names remain available to external skins.
+	skin = """<screen name="DfuFlashGuard" position="center,center" size="820,420" title="DFU Firmware Upgrade">
+		<widget name="log" position="10,5" size="800,30" halign="right" font="Regular;18" />
+		<widget name="text" position="10,40" size="800,280" font="Regular;24" halign="center" valign="center" />
+		<widget name="bytes" position="10,330" size="800,30" font="Regular;22" />
+		<widget source="progress" render="Progress" position="10,375" size="800,30" borderWidth="1" />
+	</screen>"""
 
-    skin = """<screen name="DfuFlashGuard" position="center,center" size="620,340" title="DFU Firmware Upgrade">
-        <widget name="log" position="10,5" size="540,30" halign="right" valign="center" font="Regular;18"/>
-        <ePixmap pixmap="skin_default/icons/info.png" position="555,5" size="60,30"/>
-        <widget name="text" position="10,30" size="600,220" font="Regular;24" halign="center" valign="center"/>
-        <widget name="bytes" position="10,260" size="600,30" font="Regular;22" halign="left" />
-        <widget source="progress" render="Progress" position="0,300" size="620,40" zPosition="1" borderWidth="1"/>
-    </screen>"""
+	def __init__(self, session, device):
+		Screen.__init__(self, session)
+		self.setTitle(_("DFU Firmware Upgrade"))
+		self.device = device
+		self.flasher = DfuFlash(self.onEvent, self.onUploadProgress)
+		self.running = False
+		self.success = False
+		self.logText = ""
+		self.logScreen = None
+		self["text"] = Label()
+		self["bytes"] = Label()
+		self["progress"] = Progress(valuerange=1000)
+		self["log"] = Label(_("INFO: Show Full Log"))
+		self["actions"] = ActionMap(["OkCancelActions"], {"ok": self.closeGuard, "cancel": self.closeGuard})
+		self["logAction"] = ActionMap(["TimerEditActions"], {"log": self.showLog})
+		self.onFirstExecBegin.append(self.load)
+		self.onClose.append(self.flasher.close)
 
-    def __init__(self, session, device):
-        Screen.__init__(self, session)
-        self.setTitle(_("DFU Firmware Upgrade"))
-        self._device = device
-        self._flasher = DfuFlash(self._onEvent, self._onUploadProgress)
+	def closeGuard(self):
+		if not self.running:
+			self.close(self.success)
 
-        self._label = Label()
-        self["text"] = self._label
-        self._bytes = Label()
-        self["bytes"] = self._bytes
-        self._progress = Progress(range=1000)
-        self["progress"] = self._progress
-        self["log"] = Label(_("Show Full Log"))
+	def appendText(self, text):
+		self["text"].text = text
+		self.logText = f"{self.logText}\n{text}".strip()
+		if self.logScreen:
+			self.logScreen.text = self.logText
 
-        self._actionMap = ActionMap(["OkCancelActions"],
-        actions={
-            "ok": self._close,
-            "cancel": self._close,
-        })
-        self["actions"] = self._actionMap
-        self["logAction"] = ActionMap(["TimerEditActions"],
-            actions={
-                "log": self._showLog,
-            }
-       )
-        self._actionMap.setEnabled(False)
-        self._section = None
-        self._initialProgress = True
+	def showLog(self):
+		self.logScreen = self.session.openWithCallback(self.logClosed, DfuLog, self.logText)
 
-        self._log = ""
-        self._logScreen = None
-        self.onFirstExecBegin.append(self.load)
+	def logClosed(self, *args):
+		self.logScreen = None
 
-    def _close(self):
-        self.close(True)
+	def load(self):
+		manager = eInputDeviceManager.getInstance()
+		if not manager.hasFeature(eInputDeviceManager.FEATURE_DFU_UPDATE) or manager.dfuActive():
+			self.appendText(_("DFU is not available on this receiver or an update is already running."))
+			return
+		types = self.flasher.load(self.flasher.FIRMWARE_DIRECTORY)
+		if not types:
+			self.appendText(_("The remote control firmware package is missing or invalid."))
+			return
+		if not self.device.isDfu():
+			if not self.device.connected():
+				self.appendText(_("Connect the remote control before starting the update."))
+				return
+			if self.device.batteryLevel() < DFU_BATTERY_MIN:
+				self.appendText(_("The battery level must be at least %d%% before updating.") % DFU_BATTERY_MIN)
+				return
+		version = self.flasher.applicationVersion
+		versionText = ".".join(str(x) for x in version) if version else _("unknown")
+		text = _("Install remote control firmware %s on %s?\n\nKeep the remote close to the receiver and leave its batteries inserted until the update has finished.") % (versionText, self.device.address())
+		if not self.device.isDfu() and version and self.device.checkVersion(*version) >= 0:
+			text = _("The remote already has this or a newer firmware version. Force installation?\n\n") + text
+		if not self.device.isDfu() and self.device.checkVersion(1, 5) < 0 and types & DfuFileset.TYPE_SYSTEM:
+			text += _("\n\nThe remote may not respond during the system update. Control returns after it restarts.")
+		self.appendText(_("Waiting for confirmation..."))
+		self.session.openWithCallback(self.confirmUpdate, MessageBox, text, type=MessageBox.TYPE_YESNO, default=False, windowTitle=_("Update remote control firmware?"))
 
-    def _enableActions(self):
-        self._actionMap.setEnabled(True)
+	def confirmUpdate(self, answer):
+		if not answer:
+			self.close(False)
+			return
+		self.running = True
+		self.appendText(_("Initializing DFU Mode..."))
+		if not self.flasher.update(self.device):
+			self.running = False
 
-    def _onEvent(self, event, value):
-        if event == DfuFlash.EVT_DFU_NA:
-            self._onDfuNotAvailable()
-        elif event == DfuFlash.EVT_DFU_TIMEOUT:
-            self._onDfuTimeout()
-        elif event == DfuFlash.EVT_DFU_LOWBAT:
-            self._onDfuBatteryLow()
-        elif event == DfuFlash.EVT_DFU_AVAILABLE:
-            self._onDfuAvailable()
-        elif event == DfuFlash.EVT_DFU_CONNECTED:
-            self._onDfuConnected()
-        elif event == DfuFlash.EVT_FLASH_BEGIN:
-            self._onFlashBegin(value)
-        elif event == DfuFlash.EVT_FLASH_REJECTED:
-            self._onFlashRejected(event)
-        elif event == DfuFlash.EVT_INIT_FAIL:
-            self._onInitError(event)
-        elif event == DfuFlash.EVT_DFU_CONTROL_ERROR:
-            self._onWriteControlError(event)
-        elif event == DfuFlash.EVT_UPLOAD_BEGIN:
-            self._onUploadBegin(value)
-        elif event == DfuFlash.EVT_UPLOAD_RESULT:
-            self._onUploadResult(value)
-        elif event == DfuFlash.EVT_BL_SKIPPED:
-            self._onBlSkipped()
-        elif event == DfuFlash.EVT_REBOOT_AWAIT:
-            self._onRebootAwait()
-        elif event == DfuFlash.EVT_FINISHED:
-            self._onFinished()
+	def onEvent(self, event, value):
+		errors = {
+			DfuFlash.EVT_DFU_NA: _("DFU is not available or the connection could not be started."),
+			DfuFlash.EVT_DFU_TIMEOUT: _("The remote did not connect in DFU mode. The update has stopped."),
+			DfuFlash.EVT_DFU_LOWBAT: _("The battery level must be at least %d%% before updating.") % DFU_BATTERY_MIN,
+			DfuFlash.EVT_FLASH_REJECTED: _("The firmware files could not be loaded or were rejected."),
+			DfuFlash.EVT_INIT_FAIL: _("The remote rejected update initialization. The update has stopped."),
+			DfuFlash.EVT_DFU_CONTROL_ERROR: _("No valid response was received from the remote. The update has stopped."),
+			DfuFlash.EVT_RECONNECT_TIMEOUT: _("The firmware was sent, but reconnection and the new version could not be confirmed. Check the remote in Bluetooth Setup."),
+		}
+		if event in errors or (event == DfuFlash.EVT_UPLOAD_RESULT and not value):
+			self.running = False
+			self.appendText(errors.get(event, _("Firmware transfer or verification failed. The update has stopped.")))
+		elif event == DfuFlash.EVT_FLASH_BEGIN:
+			self["progress"].value = 0
+			self.appendText(_("Starting system update...") if value == DfuFileset.TYPE_SYSTEM else _("Starting application update..."))
+		elif event == DfuFlash.EVT_UPLOAD_BEGIN:
+			sectionText = _("firmware data") if value == Dfu.DFU_FIRMWARE_TYPE_BIN else _("firmware information")
+			self.appendText(_("Transferring %s...") % sectionText)
+		elif event == DfuFlash.EVT_BL_SKIPPED:
+			self.appendText(_("The installed system version does not need this update. Continuing with the application."))
+		elif event == DfuFlash.EVT_REBOOT_AWAIT:
+			self.appendText(_("Waiting for the remote to restart and reconnect..."))
+		elif event == DfuFlash.EVT_FINISHED:
+			self.success = True
+			self.running = False
+			self["progress"].value = 1000
+			self.appendText(_("Firmware update completed. The remote has reconnected.\n\nPress OK or EXIT to close."))
 
-    def _appendText(self, text, newline=True):
-        if newline:
-            self._label.text = text
-            self._log = "{0}\n{1}".format(self._log, text)
-        else:
-            self._label.text = "{0} {1}".format(self._label.text, text)
-            self._log = "{0} {1}".format(self._log, text)
-        if self._logScreen:
-            self._logScreen.text = self._log
-
-    def _showLog(self):
-        self._logScreen = self.session.openWithCallback(self._onLogClosed, DfuLog, self._log)
-
-    def _onLogClosed(self):
-        self._logScreen = None
-
-    def load(self):
-        types = self._flasher.load(resolveFilename(SCOPE_RCU_FIRMWARE))
-        self._onLoadFinished(types)
-        if self._device.checkVersion(1, 5) < 0 and types & DfuFileset.TYPE_SYSTEM:
-            self._warnBootloaderNoControl()
-            return
-        self._flash()
-
-    def _flash(self):
-        if self._flasher.update(self._device):
-            self._appendText(_("Initializing DFU Mode..."))
-        else:
-            self._enableActions()
-
-    def _warnBootloaderNoControl(self):
-        txt = _(
-            "Your remote is likely to become unresponsive during the first half "
-            "of the update Process.\nAfter the Bootloader/System has been "
-            "updated you will regain control for the rest of this and all future updates."
-        )
-        self.session.openWithCallback(
-            self._onBootloaderNoControlAck,
-            MessageBox,
-            txt,
-            type=MessageBox.TYPE_INFO,
-            windowTitle=_("Please read carefully!"),
-        )
-
-    def _onBootloaderNoControlAck(self, response):
-        self._flash()
-
-    def _onDfuNotAvailable(self):
-        self._appendText(_("DFU is not available on this device. A firmware update may be required upfront!"))
-        self._enableActions()
-
-    def _onDfuTimeout(self):
-        self._flasher = None
-        self._appendText(_("DFU device did not show up. Cancelling!\nYou may want to try this again!"))
-        self._enableActions()
-
-    def _onDfuBatteryLow(self):
-        text = _("Device battery level of {0}% is too low.\nIt's required to be at least {1}%!").format(self._device.batteryLevel(), DFU_BATTERY_MIN)
-        self.session.openWithCallback(self._onErrorAck, MessageBox, text, type=MessageBox.TYPE_ERROR, windowTitle=_("Upload rejected!"))
-
-    def _onLoadFinished(self, types):
-        t = []
-        if types & DfuFileset.TYPE_SYSTEM:
-            t.append(_("SYSTEM"))
-        if types & DfuFileset.TYPE_APP:
-            t.append(_("APPLICATION"))
-        self._appendText(_("Package Content: {0}").format(",".join(t)))
-
-    def _typeDescription(self, setType=None):
-        if setType is None:
-            setType = self._flasher.currentSetType
-        return _("System") if setType == DfuFileset.TYPE_SYSTEM else _("Application")
-
-    def _sectionDescription(self, section=None):
-        section = section or self._section
-        if not section:
-            return "UNKNOWN"
-        return _("BIN") if section == eInputDeviceDfuFlasher.DFU_FIRMWARE_TYPE_BIN else _("DAT")
-
-    def _onDfuAvailable(self):
-        self._appendText(_("DFU device ready!"))
-
-    def _onDfuConnected(self):
-        self._appendText(_("DFU device connected!"))
-
-    def _onFlashBegin(self, type):
-        typeDesc = self._typeDescription().upper()
-        self._appendText(_("Starting DFU Upload of {0}").format(typeDesc))
-
-    def _addBatteryRebootHintText(self, text):
-        return "{0}\n\n{1}".format(text, _("You can remove the batteries of your remote for a short moment to reboot it!"))
-
-    def _onFlashRejected(self, event):
-        self._enableActions()
-        text = self._addBatteryRebootHintText(_("The firmware files are invalid or corrupted!\nThe upload was rejected by the device!"))
-        self._appendText(text)
-        self.session.openWithCallback(self._onErrorAck, MessageBox, text, type=MessageBox.TYPE_ERROR, windowTitle=_("Upload rejected!"))
-
-    def _onInitError(self, event):
-        self._enableActions()
-        text = self._addBatteryRebootHintText(_("Update initialization failed!\n"))
-        self._appendText(text)
-        self.session.openWithCallback(self._onErrorAck, MessageBox, text, type=MessageBox.TYPE_ERROR, windowTitle=_("Init failed!"))
-
-    def _onWriteControlError(self, event):
-        self._enableActions()
-        text = self._addBatteryRebootHintText(_("Control write failed! Code %i\n") % (event,))
-        self._appendText(text)
-        self.session.openWithCallback(self._onErrorAck, MessageBox, text, type=MessageBox.TYPE_ERROR, windowTitle=_("Control write failed!"))
-
-    def _onErrorAck(self, result=None):
-        self.close(False)
-
-    def _onUploadBegin(self, section):
-        if section == self._section:
-            return
-        self._section = section
-        self._initialProgress = True
-        s = self._sectionDescription(section)
-        setType = self._typeDescription()
-        self._appendText("Uploading {0} {1}...".format(setType, s))
-
-    def _onUploadProgress(self, currentBytes, totalBytes):
-        self._initialProgress = False
-        self._progress.value = int(float(currentBytes * 100.0 / totalBytes * 1.0) * 10)
-        self._bytes.text = _("Uploaded {0} of {1} bytes").format(currentBytes, totalBytes)
-
-    def _onUploadResult(self, success):
-        text = _("OK") if success else _("ERROR")
-        self._appendText(text.format(self._sectionDescription()), newline=False)
-        self._section = None
-        self._initialProgress = True
-        if not success:
-            self._enableActions()
-
-    def _onRebootAwait(self):
-        self._appendText(_("Waiting for device reboot..."))
-
-    def _onBlSkipped(self):
-        self._appendText(_("System rejected! (Already the latest version?!). Skipping!"))
-
-    def _onFinished(self):
-        self._enableActions()
-        self._appendText(_(
-            "\nYour remote control will restart in a few seconds (up to 40)!"
-            "\n\nPress [OK] or [EXIT] to close this window once it finished booting!"
-        ))
+	def onUploadProgress(self, currentBytes, totalBytes):
+		self["progress"].value = min(1000, currentBytes * 1000 // totalBytes) if totalBytes else 0
+		self["bytes"].text = _("Uploaded %d of %d bytes") % (currentBytes, totalBytes)

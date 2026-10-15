@@ -788,3 +788,81 @@ msgstr ""
 
 msgid "\nPlease contact the support!\nYou can try executing\n'flash-nrf52 --program --verify --start'\non a console manually"
 msgstr ""
+
+msgid "INFO: Show Full Log"
+msgstr ""
+
+msgid "DFU is not available on this receiver or an update is already running."
+msgstr ""
+
+msgid "The remote control firmware package is missing or invalid."
+msgstr ""
+
+msgid "Connect the remote control before starting the update."
+msgstr ""
+
+msgid "The battery level must be at least %d%% before updating."
+msgstr ""
+
+msgid "Install remote control firmware %s on %s?\n\nKeep the remote close to the receiver and leave its batteries inserted until the update has finished."
+msgstr ""
+
+msgid "The remote already has this or a newer firmware version. Force installation?\n\n"
+msgstr ""
+
+msgid "\n\nThe remote may not respond during the system update. Control returns after it restarts."
+msgstr ""
+
+msgid "Waiting for confirmation..."
+msgstr ""
+
+msgid "Update remote control firmware?"
+msgstr ""
+
+msgid "DFU is not available or the connection could not be started."
+msgstr ""
+
+msgid "The remote did not connect in DFU mode. The update has stopped."
+msgstr ""
+
+msgid "The firmware files could not be loaded or were rejected."
+msgstr ""
+
+msgid "The remote rejected update initialization. The update has stopped."
+msgstr ""
+
+msgid "No valid response was received from the remote. The update has stopped."
+msgstr ""
+
+msgid "The firmware was sent, but reconnection and the new version could not be confirmed. Check the remote in Bluetooth Setup."
+msgstr ""
+
+msgid "Firmware transfer or verification failed. The update has stopped."
+msgstr ""
+
+msgid "Starting system update..."
+msgstr ""
+
+msgid "Starting application update..."
+msgstr ""
+
+msgid "firmware data"
+msgstr ""
+
+msgid "firmware information"
+msgstr ""
+
+msgid "Transferring %s..."
+msgstr ""
+
+msgid "The installed system version does not need this update. Continuing with the application."
+msgstr ""
+
+msgid "Waiting for the remote to restart and reconnect..."
+msgstr ""
+
+msgid "Firmware update completed. The remote has reconnected.\n\nPress OK or EXIT to close."
+msgstr ""
+
+msgid "Uploaded %d of %d bytes"
+msgstr ""

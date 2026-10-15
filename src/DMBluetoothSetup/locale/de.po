@@ -852,3 +852,81 @@ msgstr "Die Aktualisierung des Frontprozessors ist mehrfach fehlgeschlagen!"
 
 msgid "\nPlease contact the support!\nYou can try executing\n'flash-nrf52 --program --verify --start'\non a console manually"
 msgstr "\nBitte wenden Sie sich an den Support!\nSie können versuchen,\n'flash-nrf52 --program --verify --start'\nmanuell auf einer Konsole auszuführen"
+
+msgid "INFO: Show Full Log"
+msgstr "INFO: Vollständiges Protokoll anzeigen"
+
+msgid "DFU is not available on this receiver or an update is already running."
+msgstr "DFU ist auf diesem Receiver nicht verfügbar oder eine Aktualisierung läuft bereits."
+
+msgid "The remote control firmware package is missing or invalid."
+msgstr "Das Firmwarepaket für die Fernbedienung fehlt oder ist ungültig."
+
+msgid "Connect the remote control before starting the update."
+msgstr "Verbinden Sie die Fernbedienung, bevor Sie die Aktualisierung starten."
+
+msgid "The battery level must be at least %d%% before updating."
+msgstr "Der Batteriestand muss vor der Aktualisierung mindestens %d%% betragen."
+
+msgid "Install remote control firmware %s on %s?\n\nKeep the remote close to the receiver and leave its batteries inserted until the update has finished."
+msgstr "Firmware %s auf der Fernbedienung %s installieren?\n\nLassen Sie die Fernbedienung in der Nähe des Receivers und entfernen Sie die Batterien erst nach Abschluss der Aktualisierung."
+
+msgid "The remote already has this or a newer firmware version. Force installation?\n\n"
+msgstr "Die Fernbedienung hat bereits diese oder eine neuere Firmwareversion. Installation erzwingen?\n\n"
+
+msgid "\n\nThe remote may not respond during the system update. Control returns after it restarts."
+msgstr "\n\nWährend der Systemaktualisierung reagiert die Fernbedienung möglicherweise nicht. Nach ihrem Neustart lässt sie sich wieder bedienen."
+
+msgid "Waiting for confirmation..."
+msgstr "Warte auf Bestätigung ..."
+
+msgid "Update remote control firmware?"
+msgstr "Firmware der Fernbedienung aktualisieren?"
+
+msgid "DFU is not available or the connection could not be started."
+msgstr "DFU ist nicht verfügbar oder die Verbindung konnte nicht gestartet werden."
+
+msgid "The remote did not connect in DFU mode. The update has stopped."
+msgstr "Die Fernbedienung hat sich nicht im DFU-Modus verbunden. Die Aktualisierung wurde beendet."
+
+msgid "The firmware files could not be loaded or were rejected."
+msgstr "Die Firmwaredateien konnten nicht geladen werden oder wurden abgelehnt."
+
+msgid "The remote rejected update initialization. The update has stopped."
+msgstr "Die Fernbedienung hat den Start der Aktualisierung abgelehnt. Die Aktualisierung wurde beendet."
+
+msgid "No valid response was received from the remote. The update has stopped."
+msgstr "Von der Fernbedienung kam keine gültige Antwort. Die Aktualisierung wurde beendet."
+
+msgid "The firmware was sent, but reconnection and the new version could not be confirmed. Check the remote in Bluetooth Setup."
+msgstr "Die Firmware wurde übertragen, aber Wiederverbindung und neue Version konnten nicht bestätigt werden. Prüfen Sie die Fernbedienung in der Bluetooth-Einrichtung."
+
+msgid "Firmware transfer or verification failed. The update has stopped."
+msgstr "Übertragung oder Prüfung der Firmware fehlgeschlagen. Die Aktualisierung wurde beendet."
+
+msgid "Starting system update..."
+msgstr "Systemaktualisierung wird gestartet ..."
+
+msgid "Starting application update..."
+msgstr "Anwendungsaktualisierung wird gestartet ..."
+
+msgid "firmware data"
+msgstr "Firmwaredaten"
+
+msgid "firmware information"
+msgstr "Firmwareinformationen"
+
+msgid "Transferring %s..."
+msgstr "%s werden übertragen ..."
+
+msgid "The installed system version does not need this update. Continuing with the application."
+msgstr "Die installierte Systemversion benötigt diese Aktualisierung nicht. Die Anwendung wird jetzt aktualisiert."
+
+msgid "Waiting for the remote to restart and reconnect..."
+msgstr "Warte auf Neustart und Wiederverbindung der Fernbedienung ..."
+
+msgid "Firmware update completed. The remote has reconnected.\n\nPress OK or EXIT to close."
+msgstr "Firmwareaktualisierung abgeschlossen. Die Fernbedienung ist wieder verbunden.\n\nDrücken Sie OK oder EXIT zum Schließen."
+
+msgid "Uploaded %d of %d bytes"
+msgstr "%d von %d Bytes übertragen"

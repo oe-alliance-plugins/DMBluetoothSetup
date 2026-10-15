@@ -24,7 +24,7 @@ inputDeviceWatcher = None
 
 class InputDeviceWatcher(InputDeviceUpdateHandlerBase):
 	BATTERY_LOG_DIR = "/var/lib/enigma2"
-	BATTERY_LOW_LEVEL = 20  # same threshold as the batteryLow signal (DFU_BATTERY_MIN)
+	BATTERY_LOW_LEVEL = 20  # Normal use; firmware updates require at least 50 percent.
 
 	def __init__(self, session):
 		ensureInputDeviceManagerConfig()

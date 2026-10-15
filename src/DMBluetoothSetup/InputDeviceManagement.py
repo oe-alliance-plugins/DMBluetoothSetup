@@ -17,11 +17,7 @@ from .InputDeviceAdapterFlasher import InputDeviceUpdateChecker
 from .InputDeviceIRProg import InputDeviceIRProg
 from .InputDeviceSettings import InputDeviceSettings
 from .InputDeviceUpdateHandlerBase import InputDeviceUpdateHandlerBase
-
-try:
-	from Screens.SetupGuide import SetupGuide
-except ImportError:
-	SetupGuide = None
+from .Dfu.DfuFlashGuard import DfuFlashGuard
 
 
 INPUT_DEVICE_MANAGEMENT_SKIN = """
@@ -254,6 +250,8 @@ class InputDeviceManagementBase:
 			reactor.callLater(delay, self._refreshAndReload)
 
 	def _refreshAndReload(self):
+		if getattr(self, "dfuRunning", False):
+			return
 		self._refresh()
 		self._reload()
 		self._updateSelectionState()
@@ -267,6 +265,8 @@ class InputDeviceManagementBase:
 		pass
 
 	def _highlight(self):
+		if getattr(self, "dfuRunning", False):
+			return
 		d = self._currentInputDevice
 		if d:
 			if not self.__highlightDevice or d.address() != self.__highlightDevice.address():
@@ -292,6 +292,7 @@ class InputDeviceManagement(Screen, InputDeviceManagementBase, InputDeviceUpdate
 
 	def __init__(self, session):
 		Screen.__init__(self, session)
+		self.dfuRunning = False
 		self.setTitle(_("Input devices"))
 		InputDeviceManagementBase.__init__(self)
 		InputDeviceUpdateHandlerBase.__init__(self)
@@ -326,23 +327,24 @@ class InputDeviceManagement(Screen, InputDeviceManagementBase, InputDeviceUpdate
 		self.onLayoutFinish.append(self.__onSelectionChanged)
 
 	def _onShow(self):
+		if self.dfuRunning:
+			return
 		self._disableListFeedback()
 		self._refresh()
 
 	def _dfu(self):
 		if not self._dm.hasFeature(eInputDeviceManager.FEATURE_DFU_UPDATE):
 			return
-		if SetupGuide is None:
-			self.session.open(MessageBox, _("DFU update setup is not available on this image."), type=MessageBox.TYPE_INFO)
+		device = self._currentInputDevice
+		if not device or (not device.connected() and not device.isDfu()):
+			self.session.open(MessageBox, _("Connect the remote control before starting the update."), type=MessageBox.TYPE_INFO)
 			return
-		# Load the optional DreamOS setup guide only when that framework is available.
-		from .Dfu.DfuGuide import DfuFinishStep, DfuUpdateStep, DfuWelcomeStep
-		steps = [{
-			10: DfuWelcomeStep,
-			20: DfuUpdateStep,
-			30: DfuFinishStep,
-		}]
-		self.session.open(SetupGuide, steps=steps)
+		self.dfuRunning = True
+		self.session.openWithCallback(self.dfuClosed, DfuFlashGuard, device)
+
+	def dfuClosed(self, *args):
+		self.dfuRunning = False
+		self._refreshAndReload()
 
 	def _updateButtons(self):
 		device = self._currentInputDevice
@@ -430,6 +432,8 @@ class InputDeviceManagement(Screen, InputDeviceManagementBase, InputDeviceUpdate
 			self["description"].text = text
 
 	def _devicesChanged(self, *args):
+		if getattr(self, "dfuRunning", False):
+			return
 		if len(args) >= 2:
 			address = args[0]
 			try:

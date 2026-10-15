@@ -401,6 +401,9 @@ class InputDeviceManagement(Screen, InputDeviceManagementBase, InputDeviceUpdate
 
 	def _checkAdapter(self):
 		if self.available() and not self.responding():
+			if self._updateChecker.flasherMissing:
+				Log.d("Bluetooth receiver is not responding; no adapter firmware flasher is available.")
+				return
 			self.session.openWithCallback(
 				self._onUpdateAnswer,
 				MessageBox,

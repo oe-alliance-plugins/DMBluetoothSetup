@@ -467,6 +467,10 @@ msgstr ""
 msgid "No Dreambox Bluetooth receiver detected! Sorry!"
 msgstr ""
 
+#: InputDeviceManagement.py
+msgid "The Bluetooth receiver is not responding. Firmware installation is not available on this receiver."
+msgstr ""
+
 #: InputDeviceManagement.py:420
 msgid "Press OK to disconnect"
 msgstr ""

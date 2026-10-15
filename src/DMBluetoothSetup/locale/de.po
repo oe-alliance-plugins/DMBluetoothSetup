@@ -513,6 +513,10 @@ msgstr "Bluetooth-Empfänger-Firmware flashen?"
 msgid "No Dreambox Bluetooth receiver detected! Sorry!"
 msgstr "Kein Dreambox-Bluetooth-Empfänger erkannt."
 
+#: InputDeviceManagement.py
+msgid "The Bluetooth receiver is not responding. Firmware installation is not available on this receiver."
+msgstr "Der Bluetooth-Empfänger antwortet nicht. Für diesen Empfänger ist keine Firmware-Installation verfügbar."
+
 #: InputDeviceManagement.py:420
 msgid "Press OK to disconnect"
 msgstr "OK drücken zum Trennen"

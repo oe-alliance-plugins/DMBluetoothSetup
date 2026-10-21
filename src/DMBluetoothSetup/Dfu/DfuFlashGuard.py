@@ -5,6 +5,7 @@ from Components.Label import Label
 from Components.Sources.Progress import Progress
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
+from Tools.Notifications import notificationCenter
 
 from .DfuFlash import DfuFileset, DfuFlash
 from .. import _
@@ -90,7 +91,8 @@ class DfuFlashGuard(Screen):
 				self.appendText(_("Connect the remote control before starting the update."))
 				return
 			if self.device.batteryLevel() < DFU_BATTERY_MIN:
-				self.appendText(_("The battery level must be at least %d%% before updating.") % DFU_BATTERY_MIN)
+				notificationCenter.showWarning(_("The battery level must be at least %d%% before updating.") % DFU_BATTERY_MIN, timeout=10)
+				self.close(False)
 				return
 		version = self.flasher.applicationVersion
 		versionText = ".".join(str(x) for x in version) if version else _("unknown")
